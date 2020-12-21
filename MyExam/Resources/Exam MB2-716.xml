@@ -1,0 +1,560 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Exam Code="Exam : MB2-716" Title="Title : Microsoft Dynamics 365 Customization and Configuration">
+  <Question Id="0" Point="1" isMultiSelect="True" Text="1When a business process flow (BPF) enters a specific stage, you need to run a workflow. Which two actions should you perform ? Each correct answer presents part of the solution. ">
+    <Choice Id="A" isCorrect="false"> Add a global workflow composition component. </Choice>
+    <Choice Id="B" isCorrect="true"> Select an on-demand workflow to run. </Choice>
+    <Choice Id="C" isCorrect="true"> Add a stage specific workflow composition component. </Choice>
+    <Choice Id="D" isCorrect="false"> Select a step to run.</Choice>
+  </Question>
+  <Question Id="1" Point="1" isMultiSelect="False" Text="2 You create an organization-owned custom entity. You need to ensure that users can see the custom entity while minimizing the permissions that you grant users. What should you do ? ">
+    <Choice Id="A" isCorrect="false"> Ask a system administrator to share the records with the users who need access. </Choice>
+    <Choice Id="B" isCorrect="false"> Grant access to all users and then remove the entity from the sitemap and advanced find. Provide users who need access a direct link to a view of the entity. </Choice>
+    <Choice Id="C" isCorrect="false"> Grant the appropriate security roles user-level access to the custom entity. </Choice>
+    <Choice Id="D" isCorrect="true"> Grant the appropriate security roles organization-level access to the custom entity. </Choice>
+  </Question>
+  <Question Id="2" Point="1" isMultiSelect="False" Text="3 You add a lookup for contacts to the case form. You need to display the most recent primary phone number for a contact on the case form while minimizing administrative effort. What should you do ? ">
+    <Choice Id="A" isCorrect="false"> Use a workflow to copy the phone number to a new field on the case when the contact changes. </Choice>
+    <Choice Id="B" isCorrect="true"> Use a quick view form to display the phone number. </Choice>
+    <Choice Id="C" isCorrect="false"> Use a web resource to query and display the phone number. </Choice>
+    <Choice Id="D" isCorrect="false"> Use field mapping during record creation to copy the phone number to a new field on the case. </Choice>
+  </Question>
+  <Question Id="3" Point="1" isMultiSelect="False" Text="4 You configure a 1:N relationship between two entities and set the cascade rule for deletion to Referential. What effect does deleting the parent record have on any child records ? ">
+    <Choice Id="A" isCorrect="true"> The child records remain but the link to the parent record is removed. </Choice>
+    <Choice Id="B" isCorrect="false"> The parent record cannot be deleted until all of the child records are first deleted. </Choice>
+    <Choice Id="C" isCorrect="false"> The child records are deleted and the link to the parent record shows as deleted. </Choice>
+    <Choice Id="D" isCorrect="false"> The child records are deleted along with the parent record. </Choice>
+  </Question>
+  <Question Id="4" Point="1" isMultiSelect="False" Text="5 You create a workflow that automatically sends an email when a condition is met. The staff reports that emails are not been sent as expected. You need to correct the issue. What should you do ? ">
+    <Choice Id="A" isCorrect="false"> Export the workflow. </Choice>
+    <Choice Id="B" isCorrect="false"> Set the workflow to required. </Choice>
+    <Choice Id="C" isCorrect="false"> Publish the workflow. </Choice>
+    <Choice Id="D" isCorrect="true"> Activate the workflow. </Choice>
+  </Question>
+  <Question Id="5" Point="1" isMultiSelect="False" Text="6 You implement Microsoft Dynamics 365 for customers. A customer reports that their sales support staff is taking too much time updating the probability on opportunities. You must display an Editable Grid control when users view the Opportunity entity from the web. You must display a read-only grid when users view opportunities on a tablet device. What should you do ? ">
+    <Choice Id="A" isCorrect="false"> On the Opportunity entity, clear the Enable for mobile setting. </Choice>
+    <Choice Id="B" isCorrect="false"> On the Outlook and Mobile Settings page for the Opportunity entity, configure the Organization data download filter. </Choice>
+    <Choice Id="C" isCorrect="true"> On the Opportunity entity, select the Tablet option for the Microsoft Dynamics 365 Read- only Grid setting. </Choice>
+    <Choice Id="D" isCorrect="false"> On the Opportunity entity, select the Read-only in mobile setting </Choice>
+  </Question>
+  <Question Id="6" Point="1" isMultiSelect="True" Text="7 You need to provide users that have the Sales manager security role access to multiple business process flows (BPFs). Which two statements regarding role driven BPFs are true ? ">
+    <Choice Id="A" isCorrect="false"> Users can select a default BPF for all records. </Choice>
+    <Choice Id="B" isCorrect="true"> If a user does not have access to the current process that is applied to a record, options will be disabled. </Choice>
+    <Choice Id="C" isCorrect="true"> Set Order defines the order in which BPFs are viewed. </Choice>
+    <Choice Id="D" isCorrect="false"> You must use teams to control which groups of users have access to a BPF. </Choice>
+  </Question>
+  <Question Id="7" Point="1" isMultiSelect="False" Text="8 You create a custom field and set the requirement level to Business Required. For which scenarios is the requirement level enforced ? ">
+    <Choice Id="A" isCorrect="false"> A user creates a record through the web interface but the required field is not on the current form. </Choice>
+    <Choice Id="B" isCorrect="true"> A user creates a record by using one of the mobile clients. </Choice>
+    <Choice Id="C" isCorrect="false"> A developer creates a record by using custom code. </Choice>
+    <Choice Id="D" isCorrect="false"> A user creates a record by using the data import functionality. </Choice>
+  </Question>
+  <Question Id="8" Point="1" isMultiSelect="True" Text="9 You are configuring auditing for Microsoft Dynamics 365. Which two operations can you audit ? Each correct answer presents a complete solution. ">
+    <Choice Id="A" isCorrect="true"> Create, update, and delete records. </Choice>
+    <Choice Id="B" isCorrect="true"> Create an association between records. </Choice>
+    <Choice Id="C" isCorrect="false"> Retrieve records.</Choice>
+    <Choice Id="D" isCorrect="false"> Export records. </Choice>
+  </Question>
+  <Question Id="9" Point="1" isMultiSelect="False" Text="10 You create a business rule for the Case entity and set the scope to Case. Which action will cause the business rule to run ? ">
+    <Choice Id="A" isCorrect="true"> The form loads. </Choice>
+    <Choice Id="B" isCorrect="false"> An asynchronous workflow updates the record. </Choice>
+    <Choice Id="C" isCorrect="false"> An asynchronous workflow creates a record. </Choice>
+    <Choice Id="D" isCorrect="false"> The record is saved. </Choice>
+  </Question>
+  <Question Id="10" Point="1" isMultiSelect="True" Text="11 Which two of the following are valid security role permissions ? Each correct answer presents a complete solution. ">
+    <Choice Id="A" isCorrect="false"> Deactivate </Choice>
+    <Choice Id="B" isCorrect="true"> Share </Choice>
+    <Choice Id="C" isCorrect="false"> Edit </Choice>
+    <Choice Id="D" isCorrect="true"> Append </Choice>
+  </Question>
+  <Question Id="11" Point="1" isMultiSelect="True" Text="12 You need to configure Microsoft OneNote integration for an organization's Microsoft Dynamics 365 case entity. Which two components should you enable? Each correct answer presents part of the solution. ">
+    <Choice Id="A" isCorrect="false"> Microsoft Office 365 groups </Choice>
+    <Choice Id="B" isCorrect="true"> document management for the entity </Choice>
+    <Choice Id="C" isCorrect="false"> Interactive Service Hub </Choice>
+    <Choice Id="D" isCorrect="true"> server-based Microsoft SharePoint integration </Choice>
+    <Choice Id="E" isCorrect="false"> Microsoft OneDrive integration </Choice>
+  </Question>
+  <Question Id="12" Point="1" isMultiSelect="True" Text="13 Which three actions can you perform by using business rules ? Each correct answer presents a complete solution. ">
+    <Choice Id="A" isCorrect="true"> Display an error message at the field level. </Choice>
+    <Choice Id="B" isCorrect="true"> Set a default field value. </Choice>
+    <Choice Id="C" isCorrect="false"> Set the active business process flow (BPF) stage.</Choice>
+    <Choice Id="D" isCorrect="false"> Display an error message at the form level. </Choice>
+    <Choice Id="E" isCorrect="true"> Clear a field value. </Choice>
+  </Question>
+  <Question Id="13" Point="1" isMultiSelect="False" Text="14 A group of users must be able to associate a time zone with a record. You need to implement the required functionality by using native Microsoft Dynamics 365 features. Which field type should you use ? ">
+    <Choice Id="A" isCorrect="false"> option set </Choice>
+    <Choice Id="B" isCorrect="false"> multiple lines of text </Choice>
+    <Choice Id="C" isCorrect="true"> whole number </Choice>
+    <Choice Id="D" isCorrect="false"> lookup </Choice>
+  </Question>
+  <Question Id="14" Point="1" isMultiSelect="False" Text="15 You need to display data is referenced by a lookup field on a form. Which option should you use ? ">
+    <Choice Id="A" isCorrect="true"> Quick View </Choice>
+    <Choice Id="B" isCorrect="false"> Associated View </Choice>
+    <Choice Id="C" isCorrect="false"> Public View </Choice>
+    <Choice Id="D" isCorrect="false"> Quick Find View </Choice>
+  </Question>
+  <Question Id="15" Point="1" isMultiSelect="False" Text="16 Which action can you perform by using a business rule ? ">
+    <Choice Id="A" isCorrect="false"> Subtract $5.00 from a currency field. </Choice>
+    <Choice Id="B" isCorrect="false"> Clear a two options field. </Choice>
+    <Choice Id="C" isCorrect="false"> Concatenate two text fields. </Choice>
+    <Choice Id="D" isCorrect="true"> Add six days to a date field</Choice>
+  </Question>
+  <Question Id="16" Point="1" isMultiSelect="True" Text="17 You need to enable auditing for the account entity. Which two actions should you perform ? Each correct answer presents part of the solution. ">
+    <Choice Id="A" isCorrect="true"> Start auditing. </Choice>
+    <Choice Id="B" isCorrect="false"> Enable change tracking. </Choice>
+    <Choice Id="C" isCorrect="true"> Enable auditing for common entities. </Choice>
+    <Choice Id="D" isCorrect="false"> Enable auditing for user access. </Choice>
+  </Question>
+  <Question Id="17" Point="1" isMultiSelect="True" Text="18 Which two series aggregate functions are only available on numeric field data types ? Each correct answer presents part of the solution. ">
+    <Choice Id="A" isCorrect="false"> Count: Non-empty </Choice>
+    <Choice Id="B" isCorrect="false"> Count: All </Choice>
+    <Choice Id="C" isCorrect="true"> Avg </Choice>
+    <Choice Id="D" isCorrect="true"> Max </Choice>
+  </Question>
+  <Question Id="18" Point="1" isMultiSelect="False" Text="19 You need to create a business rule for the account entity that runs both client and server side. Which business rule scope should you use ? ">
+    <Choice Id="A" isCorrect="false"> All Forms </Choice>
+    <Choice Id="B" isCorrect="false"> Account </Choice>
+    <Choice Id="C" isCorrect="false"> Account for Interactive Experience </Choice>
+    <Choice Id="D" isCorrect="true"> Entity </Choice>
+  </Question>
+  <Question Id="19" Point="1" isMultiSelect="False" Text="20 You install a unmanaged solution named SolutionA that has a dependency on another unmanaged solution named SolutionB. What is the outcome when you attempt to uninstall SolutionB ? ">
+    <Choice Id="A" isCorrect="false"> SolutionB and all components that are not dependencies of SolutionA are removed. </Choice>
+    <Choice Id="B" isCorrect="false"> The system prevents you from deleting SolutionB </Choice>
+    <Choice Id="C" isCorrect="false"> SolutionB and all related components are removed. </Choice>
+    <Choice Id="D" isCorrect="true"> The container for SolutionB is removed, but all its components remain.</Choice>
+  </Question>
+  <Question Id="20" Point="1" isMultiSelect="False" Text="21 You need to create a custom entity to host records that are owned by salespeople in the Which entity type should you use ? ">
+    <Choice Id="A" isCorrect="false"> Access Team </Choice>
+    <Choice Id="B" isCorrect="false"> Organization </Choice>
+    <Choice Id="C" isCorrect="true"> User or Team </Choice>
+    <Choice Id="D" isCorrect="false"> Owner </Choice>
+  </Question>
+  <Question Id="21" Point="1" isMultiSelect="True" Text="22 You are creating a set of system views. Which three options can you configure for the views ? Each correct answer presents a complete solution. ">
+    <Choice Id="A" isCorrect="false"> read, write, and delete permissions </Choice>
+    <Choice Id="B" isCorrect="false"> append, assign, and share permissions</Choice>
+    <Choice Id="C" isCorrect="true"> default sort order for results </Choice>
+    <Choice Id="D" isCorrect="true"> the widths of each column </Choice>
+    <Choice Id="E" isCorrect="true"> the columns to display </Choice>
+  </Question>
+  <Question Id="22" Point="1" isMultiSelect="True" Text="23 Which three statements regarding actions are true ? Each correct answer presents a complete solution. ">
+    <Choice Id="A" isCorrect="true"> Actions can be invoked from a custom client application that uses Microsoft Dynamics 365 </Choice>
+    <Choice Id="B" isCorrect="true"> Actions can be invoked from JavaScript within the application.</Choice>
+    <Choice Id="C" isCorrect="false"> Actions must always be associated with a specified entity. </Choice>
+    <Choice Id="D" isCorrect="false"> Actions require some coding to enable invocation from a workflow or dialog. </Choice>
+    <Choice Id="E" isCorrect="true"> You can invoke actions from a workflow or dialog without writing code. </Choice>
+  </Question>
+  <Question Id="23" Point="1" isMultiSelect="True" Text="24 You plan to implement a server-based integration between Microsoft Dynamics 365 and SharePoint Online. Which two statements are true ? Each correct answer presents a complete solution. ">
+    <Choice Id="A" isCorrect="true"> You only need to sign in to Microsoft Dynamics 365 to access documents stored in SharePoint. </Choice>
+    <Choice Id="B" isCorrect="false"> SharePoint actions including Alert Me, Download a Copy, and Copy Shortcut are supported. </Choice>
+    <Choice Id="C" isCorrect="true"> You do not need to implement a list component. </Choice>
+    <Choice Id="D" isCorrect="false"> Users can create folders in Microsoft Dynamics 365. </Choice>
+  </Question>
+  <Question Id="24" Point="1" isMultiSelect="False" Text="25 You need to create a hyperlink field to capture the URL for a contact's Linkedln profile. Which data type should you use for the field ? ">
+    <Choice Id="A" isCorrect="true"> single line of text </Choice>
+    <Choice Id="B" isCorrect="false"> web </Choice>
+    <Choice Id="C" isCorrect="false"> URL </Choice>
+    <Choice Id="D" isCorrect="false"> text area </Choice>
+  </Question>
+  <Question Id="25" Point="1" isMultiSelect="False" Text="26 Which statement regarding ordering of items in the mobile navigation menu is true?">
+    <Choice Id="A" isCorrect="false"> Menu item placement is governed by mobile offline settings. </Choice>
+    <Choice Id="B" isCorrect="true"> Menu item placement is based on the site map. </Choice>
+    <Choice Id="C" isCorrect="false"> Most recently used entities appear first. </Choice>
+    <Choice Id="D" isCorrect="false"> Menu items are displayed in alphabetical order. </Choice>
+  </Question>
+  <Question Id="26" Point="1" isMultiSelect="False" Text="27 Which statement regarding alternate keys is true ? ">
+    <Choice Id="A" isCorrect="false"> You can define only one alternate key per entity. </Choice>
+    <Choice Id="B" isCorrect="true"> Alternate keys are enforced when creating records through the user interface, and during data imports. </Choice>
+    <Choice Id="C" isCorrect="false"> You can use date and time fields as part of an alternate key. </Choice>
+    <Choice Id="D" isCorrect="false"> Alternate keys provide a warning if there is a matching record, but still allow the record to be saved. </Choice>
+  </Question>
+  <Question Id="27" Point="1" isMultiSelect="False" Text="28 You need to install the Microsoft Dynamics 365 App for Outlook on your device. What should you do ?">
+    <Choice Id="A" isCorrect="true"> In Settings, open Apps for Dynamics 365. </Choice>
+    <Choice Id="B" isCorrect="false"> Add your user name to the Microsoft Dynamics 365 App for Outlook eligible user list. </Choice>
+    <Choice Id="C" isCorrect="false"> Enable the option to automatically add the app to Outlook. </Choice>
+    <Choice Id="D" isCorrect="false"> Download and install the app from Microsoft AppSource. </Choice>
+  </Question>
+  <Question Id="28" Point="1" isMultiSelect="False" Text="29 The receptionist for a company needs to quickly capture basic information regarding visitors. You configure several different quick create forms for the Visitor entity. The receptionist reports that only one of the quick create forms displays. Why are the other quick create forms not showing ?">
+    <Choice Id="A" isCorrect="false"> You did not assign the receptionist access to the form. </Choice>
+    <Choice Id="B" isCorrect="false"> You did not enable the switch forms control for quick create forms. </Choice>
+    <Choice Id="C" isCorrect="true"> You can only show one quick create form per entity. </Choice>
+    <Choice Id="D" isCorrect="false"> You did not assign the correct security role for the quick create from. </Choice>
+  </Question>
+  <Question Id="29" Point="1" isMultiSelect="False" Text="30 You have a Microsoft Dynamics 365 environment. You create and deploy a custom entity. Which property can you turn off after enabling the property ?">
+    <Choice Id="A" isCorrect="false"> Connections </Choice>
+    <Choice Id="B" isCorrect="false"> Feedback </Choice>
+    <Choice Id="C" isCorrect="true"> Change Tracking </Choice>
+    <Choice Id="D" isCorrect="false"> Activities</Choice>
+  </Question>
+  <Question Id="30" Point="1" isMultiSelect="False" Text="31 You enable folder-level tracking functionality for all users. A user named User1 creates a folder named Dynamics 365 underneath her in box. User1 moves emails into the Dynamics 365 folder. User1 reports that the emails are not being tracked. You need to resolve the issue. What should you do ? ">
+    <Choice Id="A" isCorrect="false"> Ensure that the Microsoft Dynamics 365 for Outlook client is installed. </Choice>
+    <Choice Id="B" isCorrect="false"> Configure server-side synchronization for Microsoft Exchange. </Choice>
+    <Choice Id="C" isCorrect="false"> Ensure that Microsoft Exchange rules are created. </Choice>
+    <Choice Id="D" isCorrect="true"> Instruct the user to create a folder tracking rule. </Choice>
+  </Question>
+  <Question Id="31" Point="1" isMultiSelect="True" Text="32 You have a business process named Know Your Customer. Employees use this business process to capture key information about customers. You must implement a business process flow (BPF) in Microsoft Dynamics 365 that represents this business process. You specify the name for the BPF as well as the stage names, entities, and stage category that the BPF will use. You need to complete the BPF implementation. Which three additional components can you configure ? Each correct answer presents part of the solution. ">
+    <Choice Id="A" isCorrect="true"> Step Required </Choice>
+    <Choice Id="B" isCorrect="false"> Check Conditions </Choice>
+    <Choice Id="C" isCorrect="false"> Wait Conditions </Choice>
+    <Choice Id="D" isCorrect="true"> Step Display Names </Choice>
+    <Choice Id="E" isCorrect="true"> Data Fields</Choice>
+  </Question>
+  <Question Id="32" Point="1" isMultiSelect="False" Text="33 You are a subject matter expert for an insurance company. You have a complex business method that is used for settling and releasing claims. You need to create a process in Microsoft Dynamics 365 to assist team members with the claims settlement process. You must limit this process to team members that have a specific security role. What should you implement ?">
+    <Choice Id="A" isCorrect="true"> business process flow (BPF) </Choice>
+    <Choice Id="B" isCorrect="false"> workflows </Choice>
+    <Choice Id="C" isCorrect="false"> custom actions </Choice>
+    <Choice Id="D" isCorrect="false"> dialogs </Choice>
+  </Question>
+  <Question Id="33" Point="1" isMultiSelect="True" Text="34 You create a Publisher and add entities to a solution. What are two outcomes of this action ? Each correct answer presents a complete solution. ">
+    <Choice Id="A" isCorrect="false"> The name for existing custom entities that you add to a solution use the prefix that indicates the publisher. </Choice>
+    <Choice Id="B" isCorrect="false"> A new section dedicated to the publisher is added to the sitemap. </Choice>
+    <Choice Id="C" isCorrect="true"> Option sets that you create as part of the solution use the prefix that indicates the publisher. </Choice>
+    <Choice Id="D" isCorrect="true"> The name for custom entities that you create as part of the solution use the prefix that indicates the publisher.</Choice>
+  </Question>
+  <Question Id="34" Point="1" isMultiSelect="True" Text="35 For which three scenarios can you enable duplicate detection ? Each correct answer presents a complete solution. ">
+    <Choice Id="A" isCorrect="true"> when Microsoft Dynamics 365 for Outlook goes from offline to online </Choice>
+    <Choice Id="B" isCorrect="true"> when a record is created or updated </Choice>
+    <Choice Id="C" isCorrect="true"> during data import </Choice>
+    <Choice Id="D" isCorrect="false"> when a record is deleted or deactivated </Choice>
+    <Choice Id="E" isCorrect="false"> when Microsoft Dynamics 365 for Outlook goes from online to offline </Choice>
+  </Question>
+  <Question Id="35" Point="1" isMultiSelect="False" Text="36 You are implementing a Lead to Quote business process. The process will update the Lead. Account Contact, and Quote entities. You need to create a business process flow (BPF) that spans the entities. What should you do ?">
+    <Choice Id="A" isCorrect="false"> For each stage, specify the step. </Choice>
+    <Choice Id="B" isCorrect="false"> Add a workflow. </Choice>
+    <Choice Id="C" isCorrect="false"> Use a composition. </Choice>
+    <Choice Id="D" isCorrect="true"> Add a stage and specify the properties for each entity. </Choice>
+  </Question>
+  <Question Id="36" Point="1" isMultiSelect="True" Text="37 Which two components can you export as part of a solution ? Each correct answer presents a complete solution. ">
+    <Choice Id="A" isCorrect="false"> business units </Choice>
+    <Choice Id="B" isCorrect="false"> themes </Choice>
+    <Choice Id="C" isCorrect="true"> web resources </Choice>
+    <Choice Id="D" isCorrect="true"> connection roles </Choice>
+  </Question>
+  <Question Id="37" Point="1" isMultiSelect="False" Text="38 You create a custom entity. Records are created by users through the user interface, and through a backend Integration. You must combine two fields to populate a new field that will replace the name field on the entity. You need to ensure that the new field displays a result immediately after a new record is saved. What should you use ?">
+    <Choice Id="A" isCorrect="false"> a background workflow </Choice>
+    <Choice Id="B" isCorrect="false"> JavaScript code on the record form </Choice>
+    <Choice Id="C" isCorrect="false"> a form-scoped business rule </Choice>
+    <Choice Id="D" isCorrect="true"> a calculated field </Choice>
+  </Question>
+  <Question Id="38" Point="1" isMultiSelect="False" Text="39 A sales team member creates a chart. You need to make the chart available to all members of the sales team. What should you do ?">
+    <Choice Id="A" isCorrect="false"> Download and use the Microsoft Dynamics CRM 2016 Report Authoring Extension.</Choice>
+    <Choice Id="B" isCorrect="false"> Ask the team member to export the data used by the chart. </Choice>
+    <Choice Id="C" isCorrect="false"> Export the chart XML and import it into system charts. </Choice>
+    <Choice Id="D" isCorrect="true"> Ask the team member to share the chart with other sales team members. </Choice>
+  </Question>
+  <Question Id="39" Point="1" isMultiSelect="False" Text="40 You are implementing Microsoft Dynamics 365 for a medical center. You need to implement the Connection functionality of Microsoft Dynamics 365 to display family relationships between patients. What should you do ? ">
+    <Choice Id="A" isCorrect="false"> Create a new entity named Connection Role that allows staff to connect the Contact records for family members. </Choice>
+    <Choice Id="B" isCorrect="false"> Configure a 1:N relationship between the Contact entity and Relationship entity. </Choice>
+    <Choice Id="C" isCorrect="true"> Specify the Connection Roles that describe the relationship. </Choice>
+    <Choice Id="D" isCorrect="false"> Crate a new Activity entity to describe the relationship. </Choice>
+  </Question>
+  <Question Id="40" Point="1" isMultiSelect="True" Text="41 You have an environment that includes Microsoft Dynamics 365 and Exchange Online. Email messages between Microsoft Dynamics and Exchange are synchronizing correctly. You need to ensure that appointments, contacts, and tasks are synchronized. What are two possible ways to achieve this goal ? Each correct answer presents a complete solution. ">
+    <Choice Id="A" isCorrect="true"> Configure the default synchronization method for appointments, contacts, and tasks to use serverside synchronization. </Choice>
+    <Choice Id="B" isCorrect="true"> Configure the default synchronization method for appointments, contacts, and tasks to use Microsoft Dynamics 365 for Outlook. </Choice>
+    <Choice Id="C" isCorrect="false"> Connect Microsoft Dynamics 365 to POP3/SMTP servers. </Choice>
+    <Choice Id="D" isCorrect="false"> Set up the email router. </Choice>
+  </Question>
+  <Question Id="41" Point="1" isMultiSelect="True" Text="42 Which three statements regarding form design or behavior for the mobile phone or tablet application are true ? Each correct answer presents a complete solution. ">
+    <Choice Id="A" isCorrect="false"> The form selector is available. </Choice>
+    <Choice Id="B" isCorrect="true"> The first five tabs will display. </Choice>
+    <Choice Id="C" isCorrect="false"> Activities can be modified. </Choice>
+    <Choice Id="D" isCorrect="true"> Tabs donot have the expand and collapse capability. </Choice>
+    <Choice Id="E" isCorrect="true"> If business rules are changed while the mobile app is open, the app must be closed and reopened for those changes to apply. </Choice>
+  </Question>
+  <Question Id="42" Point="1" isMultiSelect="False" Text="43 You administer a Microsoft Dynamics 365 environment for a company. You need to prevent one specific employee from synchronizing data by using Microsoft Dynamics 365 for Outlook without preventing the employee from using Microsoft Dynamics 365 tor Outlook. What should you do ? ">
+    <Choice Id="A" isCorrect="false"> Set the Web Mail Merge settings to None Selected for the individual's security role. </Choice>
+    <Choice Id="B" isCorrect="true"> Set the Sync to Outlook settings to None Selected for the individual's security role.</Choice>
+    <Choice Id="C" isCorrect="false"> Set the Dynamics 365 Address Book settings to None Selected for the individual's security role. </Choice>
+    <Choice Id="D" isCorrect="false"> Set the Use Dynamics 365 App for Outlook to None Selected for the individual's security role. </Choice>
+  </Question>
+  <Question Id="43" Point="1" isMultiSelect="True" Text="44 Which two chart types can you combine with another chart type ? Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="true"> line </Choice>
+    <Choice Id="B" isCorrect="false"> pie </Choice>
+    <Choice Id="C" isCorrect="true"> column </Choice>
+    <Choice Id="D" isCorrect="false"> funnel </Choice>
+  </Question>
+  <Question Id="44" Point="1" isMultiSelect="False" Text="45 You plan to entity mapping to replicate data from a text field between two related entities. For which scenario can you replicate data ? ">
+    <Choice Id="A" isCorrect="false"> The target field is already mapped to a different source field. </Choice>
+    <Choice Id="B" isCorrect="true"> The length of the source field is smaller than the destination field </Choice>
+    <Choice Id="C" isCorrect="false"> The two entities are in a N:N relationship. </Choice>
+    <Choice Id="D" isCorrect="false"> The new record is created and then related to the parent record </Choice>
+  </Question>
+  <Question Id="45" Point="1" isMultiSelect="False" Text="46 For which of the following scenarios can you delete an entity ?">
+    <Choice Id="A" isCorrect="true"> The entity is custom and uses a system*defined global option set. </Choice>
+    <Choice Id="B" isCorrect="false"> The entity is part of a managed solution and no other items are dependent upon the entity. </Choice>
+    <Choice Id="C" isCorrect="false"> The entity is part of an unmanaged solution and another unmanaged entity has a lookup field to </Choice>
+    <Choice Id="D" isCorrect="false"> The entity is system defined and no other items are dependent upon the entity. </Choice>
+  </Question>
+  <Question Id="46" Point="1" isMultiSelect="True" Text="47 You create a business rule for the Account entity. The business rule must run when you import account records. Which two conditions must be true ? Each correct answer presents a complete solution. ">
+    <Choice Id="A" isCorrect="true"> The scope was set toEntity. </Choice>
+    <Choice Id="B" isCorrect="false"> The scope was set toAccount. </Choice>
+    <Choice Id="C" isCorrect="true"> A business rule is active. </Choice>
+    <Choice Id="D" isCorrect="false"> A business rule snapshot was successful. </Choice>
+  </Question>
+  <Question Id="47" Point="1" isMultiSelect="False" Text="48 Which form type is used by the Microsoft Dynamics 365 for tablets app ? ">
+    <Choice Id="A" isCorrect="false"> Mobile </Choice>
+    <Choice Id="B" isCorrect="true"> Main </Choice>
+    <Choice Id="C" isCorrect="false"> Mobile - Express </Choice>
+    <Choice Id="D" isCorrect="false"> Turbo </Choice>
+  </Question>
+  <Question Id="48" Point="1" isMultiSelect="False" Text="49 Which component can you add to a solution ? ">
+    <Choice Id="A" isCorrect="false"> Goals </Choice>
+    <Choice Id="B" isCorrect="false"> Queues </Choice>
+    <Choice Id="C" isCorrect="false"> Subjects </Choice>
+    <Choice Id="D" isCorrect="true"> Processes </Choice>
+  </Question>
+  <Question Id="49" Point="1" isMultiSelect="True" Text="50 Which two entity properties can you disable on a system entity ?">
+    <Choice Id="A" isCorrect="true"> Access Teams </Choice>
+    <Choice Id="B" isCorrect="false"> Notes </Choice>
+    <Choice Id="C" isCorrect="true"> Allow quick create </Choice>
+    <Choice Id="D" isCorrect="false"> Queues</Choice>
+  </Question>
+  <Question Id="50" Point="1" isMultiSelect="False" Text="51 You add a new entity named Parts to Microsoft Dynamics 365. You need to grant all users that have the Salesperson security role read access to the Parts entity. Which tab of the Security Role page should you use ? ">
+    <Choice Id="A" isCorrect="false"> Business Management </Choice>
+    <Choice Id="B" isCorrect="false"> Missing Entities </Choice>
+    <Choice Id="C" isCorrect="true"> Custom Entities </Choice>
+    <Choice Id="D" isCorrect="false"> Customization</Choice>
+  </Question>
+  <Question Id="51" Point="1" isMultiSelect="True" Text="52 You are a Microsoft Dynamics 365 administrator for a real estate company. The sales team wants to use mobile devices to update opportunities and gain insights about customers while they are out of the office. You need to instruct the sales team on how to install mobile apps for Microsoft Dynamics 365. To which two locations should you direct the sales team members ? Each correct answer presents a complete solution. ">
+    <Choice Id="A" isCorrect="true"> the Settings (Personal Options) page in Microsoft Dynamics 365 </Choice>
+    <Choice Id="B" isCorrect="true"> the Apple iTunes App Store, Google Play App Store, or Windows Store </Choice>
+    <Choice Id="C" isCorrect="false"> a specific Microsoft SharePoint site </Choice>
+    <Choice Id="D" isCorrect="false"> a Microsoft OneDrive for Business folder</Choice>
+  </Question>
+  <Question Id="52" Point="1" isMultiSelect="False" Text="53 You need to add the status reason Duplicate to the status value Cancelled for the case entity. What should you do ? ">
+    <Choice Id="A" isCorrect="false"> Add the value to the Cancelled list of the Status field. </Choice>
+    <Choice Id="B" isCorrect="true"> Add the value to the Cancelled list of the Status Reason field. </Choice>
+    <Choice Id="C" isCorrect="false"> Using status reason transitions, add the value to the Cancelled status. </Choice>
+    <Choice Id="D" isCorrect="false"> Using status reason transitions, add the value to the Cancelled status reason. </Choice>
+  </Question>
+  <Question Id="53" Point="1" isMultiSelect="False" Text="54 You create a new custom entity and add it to the sitemap. System administrators can see the custom entity. Users report that they cannot see the custom entity. You need to ensure that users can see the custom entity. What should you do ? ">
+    <Choice Id="A" isCorrect="false"> Publish the sitemap. </Choice>
+    <Choice Id="B" isCorrect="false"> Publish the custom entity.</Choice>
+    <Choice Id="C" isCorrect="false"> Wait for changes to the security roles to take effect. </Choice>
+    <Choice Id="D" isCorrect="true"> Grant appropriate security roles access to the custom entity.</Choice>
+  </Question>
+  <Question Id="54" Point="1" isMultiSelect="False" Text="55 You export five modified system security roles from a development environment as an unmanaged solution. You solution into a production environment. Which of the following statements is true regarding the import of the unmanaged solution ? ">
+    <Choice Id="A" isCorrect="false"> Copies of security roles will be created automatically in the production environment. </Choice>
+    <Choice Id="B" isCorrect="true"> The system security roles in production will be overwritten with the settings imported from the solution. </Choice>
+    <Choice Id="C" isCorrect="false"> Security roles cannot be imported. </Choice>
+    <Choice Id="D" isCorrect="false"> The import will fail because system security roles cannot be overwritten by importing a solution. </Choice>
+  </Question>
+  <Question Id="55" Point="1" isMultiSelect="False" Text="56 : You plan to create a field for an entity to capture data in a consistent format. When a user adds a record for the entity, the choices provided to the user for the field often change or become outdated. The choices must not be available for new records. You need to create the field while minimizing the administrative overhead to maintain the field. Which field type should you use ? ">
+    <Choice Id="A" isCorrect="false"> global option set </Choice>
+    <Choice Id="B" isCorrect="false"> single line of text </Choice>
+    <Choice Id="C" isCorrect="false"> local option set </Choice>
+    <Choice Id="D" isCorrect="true"> lookup</Choice>
+  </Question>
+  <Question Id="56" Point="1" isMultiSelect="False" Text="57 Which two features are only available for real-time workflows ? ">
+    <Choice Id="A" isCorrect="false"> Start before a record is created. </Choice>
+    <Choice Id="B" isCorrect="false"> Wait six hours before executing the next step. </Choice>
+    <Choice Id="C" isCorrect="true"> Start before a record is assigned. </Choice>
+    <Choice Id="D" isCorrect="true"> Run as the user who made changes to the record. </Choice>
+  </Question>
+  <Question Id="57" Point="1" isMultiSelect="False" Text="58 You implement Microsoft Office 365 groups for a company. You need to ensure that all members of a specific security role can see and use an Office 365 group. Which privilege should you assign to the security role ?">
+    <Choice Id="A" isCorrect="true"> ISV Extensions </Choice>
+    <Choice Id="B" isCorrect="false"> Execute Workflow Job </Choice>
+    <Choice Id="C" isCorrect="false"> Act on behalf of another user</Choice>
+    <Choice Id="D" isCorrect="false"> Browse Availability </Choice>
+  </Question>
+  <Question Id="58" Point="1" isMultiSelect="False" Text="59 You plan to integrate data from an external system into Microsoft Dynamics 365. You need to create a Microsoft Dynamics 365 field to use for matching records from the external system. What should you create ? ">
+    <Choice Id="A" isCorrect="false"> calculated field </Choice>
+    <Choice Id="B" isCorrect="false"> global option set </Choice>
+    <Choice Id="C" isCorrect="false"> rollup field </Choice>
+    <Choice Id="D" isCorrect="true"> alternate key </Choice>
+  </Question>
+  <Question Id="59" Point="1" isMultiSelect="True" Text="60 You need to ensure that users can save private documents in Microsoft OneDrive for Business folders from within Microsoft Dynamics 365. Which two actions should you perform ? Each correct answer presents part of the solution. ">
+    <Choice Id="A" isCorrect="false"> Set the Manage User Synchronization Filters option to Origination for the Security Role. </Choice>
+    <Choice Id="B" isCorrect="true"> Configure server-based integration for Microsoft Dynamics 365 and Microsoft SharePoint Online. </Choice>
+    <Choice Id="C" isCorrect="false"> Install and activate the Microsoft SharePoint List Component. </Choice>
+    <Choice Id="D" isCorrect="true"> Ensure that users have Microsoft OneDrive for Business and SharePoint licenses. </Choice>
+  </Question>
+  <Question Id="60" Point="1" isMultiSelect="False" Text="61 Users need to be able to embed Microsoft Power BI visuals into personal dashboards. What should you do ? ">
+    <Choice Id="A" isCorrect="false"> Enable server-based integration with Power BI. </Choice>
+    <Choice Id="B" isCorrect="false"> Add Power BI as a report category. </Choice>
+    <Choice Id="C" isCorrect="true"> Enable Power BI visualization embedding. </Choice>
+    <Choice Id="D" isCorrect="false"> Grant users Power BI reporting permissions. </Choice>
+  </Question>
+  <Question Id="61" Point="1" isMultiSelect="False" Text="62 You need to create a process that prompts users with questions and captures their answers. Which process type should you use ? ">
+    <Choice Id="A" isCorrect="false"> business rule </Choice>
+    <Choice Id="B" isCorrect="true"> dialog </Choice>
+    <Choice Id="C" isCorrect="false"> custom action </Choice>
+    <Choice Id="D" isCorrect="false"> background workflow </Choice>
+  </Question>
+  <Question Id="62" Point="1" isMultiSelect="True" Text="63 Which three actions can you add to a workflow? Each correct answer presents part of the solution. ">
+    <Choice Id="A" isCorrect="true"> Create Record </Choice>
+    <Choice Id="B" isCorrect="false"> Share Record </Choice>
+    <Choice Id="C" isCorrect="true"> Update Record </Choice>
+    <Choice Id="D" isCorrect="true"> Assign Record </Choice>
+    <Choice Id="E" isCorrect="false"> Delete Record </Choice>
+  </Question>
+  <Question Id="63" Point="1" isMultiSelect="False" Text="64 You create a business rule. Which action can you perform ? ">
+    <Choice Id="A" isCorrect="false"> Hide a section. </Choice>
+    <Choice Id="B" isCorrect="false"> Show an error message when a rule fails to run. </Choice>
+    <Choice Id="C" isCorrect="true"> Show an error message when a condition is met. </Choice>
+    <Choice Id="D" isCorrect="false"> Hide a tab. </Choice>
+  </Question>
+  <Question Id="64" Point="1" isMultiSelect="False" Text="65 Which of the following chart types can be configured as an organization-owned chart but not as a user owned chart ? ">
+    <Choice Id="A" isCorrect="false"> bar and line </Choice>
+    <Choice Id="B" isCorrect="true"> tag or doughnut </Choice>
+    <Choice Id="C" isCorrect="false"> line and multi-series </Choice>
+    <Choice Id="D" isCorrect="false"> area and funnel </Choice>
+  </Question>
+  <Question Id="65" Point="1" isMultiSelect="False" Text="67 What is the total number of If-Else conditions that you can add to a business rule ? ">
+    <Choice Id="A" isCorrect="false"> 5 </Choice>
+    <Choice Id="B" isCorrect="false"> 7 </Choice>
+    <Choice Id="C" isCorrect="true"> 10 </Choice>
+    <Choice Id="D" isCorrect="false"> 15 </Choice>
+  </Question>
+  <Question Id="66" Point="1" isMultiSelect="False" Text="68 You need to create a business process flow (BPF) that spans multiple entities. Which of the following statements is true ? ">
+    <Choice Id="A" isCorrect="false"> Relationships must exist between entities. </Choice>
+    <Choice Id="B" isCorrect="true"> You can include a maximum of five entities. </Choice>
+    <Choice Id="C" isCorrect="false"> The same entity cannot be used twice. </Choice>
+    <Choice Id="D" isCorrect="false"> You can use entities that have N:N relationships. </Choice>
+  </Question>
+  <Question Id="67" Point="1" isMultiSelect="False" Text="69 Your organization has a custom entity that contains 25 records. A specific group of users needs access to the records. You need to ensure that only specified users can access the records and that you can manage access from one place. What should you do ? ">
+    <Choice Id="A" isCorrect="false"> Add the users to access teams. Grant the teams read and write access for each of the custom entity records. </Choice>
+    <Choice Id="B" isCorrect="false"> Ask the owner of the custom entity records to grant specific users read and write access to the records. </Choice>
+    <Choice Id="C" isCorrect="true"> Create an owner team that includes the users. Assign the team a new security role which can access only the custom entity. </Choice>
+    <Choice Id="D" isCorrect="false"> Modify an existing security role that is common to the users. Grant the role access to the custom entity. </Choice>
+  </Question>
+  <Question Id="68" Point="1" isMultiSelect="False" Text="70 You are designing a managed solution that will be deployed to another part of the business. Users may want to customize specific parts of the solution after the solution is installed. Which capability represents a managed property that users can configure? ">
+    <Choice Id="A" isCorrect="false"> the ability to change the display name of a system entity </Choice>
+    <Choice Id="B" isCorrect="false"> the ability to reassign a system dashboard </Choice>
+    <Choice Id="C" isCorrect="false"> the ability to rename a web resource </Choice>
+    <Choice Id="D" isCorrect="true"> the ability to add forms to a custom entity </Choice>
+  </Question>
+  <Question Id="69" Point="1" isMultiSelect="True" Text="71 You need to use Theme settings to customize the Microsoft Dynamics 365 user interface for a customer. Which three actions can you perform ? Each correct answer presents a complete solution. ">
+    <Choice Id="A" isCorrect="false"> Export a theme as part of a solution. </Choice>
+    <Choice Id="B" isCorrect="true"> Adjust accent colors including hover and selection colors. </Choice>
+    <Choice Id="C" isCorrect="true"> Change the logo and navigation colors. </Choice>
+    <Choice Id="D" isCorrect="false"> Change icon colors. </Choice>
+    <Choice Id="E" isCorrect="true"> Provide entity-specific coloring. </Choice>
+  </Question>
+  <Question Id="70" Point="1" isMultiSelect="True" Text="73 Which two statements are exclusive to managed solutions and not unmanaged solutions ? Each correct answer presents part of the solution. ">
+    <Choice Id="A" isCorrect="true"> You cannot export the solution. </Choice>
+    <Choice Id="B" isCorrect="true"> When you remove the solution, all components items included in the solution are removed. </Choice>
+    <Choice Id="C" isCorrect="false"> You must define entity assets for every entity that you add to the solution. </Choice>
+    <Choice Id="D" isCorrect="false"> You must select a publisher for the solution</Choice>
+  </Question>
+  <Question Id="71" Point="1" isMultiSelect="True" Text="74 To which three data types can you add a custom control ? Each correct answer presents a complete solution. ">
+    <Choice Id="A" isCorrect="true"> composite </Choice>
+    <Choice Id="B" isCorrect="false"> date and time </Choice>
+    <Choice Id="C" isCorrect="true"> multiple lines of text </Choice>
+    <Choice Id="D" isCorrect="true"> single line text </Choice>
+    <Choice Id="E" isCorrect="false"> lookup </Choice>
+  </Question>
+  <Question Id="72" Point="1" isMultiSelect="True" Text="75 You are implementing a new business process flow (BPF) in Microsoft Dynamics 365. You specify a name and the primary intent for the BPF, and define the stages and conditions. You need to configure the composition. Which two options can you configure ? Each correct answer presents a complete solution. ">
+    <Choice Id="A" isCorrect="false"> Dialogs </Choice>
+    <Choice Id="B" isCorrect="true"> Workflows </Choice>
+    <Choice Id="C" isCorrect="true"> Steps </Choice>
+    <Choice Id="D" isCorrect="false"> Actions </Choice>
+  </Question>
+  <Question Id="73" Point="1" isMultiSelect="False" Text="76 You create a workflow and set the scope to User (default). User A owns the workflow. User B is making bulk changes on records that will trigger the workflow. Which records will this workflow affect ? ">
+    <Choice Id="A" isCorrect="false"> records owned by users in the same business unit as UserB </Choice>
+    <Choice Id="B" isCorrect="true"> records owned by UserA </Choice>
+    <Choice Id="C" isCorrect="false"> records owned by UserB </Choice>
+    <Choice Id="D" isCorrect="false"> records owned by either UserA or UserB </Choice>
+  </Question>
+  <Question Id="74" Point="1" isMultiSelect="False" Text="77 You are creating a field for a form. You need to ensure that users can select an Account or a Contact record. Which data type should you use?">
+    <Choice Id="A" isCorrect="false"> regarding </Choice>
+    <Choice Id="B" isCorrect="true"> customer</Choice>
+    <Choice Id="C" isCorrect="false"> lookup </Choice>
+    <Choice Id="D" isCorrect="false"> option set</Choice>
+  </Question>
+  <Question Id="75" Point="1" isMultiSelect="False" Text="78 You need to grant users the ability to read all accounts in Microsoft Dynamics 365. Which access level should you apply to the Read permission for the Account entity ? ">
+    <Choice Id="A" isCorrect="true"> Organization </Choice>
+    <Choice Id="B" isCorrect="false"> System </Choice>
+    <Choice Id="C" isCorrect="false"> All </Choice>
+    <Choice Id="D" isCorrect="false"> Global</Choice>
+  </Question>
+  <Question Id="76" Point="1" isMultiSelect="False" Text="79 You added a custom field to the Account entity. The field type is single line of text. You set a 500 character limit. You need to add the field as a column on the Active Accounts view. What is the maximum width in pixels (px) that you can specify for this column ? ">
+    <Choice Id="A" isCorrect="false"> 200px </Choice>
+    <Choice Id="B" isCorrect="false"> 500px </Choice>
+    <Choice Id="C" isCorrect="true"> 300px </Choice>
+    <Choice Id="D" isCorrect="false"> 1,000px  </Choice>
+  </Question>
+  <Question Id="77" Point="1" isMultiSelect="False" Text="81 You plan to delete a custom entity from an unmanaged solution. Which of the following statements is true ? ">
+    <Choice Id="A" isCorrect="false"> You must delete the solution that contains the entity. </Choice>
+    <Choice Id="B" isCorrect="false"> You can only delete the entity from managed solutions. </Choice>
+    <Choice Id="C" isCorrect="false"> You must delete all records related to the entity from the database. </Choice>
+    <Choice Id="D" isCorrect="true"> You must remove any dependencies with other objects. </Choice>
+  </Question>
+  <Question Id="78" Point="1" isMultiSelect="False" Text="82 You assign security roles to an owner team and each user on the team. What effect does the security role that is assigned to the team have on the individual team members ? ">
+    <Choice Id="A" isCorrect="false"> The permissions for the user are used instead of those of the team. </Choice>
+    <Choice Id="B" isCorrect="true"> The user is granted the least restrictive permissions of the two roles. </Choice>
+    <Choice Id="C" isCorrect="false"> The permissions for the team are used instead of those of the user. </Choice>
+    <Choice Id="D" isCorrect="false"> The user is granted the most restrictive permissions of the two roles.</Choice>
+  </Question>
+  <Question Id="79" Point="1" isMultiSelect="True" Text="83 Which two form areas allow you to read from and write to all visible fields ? Each answer presents a complete solution. ">
+    <Choice Id="A" isCorrect="true"> Header </Choice>
+    <Choice Id="B" isCorrect="true"> Body </Choice>
+    <Choice Id="C" isCorrect="false"> Navigation </Choice>
+    <Choice Id="D" isCorrect="false"> Footer </Choice>
+  </Question>
+  <Question Id="80" Point="1" isMultiSelect="True" Text="85 You have a Microsoft Dynamics 365 environment. You plan to configure folder-level tracking. Which two statements are true ? Each correct answer presents a complete solution. ">
+    <Choice Id="A" isCorrect="false"> Folder-level tracking is available for mailboxes that implement delegate access. </Choice>
+    <Choice Id="B" isCorrect="true"> Each user can create a maximum of 25 folders in their inbox. </Choice>
+    <Choice Id="C" isCorrect="false"> Folder level-tracking works with the Microsoft Dynamics 365 email router. </Choice>
+    <Choice Id="D" isCorrect="true"> You cannot change the regarding object unless you remove the email from tracked folders.</Choice>
+  </Question>
+  <Question Id="81" Point="1" isMultiSelect="False" Text="86 You enable status reason transitions for the case entity. You cannot reactivate a case due to an issue with the current status reason. You need to correct the issue. What should you do ? ">
+    <Choice Id="A" isCorrect="false"> Using status reason transitions, ensure that all active status reason options have at least one value. </Choice>
+    <Choice Id="B" isCorrect="true"> Using status reason transitions, add a new active status reason to the current status reason for the case. </Choice>
+    <Choice Id="C" isCorrect="false"> Using status reason transitions, ensure that all inactive status reason options have at least one value. </Choice>
+    <Choice Id="D" isCorrect="false"> Using status reason transitions, add a new inactive status reason to the current status reason for the case.</Choice>
+  </Question>
+  <Question Id="82" Point="1" isMultiSelect="True" Text="87 Which two field types can you configure as rollup fields ? Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="false"> single line of text</Choice>
+    <Choice Id="B" isCorrect="false"> floating point number </Choice>
+    <Choice Id="C" isCorrect="true"> date and time </Choice>
+    <Choice Id="D" isCorrect="true"> decimal number</Choice>
+  </Question>
+  <Question Id="83" Point="1" isMultiSelect="True" Text="88 You have a Microsoft Dynamics 365 tenant. You plan to implement Microsoft Office 365 Groups. You to need to ensure that all Office 365 Group features are available. Which three actions should you perform ? Each correct answer presents part of the solution. ">
+    <Choice Id="A" isCorrect="true"> Configure a Microsoft Exchange Online mailbox for each Microsoft Dynamics 365 user. </Choice>
+    <Choice Id="B" isCorrect="true"> Enable the ISV Extensions security privilege. </Choice>
+    <Choice Id="C" isCorrect="false"> Configure Yammer to work with Microsoft Dynamics 365. </Choice>
+    <Choice Id="D" isCorrect="true"> Enable server-based Microsoft SharePoint in Microsoft Dynamics 365. </Choice>
+    <Choice Id="E" isCorrect="false"> Configurethe Microsoft SharePoint List component. </Choice>
+  </Question>
+  <Question Id="84" Point="1" isMultiSelect="False" Text="89 You create an asynchronous workflow that runs on demand. Which statement is true ?">
+    <Choice Id="A" isCorrect="false"> The workflow will run in the security context of the user who is designated in the Execute As setting. </Choice>
+    <Choice Id="B" isCorrect="false"> The workflow will run in the security context of the system evaluating all conditions and taking all actions configured. </Choice>
+    <Choice Id="C" isCorrect="false"> The workflow will run in the security context of the workflow owner. </Choice>
+    <Choice Id="D" isCorrect="true"> The workflow will run in the security context of the user who triggered it.</Choice>
+  </Question>
+  <Question Id="85" Point="1" isMultiSelect="False" Text="90 You are implementing a new business process. The system must send a notification to the manager 24 hours after an opportunity Is created based on the date of the next best action. Which type of workflow should you implement ? ">
+    <Choice Id="A" isCorrect="false"> synchronous workflow </Choice>
+    <Choice Id="B" isCorrect="true"> asynchronous workflow </Choice>
+    <Choice Id="C" isCorrect="false"> Microsoft Dynamics 365 dialogs </Choice>
+    <Choice Id="D" isCorrect="false"> business process flow (BPF)</Choice>
+  </Question>
+  <Question Id="86" Point="1" isMultiSelect="False" Text="91 You manage Microsoft Office 365 and Microsoft Dynamics 365 for a company. Some Office 365 users do not have a Microsoft Dynamics 365 license. You need to ensure that all users can see tasks that are associated with a Microsoft Dynamics 365 opportunity record. What should you implement ? ">
+    <Choice Id="A" isCorrect="false"> Microsoft OneNote integration </Choice>
+    <Choice Id="B" isCorrect="false"> Microsoft OneDrive integration </Choice>
+    <Choice Id="C" isCorrect="false"> Microsoft SharePoint integration </Choice>
+    <Choice Id="D" isCorrect="true"> Microsoft Office 365 groups </Choice>
+  </Question>
+  <Question Id="87" Point="1" isMultiSelect="False" Text="92 Your company rents tools and machines to customers. You create a custom entity named Equipment to track the tools and machines. You need to show the hierarchical relationships between various pieces of equipment. How should you configure the relationship ? ">
+    <Choice Id="A" isCorrect="false"> Ensure that you enable Connections for the entity. </Choice>
+    <Choice Id="B" isCorrect="false"> Set up a parental 1:N relationship between Accounts and Equipment. </Choice>
+    <Choice Id="C" isCorrect="true"> Create a self-referential relationship and configure hierarchy settings. </Choice>
+    <Choice Id="D" isCorrect="false"> Set up a N:N relationship between Accounts and Equipment. </Choice>
+  </Question>
+  <Question Id="88" Point="1" isMultiSelect="False" Text="93 You need to display data that is referenced by a lookup field on a form. Which option should you use ?">
+    <Choice Id="A" isCorrect="false"> Quick Find View </Choice>
+    <Choice Id="B" isCorrect="false"> Associated View </Choice>
+    <Choice Id="C" isCorrect="true"> Quick View </Choice>
+    <Choice Id="D" isCorrect="false"> Public View </Choice>
+  </Question>
+  <Question Id="89" Point="1" isMultiSelect="False" Text="94 What is the character limit for a Single Line of Text field ? ">
+    <Choice Id="A" isCorrect="false"> 1’000 </Choice>
+    <Choice Id="B" isCorrect="false"> 2’000 </Choice>
+    <Choice Id="C" isCorrect="true"> 4’000 </Choice>
+    <Choice Id="D" isCorrect="false"> 10’000 </Choice>
+  </Question>
+  <Question Id="90" Point="1" isMultiSelect="False" Text="95 You use access teams to assign security permissions. Which of the following statements is true ? ">
+    <Choice Id="A" isCorrect="false"> Permissions are defined by an access team template that is associated with each record. </Choice>
+    <Choice Id="B" isCorrect="false"> Permissions are defined by an access team template that spans multiple entities.</Choice>
+    <Choice Id="C" isCorrect="false"> Permissions are defined by the security role that is assigned to the access team. </Choice>
+    <Choice Id="D" isCorrect="true"> Permissions are defined by one of the access team templates for the entity. </Choice>
+  </Question>
+</Exam>

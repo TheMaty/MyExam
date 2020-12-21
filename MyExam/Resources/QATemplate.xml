@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Exam Code="TestCode" Title="Test Exam">
+  <Question Id="1" Point="1" isMultiSelect="False" Text="What is color of the Sky ?">
+    <Choice Id="A" isCorrect="True">Blue</Choice>
+    <Choice Id="B" isCorrect="False">Red</Choice>
+    <Choice Id="C" isCorrect="False">Yellow</Choice>
+    <Choice Id="D" isCorrect="False">Purple</Choice>
+  </Question>
+  <Question Id="2" Point="1" isMultiSelect="True" Text="Where do original English speakers live ?">
+    <Choice Id="A" isCorrect="False">United States</Choice>
+    <Choice Id="B" isCorrect="False">Turkey</Choice>
+    <Choice Id="C" isCorrect="True">United Kingdom</Choice>
+    <Choice Id="D" isCorrect="True">Great Britain</Choice>
+  </Question>
+</Exam>

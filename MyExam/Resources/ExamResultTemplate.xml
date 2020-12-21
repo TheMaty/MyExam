@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Result ExamCode="TestCode" ExamTitle="Test Exam">
+  <ExamHeader>
+    <FullName></FullName>
+    <Date></Date>
+    <Correct></Correct>
+    <Fail></Fail>
+    <Grade></Grade>
+  </ExamHeader>
+  <Responses>
+    <Question Id="1" isCorrect="True">AB</Question>
+    <Question Id="2" isCorrect="True">CD</Question>
+  </Responses>
+</Result>
