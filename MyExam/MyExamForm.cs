@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Linq;
 using Microsoft.Office;
+using Microsoft.Office.Interop.Word;
+using Microsoft.VisualBasic.Devices;
 
 namespace MyExam
 {
@@ -64,7 +68,7 @@ namespace MyExam
         public Exam exam;
 
         // Create a Font object for the node tags.
-        Font tagFont = new Font("Helvetica", 8, FontStyle.Bold);
+        System.Drawing.Font tagFont = new System.Drawing.Font("Helvetica", 8, FontStyle.Bold);
 
         public MyExamForm()
         {
@@ -165,7 +169,7 @@ namespace MyExam
         private void buttonImportFromDoc_Click(object sender, EventArgs e)
         {
 
-            object filename = @"C:\Users\eatamuh\source\repos\MyExam\MyExam\Resources\Exam MB2-715 for Import.docx";
+            object filename = @"C:\source\repos\MyExam\MyExam\Resources\Exam PL-900 PowerApps.docx";
 
             Microsoft.Office.Interop.Word.ApplicationClass AC = new Microsoft.Office.Interop.Word.ApplicationClass();
             Microsoft.Office.Interop.Word.Document doc = new Microsoft.Office.Interop.Word.Document();
@@ -173,11 +177,24 @@ namespace MyExam
             object readOnly = false;
             object isVisible = true;
             object missing = System.Reflection.Missing.Value;
+
             try
             {
                 doc = AC.Documents.Open(ref filename, ref missing, ref readOnly, ref missing, ref missing, ref missing, ref missing, ref missing, ref missing, ref missing, ref missing, ref isVisible, ref isVisible, ref missing, ref missing, ref missing);
-                
-                ucXmlRichTextBoxQA.Xml = System.IO.File.ReadAllText(generateQAXMLforExam_MB2_715_for_Import_docx(Regex.Replace(doc.Content.Text, @"\r\n?|\n?|\v?|\f", "")));               
+
+                Image[] images = new Image[AC.ActiveDocument.InlineShapes.Count];
+
+                for (int i = 0; i < AC.ActiveDocument.InlineShapes.Count; i++)
+                {
+                    int m_i = i + 1;
+                    InlineShape inlineShape = AC.ActiveDocument.InlineShapes[m_i];
+                    inlineShape.Select();
+                    AC.Selection.Copy();
+                    Computer computer = new Computer();
+                    images[i] = computer.Clipboard.GetImage();
+                }
+
+                ucXmlRichTextBoxQA.Xml = System.IO.File.ReadAllText(generateQAXMLforExam_PL_900_for_Import_docx(Regex.Replace(doc.Content.Text, @"\r\n?|\n?|\v?|\f", ""), images));               
 
 
             }
@@ -194,6 +211,147 @@ namespace MyExam
                 System.Runtime.InteropServices.Marshal.ReleaseComObject(AC);
                 GC.Collect();
             }           
+        }
+
+
+        private string generateQAXMLforExam_PL_900_for_Import_docx(string str, Image[] images)
+        {
+            int counter = 0, imageCounter = 0;
+            string strCodeName = "Exam PL-900";
+            string strExamName = "Title : Microsoft Power Platform Fundamentals";
+
+            str = str.Replace('', ' ').Replace('\f',' ');
+            string[] Questions = str.Split(new[] { " * - Question " }, StringSplitOptions.None);
+
+
+            XElement element = new XElement("Exam",
+                    new XAttribute("Code", strCodeName),
+                    new XAttribute("Title", strExamName)
+                    );
+
+            foreach (string q in Questions)
+            {
+                if (q == string.Empty)
+                    continue;
+                //clean up the string
+                string mainPart = q.Split(new[] { "ANSWER" }, StringSplitOptions.None)[0];
+
+                if (q.Contains("Hot Area") || q.Contains("DRAG DROP "))
+                {
+                    StringBuilder sb = new StringBuilder();
+                    sb.Append(Convert.ToBase64String(ImageToByteArray(images[imageCounter])));
+                    
+                    mainPart = mainPart + " *** " + sb.ToString() + " *** " ;
+                    imageCounter = imageCounter + 1; 
+                }
+
+                XElement sub = new XElement("Question",
+                    new XAttribute("Id", counter.ToString()),
+                    new XAttribute("Point", 1),
+                    new XAttribute("isMultiSelect", "False"),
+                    new XAttribute("Text", mainPart.Split(new[] { "A." }, StringSplitOptions.None)[0])
+                    );
+
+                string temp = q.Split(new[] { "ANSWER" }, StringSplitOptions.None)[1].Split(new[] { "A." }, StringSplitOptions.None)[1];
+
+                XElement choiceLevel = new XElement("Choice",
+                    new XAttribute("Id", "A"),
+                    new XAttribute("isCorrect", "False")
+                    );
+
+                choiceLevel.Value = temp.Split(new[] { "B." }, StringSplitOptions.None)[0];
+
+                temp = temp.Split(new[] { "B." }, StringSplitOptions.None)[1];
+
+                sub.Add(choiceLevel);
+
+                choiceLevel = new XElement("Choice",
+                    new XAttribute("Id", "B"),
+                    new XAttribute("isCorrect", "False")
+                    );
+
+                choiceLevel.Value = temp.Split(new[] { "C." }, StringSplitOptions.None)[0];
+
+                temp = temp.Split(new[] { "C." }, StringSplitOptions.None)[1];
+
+                sub.Add(choiceLevel);
+
+
+                choiceLevel = new XElement("Choice",
+                    new XAttribute("Id", "C"),
+                    new XAttribute("isCorrect", "False")
+                    );
+
+                choiceLevel.Value = temp.Split(new[] { "D." }, StringSplitOptions.None)[0];
+
+                temp = temp.Split(new[] { "D." }, StringSplitOptions.None)[1];
+
+                sub.Add(choiceLevel);
+
+
+                choiceLevel = new XElement("Choice",
+                    new XAttribute("Id", "D"),
+                    new XAttribute("isCorrect", "False")
+                    );
+
+                if (temp.Split(new[] { "E." }, StringSplitOptions.None).Length > 1)
+                {
+                    choiceLevel.Value = temp.Split(new[] { "E." }, StringSplitOptions.None)[0];
+
+                    temp = temp.Split(new[] { "E." }, StringSplitOptions.None)[1];
+
+                    sub.Add(choiceLevel);
+
+
+                    choiceLevel = new XElement("Choice",
+                       new XAttribute("Id", "E"),
+                       new XAttribute("isCorrect", "False")
+                       );
+
+                    if (temp.Split(new[] { "F." }, StringSplitOptions.None).Length > 1)
+                    {
+                        choiceLevel.Value = temp.Split(new[] { "F." }, StringSplitOptions.None)[0];
+                        sub.Add(choiceLevel);
+
+                        choiceLevel = new XElement("Choice",
+                          new XAttribute("Id", "F"),
+                          new XAttribute("isCorrect", "False")
+                          );
+
+                        choiceLevel.Value = temp.Split(new[] { "F." }, StringSplitOptions.None)[1];
+                        sub.Add(choiceLevel);
+                    }
+                    else
+                    {
+                        choiceLevel.Value = temp;
+                        sub.Add(choiceLevel);
+                    }
+
+                }
+                else
+                {
+                    choiceLevel.Value = temp;
+                    sub.Add(choiceLevel);
+                }
+
+                element.Add(sub);
+                counter++;
+            }
+
+
+            XDocument doc = new XDocument(element);
+
+
+            doc.Save($"{strCodeName.Replace(":", "")}.xml");
+
+            return $"{strCodeName.Replace(":", "")}.xml";
+        }
+
+        private byte[] ImageToByteArray(System.Drawing.Image imageIn)
+        {
+            ImageConverter _imageConverter = new ImageConverter();
+            byte[] xByte = (byte[])_imageConverter.ConvertTo(imageIn, typeof(byte[]));
+            return xByte;
         }
 
         private string generateQAXMLforExam_MB2_716_questions_formatted_docx(string str)
@@ -617,7 +775,23 @@ namespace MyExam
             treeView1.Nodes.Add(exam.header.examCode);
             foreach (Question q in exam.qa)
             {
-                TreeNode node = treeView1.Nodes[0].Nodes.Add("q_" + q.Id, q.question + " (  is Multiple selection : " + q.allowMultipleSelect.ToString() + " ) " );
+                TreeNode node;
+
+                //if (q.question.Contains(" *** "))
+                //{
+                //    //first image index
+                //    int imageStartindex = q.question.IndexOf(" *** ");
+                //    int imageEndIndex = q.question.LastIndexOf(" *** ");
+
+                //    string questionWithoutImage = q.question.Remove(imageStartindex, imageEndIndex - imageStartindex);
+
+                //    node = treeView1.Nodes[0].Nodes.Add("q_" + q.Id, questionWithoutImage + " (  is Multiple selection : " + q.allowMultipleSelect.ToString() + " ) ");
+                //}
+                //else
+                //{
+                    node = treeView1.Nodes[0].Nodes.Add("q_" + q.Id, q.question + " (  is Multiple selection : " + q.allowMultipleSelect.ToString() + " ) ");
+                //}
+
                 node.ToolTipText = q.question + " ( is Multiple selection : " + q.allowMultipleSelect.ToString() + " ) ";
 
                 foreach (Choice c in q.choices)
@@ -756,12 +930,12 @@ namespace MyExam
 
         private void treeView1_DrawNode(object sender, DrawTreeNodeEventArgs e)
         {
-            Rectangle rectNodeBounds = e.Node.Bounds;
+            System.Drawing.Rectangle rectNodeBounds = e.Node.Bounds;
             rectNodeBounds.Width = (int)(rectNodeBounds.Width * 0.8);
 
             // Draw the background and node text for a selected node.
             if ((e.State & TreeNodeStates.Selected) != 0)
-            {              
+            {
                 // Draw the background of the selected node. The NodeBounds
                 // method makes the highlight rectangle large enough to
                 // include the text of a node tag, if one is present.
@@ -769,12 +943,12 @@ namespace MyExam
 
                 // Retrieve the node font. If the node font has not been set,
                 // use the TreeView font.
-                Font nodeFont = e.Node.NodeFont;
+                System.Drawing.Font nodeFont = e.Node.NodeFont;
                 if (nodeFont == null) nodeFont = ((TreeView)sender).Font;
 
                 // Draw the node text.
                 e.Graphics.DrawString(e.Node.Text, nodeFont, Brushes.White,
-                    Rectangle.Inflate(rectNodeBounds, 2, 0));
+                    System.Drawing.Rectangle.Inflate(rectNodeBounds, 2, 0));
             }
 
             // Use the default background and node text.

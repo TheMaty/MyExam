@@ -1,560 +1,537 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Exam Code="Exam : MB2-715" Title="Title : Microsoft Dynamics 365 Customer Engagement Online Deployment v10.0">
-  <Question Id="0" Point="1" isMultiSelect="False" Text="You are the sales manager for a company that has more than 15,000 employees.You plan to purchase Microsoft Dynamics 365 for your company, although only 750 seats will be required. Management wants all Microsoft Dynamics 365 users to have access to all Microsoft Dynamics 365 applications.Based on this criteria, which licensing option should you select? ">
-    <Choice Id="A" isCorrect="false"> Enterprise Edition with APPS-based Licensing. </Choice>
-    <Choice Id="B" isCorrect="false"> Enterprise Edition with Plan-based Licensing. </Choice>
-    <Choice Id="C" isCorrect="false"> Business Edition with Plan-based Licensing. </Choice>
-    <Choice Id="D" isCorrect="true"> Business Edition with APPS-based Licensing. </Choice>
-  </Question>
-  <Question Id="1" Point="1" isMultiSelect="False" Text=" You are a system administrator. Staff at your company are reporting that when they load private documents into the Microsoft Dynamics 365 integration with Microsoft SharePoint, other staff members can access those documents.You need to implement a solution that allows staff to save documents using Microsoft Dynamics 365 so that documents can only be seen by the owner. What should you do? ">
-    <Choice Id="A" isCorrect="false"> Ask a system administrator to share the records with the users who need access. </Choice>
-    <Choice Id="B" isCorrect="false"> Grant access to all users and then remove the entity from the sitemap and advanced find. Provide users who need access a direct link to a view of the entity. </Choice>
-    <Choice Id="C" isCorrect="false"> Grant the appropriate security roles user-level access to the custom entity. </Choice>
-    <Choice Id="D" isCorrect="true"> Grant the appropriate security roles organization-level access to the custom entity. </Choice>
-  </Question>
-  <Question Id="2" Point="1" isMultiSelect="False" Text="3 You add a lookup for contacts to the case form. You need to display the most recent primary phone number for a contact on the case form while minimizing administrative effort. What should you do ? ">
-    <Choice Id="A" isCorrect="false"> Use a workflow to copy the phone number to a new field on the case when the contact changes. </Choice>
-    <Choice Id="B" isCorrect="true"> Use a quick view form to display the phone number. </Choice>
-    <Choice Id="C" isCorrect="false"> Use a web resource to query and display the phone number. </Choice>
-    <Choice Id="D" isCorrect="false"> Use field mapping during record creation to copy the phone number to a new field on the case. </Choice>
-  </Question>
-  <Question Id="3" Point="1" isMultiSelect="False" Text="4 You configure a 1:N relationship between two entities and set the cascade rule for deletion to Referential. What effect does deleting the parent record have on any child records ? ">
-    <Choice Id="A" isCorrect="true"> The child records remain but the link to the parent record is removed. </Choice>
-    <Choice Id="B" isCorrect="false"> The parent record cannot be deleted until all of the child records are first deleted. </Choice>
-    <Choice Id="C" isCorrect="false"> The child records are deleted and the link to the parent record shows as deleted. </Choice>
-    <Choice Id="D" isCorrect="false"> The child records are deleted along with the parent record. </Choice>
-  </Question>
-  <Question Id="4" Point="1" isMultiSelect="False" Text="5 You create a workflow that automatically sends an email when a condition is met. The staff reports that emails are not been sent as expected. You need to correct the issue. What should you do ? ">
-    <Choice Id="A" isCorrect="false"> Export the workflow. </Choice>
-    <Choice Id="B" isCorrect="false"> Set the workflow to required. </Choice>
-    <Choice Id="C" isCorrect="false"> Publish the workflow. </Choice>
-    <Choice Id="D" isCorrect="true"> Activate the workflow. </Choice>
-  </Question>
-  <Question Id="5" Point="1" isMultiSelect="False" Text="6 You implement Microsoft Dynamics 365 for customers. A customer reports that their sales support staff is taking too much time updating the probability on opportunities. You must display an Editable Grid control when users view the Opportunity entity from the web. You must display a read-only grid when users view opportunities on a tablet device. What should you do ? ">
-    <Choice Id="A" isCorrect="false"> On the Opportunity entity, clear the Enable for mobile setting. </Choice>
-    <Choice Id="B" isCorrect="false"> On the Outlook and Mobile Settings page for the Opportunity entity, configure the Organization data download filter. </Choice>
-    <Choice Id="C" isCorrect="true"> On the Opportunity entity, select the Tablet option for the Microsoft Dynamics 365 Read- only Grid setting. </Choice>
-    <Choice Id="D" isCorrect="false"> On the Opportunity entity, select the Read-only in mobile setting </Choice>
-  </Question>
-  <Question Id="6" Point="1" isMultiSelect="True" Text="7 You need to provide users that have the Sales manager security role access to multiple business process flows (BPFs). Which two statements regarding role driven BPFs are true ? ">
-    <Choice Id="A" isCorrect="false"> Users can select a default BPF for all records. </Choice>
-    <Choice Id="B" isCorrect="true"> If a user does not have access to the current process that is applied to a record, options will be disabled. </Choice>
-    <Choice Id="C" isCorrect="true"> Set Order defines the order in which BPFs are viewed. </Choice>
-    <Choice Id="D" isCorrect="false"> You must use teams to control which groups of users have access to a BPF. </Choice>
-  </Question>
-  <Question Id="7" Point="1" isMultiSelect="False" Text="8 You create a custom field and set the requirement level to Business Required. For which scenarios is the requirement level enforced ? ">
-    <Choice Id="A" isCorrect="false"> A user creates a record through the web interface but the required field is not on the current form. </Choice>
-    <Choice Id="B" isCorrect="true"> A user creates a record by using one of the mobile clients. </Choice>
-    <Choice Id="C" isCorrect="false"> A developer creates a record by using custom code. </Choice>
-    <Choice Id="D" isCorrect="false"> A user creates a record by using the data import functionality. </Choice>
-  </Question>
-  <Question Id="8" Point="1" isMultiSelect="True" Text="9 You are configuring auditing for Microsoft Dynamics 365. Which two operations can you audit ? Each correct answer presents a complete solution. ">
-    <Choice Id="A" isCorrect="true"> Create, update, and delete records. </Choice>
-    <Choice Id="B" isCorrect="true"> Create an association between records. </Choice>
-    <Choice Id="C" isCorrect="false"> Retrieve records.</Choice>
-    <Choice Id="D" isCorrect="false"> Export records. </Choice>
-  </Question>
-  <Question Id="9" Point="1" isMultiSelect="False" Text="10 You create a business rule for the Case entity and set the scope to Case. Which action will cause the business rule to run ? ">
-    <Choice Id="A" isCorrect="true"> The form loads. </Choice>
-    <Choice Id="B" isCorrect="false"> An asynchronous workflow updates the record. </Choice>
-    <Choice Id="C" isCorrect="false"> An asynchronous workflow creates a record. </Choice>
-    <Choice Id="D" isCorrect="false"> The record is saved. </Choice>
-  </Question>
-  <Question Id="10" Point="1" isMultiSelect="True" Text="11 Which two of the following are valid security role permissions ? Each correct answer presents a complete solution. ">
-    <Choice Id="A" isCorrect="false"> Deactivate </Choice>
-    <Choice Id="B" isCorrect="true"> Share </Choice>
-    <Choice Id="C" isCorrect="false"> Edit </Choice>
-    <Choice Id="D" isCorrect="true"> Append </Choice>
-  </Question>
-  <Question Id="11" Point="1" isMultiSelect="True" Text="12 You need to configure Microsoft OneNote integration for an organization's Microsoft Dynamics 365 case entity. Which two components should you enable? Each correct answer presents part of the solution. ">
-    <Choice Id="A" isCorrect="false"> Microsoft Office 365 groups </Choice>
-    <Choice Id="B" isCorrect="true"> document management for the entity </Choice>
-    <Choice Id="C" isCorrect="false"> Interactive Service Hub </Choice>
-    <Choice Id="D" isCorrect="true"> server-based Microsoft SharePoint integration </Choice>
-    <Choice Id="E" isCorrect="false"> Microsoft OneDrive integration </Choice>
-  </Question>
-  <Question Id="12" Point="1" isMultiSelect="True" Text="13 Which three actions can you perform by using business rules ? Each correct answer presents a complete solution. ">
-    <Choice Id="A" isCorrect="true"> Display an error message at the field level. </Choice>
-    <Choice Id="B" isCorrect="true"> Set a default field value. </Choice>
-    <Choice Id="C" isCorrect="false"> Set the active business process flow (BPF) stage.</Choice>
-    <Choice Id="D" isCorrect="false"> Display an error message at the form level. </Choice>
-    <Choice Id="E" isCorrect="true"> Clear a field value. </Choice>
-  </Question>
-  <Question Id="13" Point="1" isMultiSelect="False" Text="14 A group of users must be able to associate a time zone with a record. You need to implement the required functionality by using native Microsoft Dynamics 365 features. Which field type should you use ? ">
-    <Choice Id="A" isCorrect="false"> option set </Choice>
-    <Choice Id="B" isCorrect="false"> multiple lines of text </Choice>
-    <Choice Id="C" isCorrect="true"> whole number </Choice>
-    <Choice Id="D" isCorrect="false"> lookup </Choice>
-  </Question>
-  <Question Id="14" Point="1" isMultiSelect="False" Text="15 You need to display data is referenced by a lookup field on a form. Which option should you use ? ">
-    <Choice Id="A" isCorrect="true"> Quick View </Choice>
-    <Choice Id="B" isCorrect="false"> Associated View </Choice>
-    <Choice Id="C" isCorrect="false"> Public View </Choice>
-    <Choice Id="D" isCorrect="false"> Quick Find View </Choice>
-  </Question>
-  <Question Id="15" Point="1" isMultiSelect="False" Text="16 Which action can you perform by using a business rule ? ">
-    <Choice Id="A" isCorrect="false"> Subtract $5.00 from a currency field. </Choice>
-    <Choice Id="B" isCorrect="false"> Clear a two options field. </Choice>
-    <Choice Id="C" isCorrect="false"> Concatenate two text fields. </Choice>
-    <Choice Id="D" isCorrect="true"> Add six days to a date field</Choice>
-  </Question>
-  <Question Id="16" Point="1" isMultiSelect="True" Text="17 You need to enable auditing for the account entity. Which two actions should you perform ? Each correct answer presents part of the solution. ">
-    <Choice Id="A" isCorrect="true"> Start auditing. </Choice>
-    <Choice Id="B" isCorrect="false"> Enable change tracking. </Choice>
-    <Choice Id="C" isCorrect="true"> Enable auditing for common entities. </Choice>
-    <Choice Id="D" isCorrect="false"> Enable auditing for user access. </Choice>
-  </Question>
-  <Question Id="17" Point="1" isMultiSelect="True" Text="18 Which two series aggregate functions are only available on numeric field data types ? Each correct answer presents part of the solution. ">
-    <Choice Id="A" isCorrect="false"> Count: Non-empty </Choice>
-    <Choice Id="B" isCorrect="false"> Count: All </Choice>
-    <Choice Id="C" isCorrect="true"> Avg </Choice>
-    <Choice Id="D" isCorrect="true"> Max </Choice>
-  </Question>
-  <Question Id="18" Point="1" isMultiSelect="False" Text="19 You need to create a business rule for the account entity that runs both client and server side. Which business rule scope should you use ? ">
-    <Choice Id="A" isCorrect="false"> All Forms </Choice>
-    <Choice Id="B" isCorrect="false"> Account </Choice>
-    <Choice Id="C" isCorrect="false"> Account for Interactive Experience </Choice>
-    <Choice Id="D" isCorrect="true"> Entity </Choice>
-  </Question>
-  <Question Id="19" Point="1" isMultiSelect="False" Text="20 You install a unmanaged solution named SolutionA that has a dependency on another unmanaged solution named SolutionB. What is the outcome when you attempt to uninstall SolutionB ? ">
-    <Choice Id="A" isCorrect="false"> SolutionB and all components that are not dependencies of SolutionA are removed. </Choice>
-    <Choice Id="B" isCorrect="false"> The system prevents you from deleting SolutionB </Choice>
-    <Choice Id="C" isCorrect="false"> SolutionB and all related components are removed. </Choice>
-    <Choice Id="D" isCorrect="true"> The container for SolutionB is removed, but all its components remain.</Choice>
-  </Question>
-  <Question Id="20" Point="1" isMultiSelect="False" Text="21 You need to create a custom entity to host records that are owned by salespeople in the Which entity type should you use ? ">
-    <Choice Id="A" isCorrect="false"> Access Team </Choice>
-    <Choice Id="B" isCorrect="false"> Organization </Choice>
-    <Choice Id="C" isCorrect="true"> User or Team </Choice>
-    <Choice Id="D" isCorrect="false"> Owner </Choice>
-  </Question>
-  <Question Id="21" Point="1" isMultiSelect="True" Text="22 You are creating a set of system views. Which three options can you configure for the views ? Each correct answer presents a complete solution. ">
-    <Choice Id="A" isCorrect="false"> read, write, and delete permissions </Choice>
-    <Choice Id="B" isCorrect="false"> append, assign, and share permissions</Choice>
-    <Choice Id="C" isCorrect="true"> default sort order for results </Choice>
-    <Choice Id="D" isCorrect="true"> the widths of each column </Choice>
-    <Choice Id="E" isCorrect="true"> the columns to display </Choice>
-  </Question>
-  <Question Id="22" Point="1" isMultiSelect="True" Text="23 Which three statements regarding actions are true ? Each correct answer presents a complete solution. ">
-    <Choice Id="A" isCorrect="true"> Actions can be invoked from a custom client application that uses Microsoft Dynamics 365 </Choice>
-    <Choice Id="B" isCorrect="true"> Actions can be invoked from JavaScript within the application.</Choice>
-    <Choice Id="C" isCorrect="false"> Actions must always be associated with a specified entity. </Choice>
-    <Choice Id="D" isCorrect="false"> Actions require some coding to enable invocation from a workflow or dialog. </Choice>
-    <Choice Id="E" isCorrect="true"> You can invoke actions from a workflow or dialog without writing code. </Choice>
-  </Question>
-  <Question Id="23" Point="1" isMultiSelect="True" Text="24 You plan to implement a server-based integration between Microsoft Dynamics 365 and SharePoint Online. Which two statements are true ? Each correct answer presents a complete solution. ">
-    <Choice Id="A" isCorrect="true"> You only need to sign in to Microsoft Dynamics 365 to access documents stored in SharePoint. </Choice>
-    <Choice Id="B" isCorrect="false"> SharePoint actions including Alert Me, Download a Copy, and Copy Shortcut are supported. </Choice>
-    <Choice Id="C" isCorrect="true"> You do not need to implement a list component. </Choice>
-    <Choice Id="D" isCorrect="false"> Users can create folders in Microsoft Dynamics 365. </Choice>
-  </Question>
-  <Question Id="24" Point="1" isMultiSelect="False" Text="25 You need to create a hyperlink field to capture the URL for a contact's Linkedln profile. Which data type should you use for the field ? ">
-    <Choice Id="A" isCorrect="true"> single line of text </Choice>
-    <Choice Id="B" isCorrect="false"> web </Choice>
-    <Choice Id="C" isCorrect="false"> URL </Choice>
-    <Choice Id="D" isCorrect="false"> text area </Choice>
-  </Question>
-  <Question Id="25" Point="1" isMultiSelect="False" Text="26 Which statement regarding ordering of items in the mobile navigation menu is true?">
-    <Choice Id="A" isCorrect="false"> Menu item placement is governed by mobile offline settings. </Choice>
-    <Choice Id="B" isCorrect="true"> Menu item placement is based on the site map. </Choice>
-    <Choice Id="C" isCorrect="false"> Most recently used entities appear first. </Choice>
-    <Choice Id="D" isCorrect="false"> Menu items are displayed in alphabetical order. </Choice>
-  </Question>
-  <Question Id="26" Point="1" isMultiSelect="False" Text="27 Which statement regarding alternate keys is true ? ">
-    <Choice Id="A" isCorrect="false"> You can define only one alternate key per entity. </Choice>
-    <Choice Id="B" isCorrect="true"> Alternate keys are enforced when creating records through the user interface, and during data imports. </Choice>
-    <Choice Id="C" isCorrect="false"> You can use date and time fields as part of an alternate key. </Choice>
-    <Choice Id="D" isCorrect="false"> Alternate keys provide a warning if there is a matching record, but still allow the record to be saved. </Choice>
-  </Question>
-  <Question Id="27" Point="1" isMultiSelect="False" Text="28 You need to install the Microsoft Dynamics 365 App for Outlook on your device. What should you do ?">
-    <Choice Id="A" isCorrect="true"> In Settings, open Apps for Dynamics 365. </Choice>
-    <Choice Id="B" isCorrect="false"> Add your user name to the Microsoft Dynamics 365 App for Outlook eligible user list. </Choice>
-    <Choice Id="C" isCorrect="false"> Enable the option to automatically add the app to Outlook. </Choice>
-    <Choice Id="D" isCorrect="false"> Download and install the app from Microsoft AppSource. </Choice>
-  </Question>
-  <Question Id="28" Point="1" isMultiSelect="False" Text="29 The receptionist for a company needs to quickly capture basic information regarding visitors. You configure several different quick create forms for the Visitor entity. The receptionist reports that only one of the quick create forms displays. Why are the other quick create forms not showing ?">
-    <Choice Id="A" isCorrect="false"> You did not assign the receptionist access to the form. </Choice>
-    <Choice Id="B" isCorrect="false"> You did not enable the switch forms control for quick create forms. </Choice>
-    <Choice Id="C" isCorrect="true"> You can only show one quick create form per entity. </Choice>
-    <Choice Id="D" isCorrect="false"> You did not assign the correct security role for the quick create from. </Choice>
-  </Question>
-  <Question Id="29" Point="1" isMultiSelect="False" Text="30 You have a Microsoft Dynamics 365 environment. You create and deploy a custom entity. Which property can you turn off after enabling the property ?">
-    <Choice Id="A" isCorrect="false"> Connections </Choice>
-    <Choice Id="B" isCorrect="false"> Feedback </Choice>
-    <Choice Id="C" isCorrect="true"> Change Tracking </Choice>
-    <Choice Id="D" isCorrect="false"> Activities</Choice>
-  </Question>
-  <Question Id="30" Point="1" isMultiSelect="False" Text="31 You enable folder-level tracking functionality for all users. A user named User1 creates a folder named Dynamics 365 underneath her in box. User1 moves emails into the Dynamics 365 folder. User1 reports that the emails are not being tracked. You need to resolve the issue. What should you do ? ">
-    <Choice Id="A" isCorrect="false"> Ensure that the Microsoft Dynamics 365 for Outlook client is installed. </Choice>
-    <Choice Id="B" isCorrect="false"> Configure server-side synchronization for Microsoft Exchange. </Choice>
-    <Choice Id="C" isCorrect="false"> Ensure that Microsoft Exchange rules are created. </Choice>
-    <Choice Id="D" isCorrect="true"> Instruct the user to create a folder tracking rule. </Choice>
-  </Question>
-  <Question Id="31" Point="1" isMultiSelect="True" Text="32 You have a business process named Know Your Customer. Employees use this business process to capture key information about customers. You must implement a business process flow (BPF) in Microsoft Dynamics 365 that represents this business process. You specify the name for the BPF as well as the stage names, entities, and stage category that the BPF will use. You need to complete the BPF implementation. Which three additional components can you configure ? Each correct answer presents part of the solution. ">
-    <Choice Id="A" isCorrect="true"> Step Required </Choice>
-    <Choice Id="B" isCorrect="false"> Check Conditions </Choice>
-    <Choice Id="C" isCorrect="false"> Wait Conditions </Choice>
-    <Choice Id="D" isCorrect="true"> Step Display Names </Choice>
-    <Choice Id="E" isCorrect="true"> Data Fields</Choice>
-  </Question>
-  <Question Id="32" Point="1" isMultiSelect="False" Text="33 You are a subject matter expert for an insurance company. You have a complex business method that is used for settling and releasing claims. You need to create a process in Microsoft Dynamics 365 to assist team members with the claims settlement process. You must limit this process to team members that have a specific security role. What should you implement ?">
-    <Choice Id="A" isCorrect="true"> business process flow (BPF) </Choice>
-    <Choice Id="B" isCorrect="false"> workflows </Choice>
-    <Choice Id="C" isCorrect="false"> custom actions </Choice>
-    <Choice Id="D" isCorrect="false"> dialogs </Choice>
-  </Question>
-  <Question Id="33" Point="1" isMultiSelect="True" Text="34 You create a Publisher and add entities to a solution. What are two outcomes of this action ? Each correct answer presents a complete solution. ">
-    <Choice Id="A" isCorrect="false"> The name for existing custom entities that you add to a solution use the prefix that indicates the publisher. </Choice>
-    <Choice Id="B" isCorrect="false"> A new section dedicated to the publisher is added to the sitemap. </Choice>
-    <Choice Id="C" isCorrect="true"> Option sets that you create as part of the solution use the prefix that indicates the publisher. </Choice>
-    <Choice Id="D" isCorrect="true"> The name for custom entities that you create as part of the solution use the prefix that indicates the publisher.</Choice>
-  </Question>
-  <Question Id="34" Point="1" isMultiSelect="True" Text="35 For which three scenarios can you enable duplicate detection ? Each correct answer presents a complete solution. ">
-    <Choice Id="A" isCorrect="true"> when Microsoft Dynamics 365 for Outlook goes from offline to online </Choice>
-    <Choice Id="B" isCorrect="true"> when a record is created or updated </Choice>
-    <Choice Id="C" isCorrect="true"> during data import </Choice>
-    <Choice Id="D" isCorrect="false"> when a record is deleted or deactivated </Choice>
-    <Choice Id="E" isCorrect="false"> when Microsoft Dynamics 365 for Outlook goes from online to offline </Choice>
-  </Question>
-  <Question Id="35" Point="1" isMultiSelect="False" Text="36 You are implementing a Lead to Quote business process. The process will update the Lead. Account Contact, and Quote entities. You need to create a business process flow (BPF) that spans the entities. What should you do ?">
-    <Choice Id="A" isCorrect="false"> For each stage, specify the step. </Choice>
-    <Choice Id="B" isCorrect="false"> Add a workflow. </Choice>
-    <Choice Id="C" isCorrect="false"> Use a composition. </Choice>
-    <Choice Id="D" isCorrect="true"> Add a stage and specify the properties for each entity. </Choice>
-  </Question>
-  <Question Id="36" Point="1" isMultiSelect="True" Text="37 Which two components can you export as part of a solution ? Each correct answer presents a complete solution. ">
-    <Choice Id="A" isCorrect="false"> business units </Choice>
-    <Choice Id="B" isCorrect="false"> themes </Choice>
-    <Choice Id="C" isCorrect="true"> web resources </Choice>
-    <Choice Id="D" isCorrect="true"> connection roles </Choice>
-  </Question>
-  <Question Id="37" Point="1" isMultiSelect="False" Text="38 You create a custom entity. Records are created by users through the user interface, and through a backend Integration. You must combine two fields to populate a new field that will replace the name field on the entity. You need to ensure that the new field displays a result immediately after a new record is saved. What should you use ?">
-    <Choice Id="A" isCorrect="false"> a background workflow </Choice>
-    <Choice Id="B" isCorrect="false"> JavaScript code on the record form </Choice>
-    <Choice Id="C" isCorrect="false"> a form-scoped business rule </Choice>
-    <Choice Id="D" isCorrect="true"> a calculated field </Choice>
-  </Question>
-  <Question Id="38" Point="1" isMultiSelect="False" Text="39 A sales team member creates a chart. You need to make the chart available to all members of the sales team. What should you do ?">
-    <Choice Id="A" isCorrect="false"> Download and use the Microsoft Dynamics CRM 2016 Report Authoring Extension.</Choice>
-    <Choice Id="B" isCorrect="false"> Ask the team member to export the data used by the chart. </Choice>
-    <Choice Id="C" isCorrect="false"> Export the chart XML and import it into system charts. </Choice>
-    <Choice Id="D" isCorrect="true"> Ask the team member to share the chart with other sales team members. </Choice>
-  </Question>
-  <Question Id="39" Point="1" isMultiSelect="False" Text="40 You are implementing Microsoft Dynamics 365 for a medical center. You need to implement the Connection functionality of Microsoft Dynamics 365 to display family relationships between patients. What should you do ? ">
-    <Choice Id="A" isCorrect="false"> Create a new entity named Connection Role that allows staff to connect the Contact records for family members. </Choice>
-    <Choice Id="B" isCorrect="false"> Configure a 1:N relationship between the Contact entity and Relationship entity. </Choice>
-    <Choice Id="C" isCorrect="true"> Specify the Connection Roles that describe the relationship. </Choice>
-    <Choice Id="D" isCorrect="false"> Crate a new Activity entity to describe the relationship. </Choice>
-  </Question>
-  <Question Id="40" Point="1" isMultiSelect="True" Text="41 You have an environment that includes Microsoft Dynamics 365 and Exchange Online. Email messages between Microsoft Dynamics and Exchange are synchronizing correctly. You need to ensure that appointments, contacts, and tasks are synchronized. What are two possible ways to achieve this goal ? Each correct answer presents a complete solution. ">
-    <Choice Id="A" isCorrect="true"> Configure the default synchronization method for appointments, contacts, and tasks to use serverside synchronization. </Choice>
-    <Choice Id="B" isCorrect="true"> Configure the default synchronization method for appointments, contacts, and tasks to use Microsoft Dynamics 365 for Outlook. </Choice>
-    <Choice Id="C" isCorrect="false"> Connect Microsoft Dynamics 365 to POP3/SMTP servers. </Choice>
-    <Choice Id="D" isCorrect="false"> Set up the email router. </Choice>
-  </Question>
-  <Question Id="41" Point="1" isMultiSelect="True" Text="42 Which three statements regarding form design or behavior for the mobile phone or tablet application are true ? Each correct answer presents a complete solution. ">
-    <Choice Id="A" isCorrect="false"> The form selector is available. </Choice>
-    <Choice Id="B" isCorrect="true"> The first five tabs will display. </Choice>
-    <Choice Id="C" isCorrect="false"> Activities can be modified. </Choice>
-    <Choice Id="D" isCorrect="true"> Tabs donot have the expand and collapse capability. </Choice>
-    <Choice Id="E" isCorrect="true"> If business rules are changed while the mobile app is open, the app must be closed and reopened for those changes to apply. </Choice>
-  </Question>
-  <Question Id="42" Point="1" isMultiSelect="False" Text="43 You administer a Microsoft Dynamics 365 environment for a company. You need to prevent one specific employee from synchronizing data by using Microsoft Dynamics 365 for Outlook without preventing the employee from using Microsoft Dynamics 365 tor Outlook. What should you do ? ">
-    <Choice Id="A" isCorrect="false"> Set the Web Mail Merge settings to None Selected for the individual's security role. </Choice>
-    <Choice Id="B" isCorrect="true"> Set the Sync to Outlook settings to None Selected for the individual's security role.</Choice>
-    <Choice Id="C" isCorrect="false"> Set the Dynamics 365 Address Book settings to None Selected for the individual's security role. </Choice>
-    <Choice Id="D" isCorrect="false"> Set the Use Dynamics 365 App for Outlook to None Selected for the individual's security role. </Choice>
-  </Question>
-  <Question Id="43" Point="1" isMultiSelect="True" Text="44 Which two chart types can you combine with another chart type ? Each correct answer presents a complete solution.">
-    <Choice Id="A" isCorrect="true"> line </Choice>
-    <Choice Id="B" isCorrect="false"> pie </Choice>
-    <Choice Id="C" isCorrect="true"> column </Choice>
-    <Choice Id="D" isCorrect="false"> funnel </Choice>
-  </Question>
-  <Question Id="44" Point="1" isMultiSelect="False" Text="45 You plan to entity mapping to replicate data from a text field between two related entities. For which scenario can you replicate data ? ">
-    <Choice Id="A" isCorrect="false"> The target field is already mapped to a different source field. </Choice>
-    <Choice Id="B" isCorrect="true"> The length of the source field is smaller than the destination field </Choice>
-    <Choice Id="C" isCorrect="false"> The two entities are in a N:N relationship. </Choice>
-    <Choice Id="D" isCorrect="false"> The new record is created and then related to the parent record </Choice>
-  </Question>
-  <Question Id="45" Point="1" isMultiSelect="False" Text="46 For which of the following scenarios can you delete an entity ?">
-    <Choice Id="A" isCorrect="true"> The entity is custom and uses a system*defined global option set. </Choice>
-    <Choice Id="B" isCorrect="false"> The entity is part of a managed solution and no other items are dependent upon the entity. </Choice>
-    <Choice Id="C" isCorrect="false"> The entity is part of an unmanaged solution and another unmanaged entity has a lookup field to </Choice>
-    <Choice Id="D" isCorrect="false"> The entity is system defined and no other items are dependent upon the entity. </Choice>
-  </Question>
-  <Question Id="46" Point="1" isMultiSelect="True" Text="47 You create a business rule for the Account entity. The business rule must run when you import account records. Which two conditions must be true ? Each correct answer presents a complete solution. ">
-    <Choice Id="A" isCorrect="true"> The scope was set toEntity. </Choice>
-    <Choice Id="B" isCorrect="false"> The scope was set toAccount. </Choice>
-    <Choice Id="C" isCorrect="true"> A business rule is active. </Choice>
-    <Choice Id="D" isCorrect="false"> A business rule snapshot was successful. </Choice>
-  </Question>
-  <Question Id="47" Point="1" isMultiSelect="False" Text="48 Which form type is used by the Microsoft Dynamics 365 for tablets app ? ">
-    <Choice Id="A" isCorrect="false"> Mobile </Choice>
-    <Choice Id="B" isCorrect="true"> Main </Choice>
-    <Choice Id="C" isCorrect="false"> Mobile - Express </Choice>
-    <Choice Id="D" isCorrect="false"> Turbo </Choice>
-  </Question>
-  <Question Id="48" Point="1" isMultiSelect="False" Text="49 Which component can you add to a solution ? ">
-    <Choice Id="A" isCorrect="false"> Goals </Choice>
-    <Choice Id="B" isCorrect="false"> Queues </Choice>
-    <Choice Id="C" isCorrect="false"> Subjects </Choice>
-    <Choice Id="D" isCorrect="true"> Processes </Choice>
-  </Question>
-  <Question Id="49" Point="1" isMultiSelect="True" Text="50 Which two entity properties can you disable on a system entity ?">
-    <Choice Id="A" isCorrect="true"> Access Teams </Choice>
-    <Choice Id="B" isCorrect="false"> Notes </Choice>
-    <Choice Id="C" isCorrect="true"> Allow quick create </Choice>
-    <Choice Id="D" isCorrect="false"> Queues</Choice>
-  </Question>
-  <Question Id="50" Point="1" isMultiSelect="False" Text="51 You add a new entity named Parts to Microsoft Dynamics 365. You need to grant all users that have the Salesperson security role read access to the Parts entity. Which tab of the Security Role page should you use ? ">
-    <Choice Id="A" isCorrect="false"> Business Management </Choice>
-    <Choice Id="B" isCorrect="false"> Missing Entities </Choice>
-    <Choice Id="C" isCorrect="true"> Custom Entities </Choice>
-    <Choice Id="D" isCorrect="false"> Customization</Choice>
-  </Question>
-  <Question Id="51" Point="1" isMultiSelect="True" Text="52 You are a Microsoft Dynamics 365 administrator for a real estate company. The sales team wants to use mobile devices to update opportunities and gain insights about customers while they are out of the office. You need to instruct the sales team on how to install mobile apps for Microsoft Dynamics 365. To which two locations should you direct the sales team members ? Each correct answer presents a complete solution. ">
-    <Choice Id="A" isCorrect="true"> the Settings (Personal Options) page in Microsoft Dynamics 365 </Choice>
-    <Choice Id="B" isCorrect="true"> the Apple iTunes App Store, Google Play App Store, or Windows Store </Choice>
-    <Choice Id="C" isCorrect="false"> a specific Microsoft SharePoint site </Choice>
-    <Choice Id="D" isCorrect="false"> a Microsoft OneDrive for Business folder</Choice>
-  </Question>
-  <Question Id="52" Point="1" isMultiSelect="False" Text="53 You need to add the status reason Duplicate to the status value Cancelled for the case entity. What should you do ? ">
-    <Choice Id="A" isCorrect="false"> Add the value to the Cancelled list of the Status field. </Choice>
-    <Choice Id="B" isCorrect="true"> Add the value to the Cancelled list of the Status Reason field. </Choice>
-    <Choice Id="C" isCorrect="false"> Using status reason transitions, add the value to the Cancelled status. </Choice>
-    <Choice Id="D" isCorrect="false"> Using status reason transitions, add the value to the Cancelled status reason. </Choice>
-  </Question>
-  <Question Id="53" Point="1" isMultiSelect="False" Text="54 You create a new custom entity and add it to the sitemap. System administrators can see the custom entity. Users report that they cannot see the custom entity. You need to ensure that users can see the custom entity. What should you do ? ">
-    <Choice Id="A" isCorrect="false"> Publish the sitemap. </Choice>
-    <Choice Id="B" isCorrect="false"> Publish the custom entity.</Choice>
-    <Choice Id="C" isCorrect="false"> Wait for changes to the security roles to take effect. </Choice>
-    <Choice Id="D" isCorrect="true"> Grant appropriate security roles access to the custom entity.</Choice>
-  </Question>
-  <Question Id="54" Point="1" isMultiSelect="False" Text="55 You export five modified system security roles from a development environment as an unmanaged solution. You solution into a production environment. Which of the following statements is true regarding the import of the unmanaged solution ? ">
-    <Choice Id="A" isCorrect="false"> Copies of security roles will be created automatically in the production environment. </Choice>
-    <Choice Id="B" isCorrect="true"> The system security roles in production will be overwritten with the settings imported from the solution. </Choice>
-    <Choice Id="C" isCorrect="false"> Security roles cannot be imported. </Choice>
-    <Choice Id="D" isCorrect="false"> The import will fail because system security roles cannot be overwritten by importing a solution. </Choice>
-  </Question>
-  <Question Id="55" Point="1" isMultiSelect="False" Text="56 : You plan to create a field for an entity to capture data in a consistent format. When a user adds a record for the entity, the choices provided to the user for the field often change or become outdated. The choices must not be available for new records. You need to create the field while minimizing the administrative overhead to maintain the field. Which field type should you use ? ">
-    <Choice Id="A" isCorrect="false"> global option set </Choice>
-    <Choice Id="B" isCorrect="false"> single line of text </Choice>
-    <Choice Id="C" isCorrect="false"> local option set </Choice>
-    <Choice Id="D" isCorrect="true"> lookup</Choice>
-  </Question>
-  <Question Id="56" Point="1" isMultiSelect="False" Text="57 Which two features are only available for real-time workflows ? ">
-    <Choice Id="A" isCorrect="false"> Start before a record is created. </Choice>
-    <Choice Id="B" isCorrect="false"> Wait six hours before executing the next step. </Choice>
-    <Choice Id="C" isCorrect="true"> Start before a record is assigned. </Choice>
-    <Choice Id="D" isCorrect="true"> Run as the user who made changes to the record. </Choice>
-  </Question>
-  <Question Id="57" Point="1" isMultiSelect="False" Text="58 You implement Microsoft Office 365 groups for a company. You need to ensure that all members of a specific security role can see and use an Office 365 group. Which privilege should you assign to the security role ?">
-    <Choice Id="A" isCorrect="true"> ISV Extensions </Choice>
-    <Choice Id="B" isCorrect="false"> Execute Workflow Job </Choice>
-    <Choice Id="C" isCorrect="false"> Act on behalf of another user</Choice>
-    <Choice Id="D" isCorrect="false"> Browse Availability </Choice>
-  </Question>
-  <Question Id="58" Point="1" isMultiSelect="False" Text="59 You plan to integrate data from an external system into Microsoft Dynamics 365. You need to create a Microsoft Dynamics 365 field to use for matching records from the external system. What should you create ? ">
-    <Choice Id="A" isCorrect="false"> calculated field </Choice>
-    <Choice Id="B" isCorrect="false"> global option set </Choice>
-    <Choice Id="C" isCorrect="false"> rollup field </Choice>
-    <Choice Id="D" isCorrect="true"> alternate key </Choice>
-  </Question>
-  <Question Id="59" Point="1" isMultiSelect="True" Text="60 You need to ensure that users can save private documents in Microsoft OneDrive for Business folders from within Microsoft Dynamics 365. Which two actions should you perform ? Each correct answer presents part of the solution. ">
-    <Choice Id="A" isCorrect="false"> Set the Manage User Synchronization Filters option to Origination for the Security Role. </Choice>
-    <Choice Id="B" isCorrect="true"> Configure server-based integration for Microsoft Dynamics 365 and Microsoft SharePoint Online. </Choice>
-    <Choice Id="C" isCorrect="false"> Install and activate the Microsoft SharePoint List Component. </Choice>
-    <Choice Id="D" isCorrect="true"> Ensure that users have Microsoft OneDrive for Business and SharePoint licenses. </Choice>
-  </Question>
-  <Question Id="60" Point="1" isMultiSelect="False" Text="61 Users need to be able to embed Microsoft Power BI visuals into personal dashboards. What should you do ? ">
-    <Choice Id="A" isCorrect="false"> Enable server-based integration with Power BI. </Choice>
-    <Choice Id="B" isCorrect="false"> Add Power BI as a report category. </Choice>
-    <Choice Id="C" isCorrect="true"> Enable Power BI visualization embedding. </Choice>
-    <Choice Id="D" isCorrect="false"> Grant users Power BI reporting permissions. </Choice>
-  </Question>
-  <Question Id="61" Point="1" isMultiSelect="False" Text="62 You need to create a process that prompts users with questions and captures their answers. Which process type should you use ? ">
-    <Choice Id="A" isCorrect="false"> business rule </Choice>
-    <Choice Id="B" isCorrect="true"> dialog </Choice>
-    <Choice Id="C" isCorrect="false"> custom action </Choice>
-    <Choice Id="D" isCorrect="false"> background workflow </Choice>
-  </Question>
-  <Question Id="62" Point="1" isMultiSelect="True" Text="63 Which three actions can you add to a workflow? Each correct answer presents part of the solution. ">
-    <Choice Id="A" isCorrect="true"> Create Record </Choice>
-    <Choice Id="B" isCorrect="false"> Share Record </Choice>
-    <Choice Id="C" isCorrect="true"> Update Record </Choice>
-    <Choice Id="D" isCorrect="true"> Assign Record </Choice>
-    <Choice Id="E" isCorrect="false"> Delete Record </Choice>
-  </Question>
-  <Question Id="63" Point="1" isMultiSelect="False" Text="64 You create a business rule. Which action can you perform ? ">
-    <Choice Id="A" isCorrect="false"> Hide a section. </Choice>
-    <Choice Id="B" isCorrect="false"> Show an error message when a rule fails to run. </Choice>
-    <Choice Id="C" isCorrect="true"> Show an error message when a condition is met. </Choice>
-    <Choice Id="D" isCorrect="false"> Hide a tab. </Choice>
-  </Question>
-  <Question Id="64" Point="1" isMultiSelect="False" Text="65 Which of the following chart types can be configured as an organization-owned chart but not as a user owned chart ? ">
-    <Choice Id="A" isCorrect="false"> bar and line </Choice>
-    <Choice Id="B" isCorrect="true"> tag or doughnut </Choice>
-    <Choice Id="C" isCorrect="false"> line and multi-series </Choice>
-    <Choice Id="D" isCorrect="false"> area and funnel </Choice>
-  </Question>
-  <Question Id="65" Point="1" isMultiSelect="False" Text="67 What is the total number of If-Else conditions that you can add to a business rule ? ">
-    <Choice Id="A" isCorrect="false"> 5 </Choice>
-    <Choice Id="B" isCorrect="false"> 7 </Choice>
-    <Choice Id="C" isCorrect="true"> 10 </Choice>
-    <Choice Id="D" isCorrect="false"> 15 </Choice>
-  </Question>
-  <Question Id="66" Point="1" isMultiSelect="False" Text="68 You need to create a business process flow (BPF) that spans multiple entities. Which of the following statements is true ? ">
-    <Choice Id="A" isCorrect="false"> Relationships must exist between entities. </Choice>
-    <Choice Id="B" isCorrect="true"> You can include a maximum of five entities. </Choice>
-    <Choice Id="C" isCorrect="false"> The same entity cannot be used twice. </Choice>
-    <Choice Id="D" isCorrect="false"> You can use entities that have N:N relationships. </Choice>
-  </Question>
-  <Question Id="67" Point="1" isMultiSelect="False" Text="69 Your organization has a custom entity that contains 25 records. A specific group of users needs access to the records. You need to ensure that only specified users can access the records and that you can manage access from one place. What should you do ? ">
-    <Choice Id="A" isCorrect="false"> Add the users to access teams. Grant the teams read and write access for each of the custom entity records. </Choice>
-    <Choice Id="B" isCorrect="false"> Ask the owner of the custom entity records to grant specific users read and write access to the records. </Choice>
-    <Choice Id="C" isCorrect="true"> Create an owner team that includes the users. Assign the team a new security role which can access only the custom entity. </Choice>
-    <Choice Id="D" isCorrect="false"> Modify an existing security role that is common to the users. Grant the role access to the custom entity. </Choice>
-  </Question>
-  <Question Id="68" Point="1" isMultiSelect="False" Text="70 You are designing a managed solution that will be deployed to another part of the business. Users may want to customize specific parts of the solution after the solution is installed. Which capability represents a managed property that users can configure? ">
-    <Choice Id="A" isCorrect="false"> the ability to change the display name of a system entity </Choice>
-    <Choice Id="B" isCorrect="false"> the ability to reassign a system dashboard </Choice>
-    <Choice Id="C" isCorrect="false"> the ability to rename a web resource </Choice>
-    <Choice Id="D" isCorrect="true"> the ability to add forms to a custom entity </Choice>
-  </Question>
-  <Question Id="69" Point="1" isMultiSelect="True" Text="71 You need to use Theme settings to customize the Microsoft Dynamics 365 user interface for a customer. Which three actions can you perform ? Each correct answer presents a complete solution. ">
-    <Choice Id="A" isCorrect="false"> Export a theme as part of a solution. </Choice>
-    <Choice Id="B" isCorrect="true"> Adjust accent colors including hover and selection colors. </Choice>
-    <Choice Id="C" isCorrect="true"> Change the logo and navigation colors. </Choice>
-    <Choice Id="D" isCorrect="false"> Change icon colors. </Choice>
-    <Choice Id="E" isCorrect="true"> Provide entity-specific coloring. </Choice>
-  </Question>
-  <Question Id="70" Point="1" isMultiSelect="True" Text="73 Which two statements are exclusive to managed solutions and not unmanaged solutions ? Each correct answer presents part of the solution. ">
-    <Choice Id="A" isCorrect="true"> You cannot export the solution. </Choice>
-    <Choice Id="B" isCorrect="true"> When you remove the solution, all components items included in the solution are removed. </Choice>
-    <Choice Id="C" isCorrect="false"> You must define entity assets for every entity that you add to the solution. </Choice>
-    <Choice Id="D" isCorrect="false"> You must select a publisher for the solution</Choice>
-  </Question>
-  <Question Id="71" Point="1" isMultiSelect="True" Text="74 To which three data types can you add a custom control ? Each correct answer presents a complete solution. ">
-    <Choice Id="A" isCorrect="true"> composite </Choice>
-    <Choice Id="B" isCorrect="false"> date and time </Choice>
-    <Choice Id="C" isCorrect="true"> multiple lines of text </Choice>
-    <Choice Id="D" isCorrect="true"> single line text </Choice>
-    <Choice Id="E" isCorrect="false"> lookup </Choice>
-  </Question>
-  <Question Id="72" Point="1" isMultiSelect="True" Text="75 You are implementing a new business process flow (BPF) in Microsoft Dynamics 365. You specify a name and the primary intent for the BPF, and define the stages and conditions. You need to configure the composition. Which two options can you configure ? Each correct answer presents a complete solution. ">
-    <Choice Id="A" isCorrect="false"> Dialogs </Choice>
-    <Choice Id="B" isCorrect="true"> Workflows </Choice>
-    <Choice Id="C" isCorrect="true"> Steps </Choice>
-    <Choice Id="D" isCorrect="false"> Actions </Choice>
-  </Question>
-  <Question Id="73" Point="1" isMultiSelect="False" Text="76 You create a workflow and set the scope to User (default). User A owns the workflow. User B is making bulk changes on records that will trigger the workflow. Which records will this workflow affect ? ">
-    <Choice Id="A" isCorrect="false"> records owned by users in the same business unit as UserB </Choice>
-    <Choice Id="B" isCorrect="true"> records owned by UserA </Choice>
-    <Choice Id="C" isCorrect="false"> records owned by UserB </Choice>
-    <Choice Id="D" isCorrect="false"> records owned by either UserA or UserB </Choice>
-  </Question>
-  <Question Id="74" Point="1" isMultiSelect="False" Text="77 You are creating a field for a form. You need to ensure that users can select an Account or a Contact record. Which data type should you use?">
-    <Choice Id="A" isCorrect="false"> regarding </Choice>
-    <Choice Id="B" isCorrect="true"> customer</Choice>
-    <Choice Id="C" isCorrect="false"> lookup </Choice>
-    <Choice Id="D" isCorrect="false"> option set</Choice>
-  </Question>
-  <Question Id="75" Point="1" isMultiSelect="False" Text="78 You need to grant users the ability to read all accounts in Microsoft Dynamics 365. Which access level should you apply to the Read permission for the Account entity ? ">
-    <Choice Id="A" isCorrect="true"> Organization </Choice>
-    <Choice Id="B" isCorrect="false"> System </Choice>
-    <Choice Id="C" isCorrect="false"> All </Choice>
-    <Choice Id="D" isCorrect="false"> Global</Choice>
-  </Question>
-  <Question Id="76" Point="1" isMultiSelect="False" Text="79 You added a custom field to the Account entity. The field type is single line of text. You set a 500 character limit. You need to add the field as a column on the Active Accounts view. What is the maximum width in pixels (px) that you can specify for this column ? ">
-    <Choice Id="A" isCorrect="false"> 200px </Choice>
-    <Choice Id="B" isCorrect="false"> 500px </Choice>
-    <Choice Id="C" isCorrect="true"> 300px </Choice>
-    <Choice Id="D" isCorrect="false"> 1,000px  </Choice>
-  </Question>
-  <Question Id="77" Point="1" isMultiSelect="False" Text="81 You plan to delete a custom entity from an unmanaged solution. Which of the following statements is true ? ">
-    <Choice Id="A" isCorrect="false"> You must delete the solution that contains the entity. </Choice>
-    <Choice Id="B" isCorrect="false"> You can only delete the entity from managed solutions. </Choice>
-    <Choice Id="C" isCorrect="false"> You must delete all records related to the entity from the database. </Choice>
-    <Choice Id="D" isCorrect="true"> You must remove any dependencies with other objects. </Choice>
-  </Question>
-  <Question Id="78" Point="1" isMultiSelect="False" Text="82 You assign security roles to an owner team and each user on the team. What effect does the security role that is assigned to the team have on the individual team members ? ">
-    <Choice Id="A" isCorrect="false"> The permissions for the user are used instead of those of the team. </Choice>
-    <Choice Id="B" isCorrect="true"> The user is granted the least restrictive permissions of the two roles. </Choice>
-    <Choice Id="C" isCorrect="false"> The permissions for the team are used instead of those of the user. </Choice>
-    <Choice Id="D" isCorrect="false"> The user is granted the most restrictive permissions of the two roles.</Choice>
-  </Question>
-  <Question Id="79" Point="1" isMultiSelect="True" Text="83 Which two form areas allow you to read from and write to all visible fields ? Each answer presents a complete solution. ">
-    <Choice Id="A" isCorrect="true"> Header </Choice>
-    <Choice Id="B" isCorrect="true"> Body </Choice>
-    <Choice Id="C" isCorrect="false"> Navigation </Choice>
-    <Choice Id="D" isCorrect="false"> Footer </Choice>
-  </Question>
-  <Question Id="80" Point="1" isMultiSelect="True" Text="85 You have a Microsoft Dynamics 365 environment. You plan to configure folder-level tracking. Which two statements are true ? Each correct answer presents a complete solution. ">
-    <Choice Id="A" isCorrect="false"> Folder-level tracking is available for mailboxes that implement delegate access. </Choice>
-    <Choice Id="B" isCorrect="true"> Each user can create a maximum of 25 folders in their inbox. </Choice>
-    <Choice Id="C" isCorrect="false"> Folder level-tracking works with the Microsoft Dynamics 365 email router. </Choice>
-    <Choice Id="D" isCorrect="true"> You cannot change the regarding object unless you remove the email from tracked folders.</Choice>
-  </Question>
-  <Question Id="81" Point="1" isMultiSelect="False" Text="86 You enable status reason transitions for the case entity. You cannot reactivate a case due to an issue with the current status reason. You need to correct the issue. What should you do ? ">
-    <Choice Id="A" isCorrect="false"> Using status reason transitions, ensure that all active status reason options have at least one value. </Choice>
-    <Choice Id="B" isCorrect="true"> Using status reason transitions, add a new active status reason to the current status reason for the case. </Choice>
-    <Choice Id="C" isCorrect="false"> Using status reason transitions, ensure that all inactive status reason options have at least one value. </Choice>
-    <Choice Id="D" isCorrect="false"> Using status reason transitions, add a new inactive status reason to the current status reason for the case.</Choice>
-  </Question>
-  <Question Id="82" Point="1" isMultiSelect="True" Text="87 Which two field types can you configure as rollup fields ? Each correct answer presents a complete solution.">
-    <Choice Id="A" isCorrect="false"> single line of text</Choice>
-    <Choice Id="B" isCorrect="false"> floating point number </Choice>
-    <Choice Id="C" isCorrect="true"> date and time </Choice>
-    <Choice Id="D" isCorrect="true"> decimal number</Choice>
-  </Question>
-  <Question Id="83" Point="1" isMultiSelect="True" Text="88 You have a Microsoft Dynamics 365 tenant. You plan to implement Microsoft Office 365 Groups. You to need to ensure that all Office 365 Group features are available. Which three actions should you perform ? Each correct answer presents part of the solution. ">
-    <Choice Id="A" isCorrect="true"> Configure a Microsoft Exchange Online mailbox for each Microsoft Dynamics 365 user. </Choice>
-    <Choice Id="B" isCorrect="true"> Enable the ISV Extensions security privilege. </Choice>
-    <Choice Id="C" isCorrect="false"> Configure Yammer to work with Microsoft Dynamics 365. </Choice>
-    <Choice Id="D" isCorrect="true"> Enable server-based Microsoft SharePoint in Microsoft Dynamics 365. </Choice>
-    <Choice Id="E" isCorrect="false"> Configurethe Microsoft SharePoint List component. </Choice>
-  </Question>
-  <Question Id="84" Point="1" isMultiSelect="False" Text="89 You create an asynchronous workflow that runs on demand. Which statement is true ?">
-    <Choice Id="A" isCorrect="false"> The workflow will run in the security context of the user who is designated in the Execute As setting. </Choice>
-    <Choice Id="B" isCorrect="false"> The workflow will run in the security context of the system evaluating all conditions and taking all actions configured. </Choice>
-    <Choice Id="C" isCorrect="false"> The workflow will run in the security context of the workflow owner. </Choice>
-    <Choice Id="D" isCorrect="true"> The workflow will run in the security context of the user who triggered it.</Choice>
-  </Question>
-  <Question Id="85" Point="1" isMultiSelect="False" Text="90 You are implementing a new business process. The system must send a notification to the manager 24 hours after an opportunity Is created based on the date of the next best action. Which type of workflow should you implement ? ">
-    <Choice Id="A" isCorrect="false"> synchronous workflow </Choice>
-    <Choice Id="B" isCorrect="true"> asynchronous workflow </Choice>
-    <Choice Id="C" isCorrect="false"> Microsoft Dynamics 365 dialogs </Choice>
-    <Choice Id="D" isCorrect="false"> business process flow (BPF)</Choice>
-  </Question>
-  <Question Id="86" Point="1" isMultiSelect="False" Text="91 You manage Microsoft Office 365 and Microsoft Dynamics 365 for a company. Some Office 365 users do not have a Microsoft Dynamics 365 license. You need to ensure that all users can see tasks that are associated with a Microsoft Dynamics 365 opportunity record. What should you implement ? ">
-    <Choice Id="A" isCorrect="false"> Microsoft OneNote integration </Choice>
-    <Choice Id="B" isCorrect="false"> Microsoft OneDrive integration </Choice>
-    <Choice Id="C" isCorrect="false"> Microsoft SharePoint integration </Choice>
-    <Choice Id="D" isCorrect="true"> Microsoft Office 365 groups </Choice>
-  </Question>
-  <Question Id="87" Point="1" isMultiSelect="False" Text="92 Your company rents tools and machines to customers. You create a custom entity named Equipment to track the tools and machines. You need to show the hierarchical relationships between various pieces of equipment. How should you configure the relationship ? ">
-    <Choice Id="A" isCorrect="false"> Ensure that you enable Connections for the entity. </Choice>
-    <Choice Id="B" isCorrect="false"> Set up a parental 1:N relationship between Accounts and Equipment. </Choice>
-    <Choice Id="C" isCorrect="true"> Create a self-referential relationship and configure hierarchy settings. </Choice>
-    <Choice Id="D" isCorrect="false"> Set up a N:N relationship between Accounts and Equipment. </Choice>
-  </Question>
-  <Question Id="88" Point="1" isMultiSelect="False" Text="93 You need to display data that is referenced by a lookup field on a form. Which option should you use ?">
-    <Choice Id="A" isCorrect="false"> Quick Find View </Choice>
-    <Choice Id="B" isCorrect="false"> Associated View </Choice>
-    <Choice Id="C" isCorrect="true"> Quick View </Choice>
-    <Choice Id="D" isCorrect="false"> Public View </Choice>
-  </Question>
-  <Question Id="89" Point="1" isMultiSelect="False" Text="94 What is the character limit for a Single Line of Text field ? ">
-    <Choice Id="A" isCorrect="false"> 1’000 </Choice>
-    <Choice Id="B" isCorrect="false"> 2’000 </Choice>
-    <Choice Id="C" isCorrect="true"> 4’000 </Choice>
-    <Choice Id="D" isCorrect="false"> 10’000 </Choice>
-  </Question>
-  <Question Id="90" Point="1" isMultiSelect="False" Text="95 You use access teams to assign security permissions. Which of the following statements is true ? ">
-    <Choice Id="A" isCorrect="false"> Permissions are defined by an access team template that is associated with each record. </Choice>
-    <Choice Id="B" isCorrect="false"> Permissions are defined by an access team template that spans multiple entities.</Choice>
-    <Choice Id="C" isCorrect="false"> Permissions are defined by the security role that is assigned to the access team. </Choice>
-    <Choice Id="D" isCorrect="true"> Permissions are defined by one of the access team templates for the entity. </Choice>
+<Exam Code="Exam MB2-715" Title="Title : Certification Microsoft Dynamics 365 Customer Engagement Online Deployment">
+  <Question Id="73" Point="1" isMultiSelect="False" Text="You were recently hired as a consultant for a company that plans to implement Microsoft Dynamics 365.Your job requires you to administer the Microsoft Dynamics 365 system, which includes managing user accounts, creating quotes and orders, creating workflows, and performing data imports. Which action is required for your user account?">
+    <Choice Id="D" isCorrect="false"> Assign the System Customizer role.</Choice>
+    <Choice Id="C" isCorrect="true"> Assign the System Administrator role.</Choice>
+    <Choice Id="A" isCorrect="false"> Mark the account as administrative.</Choice>
+    <Choice Id="B" isCorrect="false"> Mark the account as non-interactive.</Choice>
+  </Question>
+  <Question Id="68" Point="1" isMultiSelect="True" Text="Your organization has all staff on an E5 Microsoft Office 365 SKU and an Enterprise Plan 1 for Microsoft Dynamics 365. You need to integrate Microsoft Office 365 Groups with Microsoft Dynamics 365 so that staff can view documents in a shared workspace. What are two requirements for performing this integration? Each correct answer presents part of the solution.">
+    <Choice Id="D" isCorrect="false"> Microsoft OneDrive for Business integration must be enabled.</Choice>
+    <Choice Id="C" isCorrect="true"> Server-based Microsoft SharePoint integration must be enabled.</Choice>
+    <Choice Id="A" isCorrect="true"> Each user must have Exchange Mailbox.</Choice>
+    <Choice Id="B" isCorrect="false"> OneNote integration must be enabled.</Choice>
+  </Question>
+  <Question Id="7" Point="1" isMultiSelect="True" Text="Which two operating systems are supported for accessing Microsoft Dynamics when using Google Chrome? Each correct answer presents a complete solution.">
+    <Choice Id="D" isCorrect="true"> Android 10. </Choice>
+    <Choice Id="C" isCorrect="false"> Android 9</Choice>
+    <Choice Id="A" isCorrect="true"> Windows 8.1</Choice>
+    <Choice Id="B" isCorrect="false"> Mac OS X 10.10</Choice>
+  </Question>
+  <Question Id="44" Point="1" isMultiSelect="False" Text="You are an administrator for an organization that uses Microsoft Dynamics 365. Your mobile users are often in areas where they do not have Internet access, but they still need to be able to access and edit records through the Dynamics 365 app for mobile phones. What should you do?">
+    <Choice Id="D" isCorrect="false"> In the entity settings under Outlook &amp; Mobile, configure the Organization data downloadfilter for each of the needed entities.</Choice>
+    <Choice Id="C" isCorrect="true"> Enable the enhanced offline experience in Settings &gt; Mobile Offline in Microsoft Dynamics 365 and adjust the Organization data download filter on each of the needed entities.</Choice>
+    <Choice Id="A" isCorrect="false"> Instruct users to view the needed records prior to entering an area with no Internet access so they can view them through the recent records cache.</Choice>
+    <Choice Id="B" isCorrect="false"> Allow users to use Microsoft Dynamics 365 for Outlook, and instruct users on how to configure the offline filters.</Choice>
+  </Question>
+  <Question Id="6" Point="1" isMultiSelect="False" Text="You are a network services provider for a small sales organization. The company has no on-premises database for its users and is a complete Bring your own Device (BYOD) environment. You need to create user accounts for the sales staff for Microsoft Dynamics 365.Where should you create these accounts?">
+    <Choice Id="D" isCorrect="false"> Microsoft Dynamics 365 administrator portal.</Choice>
+    <Choice Id="C" isCorrect="false"> Microsoft Dynamics AX Enterprise Portal.</Choice>
+    <Choice Id="A" isCorrect="false"> Active Directory Federated Services</Choice>
+    <Choice Id="B" isCorrect="true"> Microsoft Office 365 administrator portal.</Choice>
+  </Question>
+  <Question Id="53" Point="1" isMultiSelect="True" Text="You are a system administrator. Staff at your company are reporting that when they load private documents into the Microsoft Dynamics 365 integration with Microsoft SharePoint, other staff members can access those documents. You need to implement a solution that allows staff to save documents using MicrosoftDynamics 365 so that documents can only be seen by the owner. What should you do?">
+    <Choice Id="D" isCorrect="false"> Change the Office Graph document settings in Microsoft Dynamics 365.</Choice>
+    <Choice Id="C" isCorrect="false"> Change the privacy-related privileges in Microsoft Dynamics 365.</Choice>
+    <Choice Id="A" isCorrect="true"> Configure OneDrive for Business integration with Microsoft Dynamics 365.</Choice>
+    <Choice Id="B" isCorrect="true"> Run Microsoft SharePoint Integration Wizard, and change the settings.</Choice>
+  </Question>
+  <Question Id="16" Point="1" isMultiSelect="False" Text="You are a systems architect for a large company that is deploying Microsoft Dynamics 365. The company currently has all data stored on Microsoft Dynamics CRM 2016 on-premises and plans on migrating all records from there to Microsoft Dynamics 365.Which record type has some statuses that cannot be set during an import?">
+    <Choice Id="D" isCorrect="true"> Quote.</Choice>
+    <Choice Id="C" isCorrect="false"> order</Choice>
+    <Choice Id="A" isCorrect="false"> invoice</Choice>
+    <Choice Id="B" isCorrect="false"> customer</Choice>
+  </Question>
+  <Question Id="78" Point="1" isMultiSelect="False" Text="You are an administrator for an organization that uses Microsoft Dynamics 365 and Microsoft Dynamics for Outlook. Some of your users have indicated that their personal notes for their contacts in Outlook appear in Microsoft Dynamics 365 for everyone to read. How should you ensure that personal notes in Outlook are not shared in Microsoft Dynamics 365?">
+    <Choice Id="D" isCorrect="false"> As the system administrator, configure the Synchronization Fields settings to only do a one-way sync from Microsoft Dynamics 365 to the Notes field in Outlook.</Choice>
+    <Choice Id="C" isCorrect="false"> instruct the users to configure their Synchronization Fields settings to only do a one-way sync from Microsoft Dynamics 365 to the notes field in Outlook.</Choice>
+    <Choice Id="A" isCorrect="true"> As the system administrator, configure the Synchronization Fields settings to not includethe Notes field in Outlook.</Choice>
+    <Choice Id="B" isCorrect="false"> Instruct the users to configure their Synchronization Fields settings to not include the Notes field in Outlook.</Choice>
+  </Question>
+  <Question Id="63" Point="1" isMultiSelect="True" Text="You are a system administrator for an organization that relies solely on an ISV solution for Microsoft Dynamics 365. Your instances are scheduled to be updated. What are two approaches for this update? Each correct answer presents part of the solution.">
+    <Choice Id="D" isCorrect="false"> Import the updated version of the ISV solution prior to the update of your instance.</Choice>
+    <Choice Id="C" isCorrect="false"> Update production. With an ISV solution, there is no need to go through a test process.</Choice>
+    <Choice Id="A" isCorrect="true"> Test the update in your sandbox environments prior to updating production.</Choice>
+    <Choice Id="B" isCorrect="true"> Contact your ISV provider and follow their recommendation for this update.</Choice>
+  </Question>
+  <Question Id="5" Point="1" isMultiSelect="False" Text="You are a system administrator for a Microsoft Dynamics 365 and Microsoft SharePointonline environment You need to prevent a user from accessing Microsoft SharePoint whilein Microsoft Dynamics 365.What should you do?">
+    <Choice Id="D" isCorrect="false"> Change the security settings for Document Template on the user's security role.</Choice>
+    <Choice Id="C" isCorrect="false"> Change the security settings for Enable or Disable User on the user's security role.</Choice>
+    <Choice Id="A" isCorrect="true"> Change the security settings for SharePoint Site on the users security role.</Choice>
+    <Choice Id="B" isCorrect="false"> Change the security settings for Document Generation on the user's security role.</Choice>
+  </Question>
+  <Question Id="41" Point="1" isMultiSelect="False" Text="You are an administrator in an organization that uses Microsoft Dynamics 365 and Microsoft Dynamics 365 for Outlook. A majority of the users want to synchronize all contacts from accounts they follow, rather than just contacts they own. What should you do?">
+    <Choice Id="D" isCorrect="false"> Instruct each user on how to configure the synchronized fields.</Choice>
+    <Choice Id="C" isCorrect="false"> Instruct each user on how to configure the synchronization.</Choice>
+    <Choice Id="A" isCorrect="true"> Create and distribute a set of synchronization filters that includes all contacts for followed accounts.</Choice>
+    <Choice Id="B" isCorrect="false"> Instruct each user on how to configure the offline filter.</Choice>
+  </Question>
+  <Question Id="52" Point="1" isMultiSelect="True" Text="You are the system administrator for a company that is deploying Microsoft Dynamics 365 in multiple regions.You need to ensure that users can only access the instance hosted in their region. Which two actions should you perform to achieve this goal? Each correct answer presents part of the solution.">
+    <Choice Id="D" isCorrect="true"> Assign the Security Group to the instance hosted on the matching region.</Choice>
+    <Choice Id="C" isCorrect="true"> Create a Security Group for each region, and add the users from that region to the group.</Choice>
+    <Choice Id="A" isCorrect="false"> Create an Access Team for each region, and add the users from that region to the team.</Choice>
+    <Choice Id="B" isCorrect="false"> Assign the Access Team to the instance hosted on the matching region.</Choice>
+  </Question>
+  <Question Id="28" Point="1" isMultiSelect="False" Text="You maintain a Microsoft Dynamics 365 online instance.You need to configure Microsoft Social Engagement, which is operating in the same tenant with Microsoft Dynamics 365. Which step should you perform to accomplish this goal?">
+    <Choice Id="D" isCorrect="false"> Update the security setting for users.</Choice>
+    <Choice Id="C" isCorrect="false"> Configure server-side synchronization to integrate with Microsoft Exchange Online.</Choice>
+    <Choice Id="A" isCorrect="false"> Create new charts to display the social data.</Choice>
+    <Choice Id="B" isCorrect="true"> Select the solution to connect to.</Choice>
+  </Question>
+  <Question Id="86" Point="1" isMultiSelect="False" Text="You have a sandbox instance being used for development purposes at your organization. The URL for this instance https://contosoSBXDEV.crm.dynamics.com. The instance will now be used to test third-party ISV Solutions. You need to ensure that the instance URL will behttps://contosoISVtesting.crm.dynamics.com.How can you accomplish this goal?">
+    <Choice Id="D" isCorrect="false"> Enable domain name on the tenant properties.</Choice>
+    <Choice Id="C" isCorrect="true"> Edit the URL on the instance properties.</Choice>
+    <Choice Id="A" isCorrect="false"> Edit the URL on the tenant properties.</Choice>
+    <Choice Id="B" isCorrect="false"> Create a new instance with the new URL.</Choice>
+  </Question>
+  <Question Id="55" Point="1" isMultiSelect="False" Text="You are a technical support specialist for your company and are responsible for supporting employee mobile devices. The sales department recently began using Microsoft Dynamics 365. Some of the sales staff want to know if they need to use Microsoft Dynamics 365 for phones express to access the Microsoft Dynamics 365 server. Which type of mobile device configuration requires the use of Microsoft Dynamics 365 for phones express?">
+    <Choice Id="D" isCorrect="true"> a Windows 8.1 phone that uses the Microsoft Dynamics 365 for phones app.</Choice>
+    <Choice Id="C" isCorrect="false"> a Windows 10 phone that uses only a supported browser</Choice>
+    <Choice Id="A" isCorrect="false"> an iOS device with less than a 9-inch screen</Choice>
+    <Choice Id="B" isCorrect="false"> an Android phone that does not have a supported browser</Choice>
+  </Question>
+  <Question Id="80" Point="1" isMultiSelect="False" Text="You work in an organization that uses Microsoft Dynamics 365. Users need to track emails in Microsoft Dynamics 365 when using a mobile device. Which approach should you recommend?">
+    <Choice Id="D" isCorrect="false"> Install Microsoft Dynamics 365 for Outlook, and instruct the users on how to go offline.</Choice>
+    <Choice Id="C" isCorrect="false"> Install Microsoft Dynamics 365 for Outlook, and instruct the users on how to track email in Microsoft Dynamics 365.</Choice>
+    <Choice Id="A" isCorrect="true"> Add the Microsoft Dynamics 365 App for Outlook, and instruct the users to install Microsoft Dynamics 365 for Phones.</Choice>
+    <Choice Id="B" isCorrect="false"> Add the Microsoft Dynamics 365 App for Outlook, and instruct the users to access Outlook by using the web application on their mobile devices.</Choice>
+  </Question>
+  <Question Id="76" Point="1" isMultiSelect="False" Text="You are an administrator for an organization that uses Microsoft Dynamics 365. The company has a bring your-own-device (BYOD) policy for mobile devices. These mobile devices need to be able to install the Microsoft Dynamics 365 app for phones and tablets.">
+    <Choice Id="D" isCorrect="false"> Windows phones 8.1 or later, iPhones 8.1 or later, but not Android phones.</Choice>
+    <Choice Id="C" isCorrect="true"> Windows phones 8.1 or later, iPhones 8.1 or later, and Android phones 4.4 or later</Choice>
+    <Choice Id="A" isCorrect="false"> Android phones 5.0 or later, Windows phones 8.1 or later, but not iPhones</Choice>
+    <Choice Id="B" isCorrect="false"> iPhones with iOS 8.1 or later. Android phones 5.0 or later, but not Windows phones</Choice>
+  </Question>
+  <Question Id="59" Point="1" isMultiSelect="False" Text="You are an administrator for an organization using Microsoft Dynamics 365 and Microsoft Dynamics 365 for Outlook. Your users are synchronizing records but want to make a few adjustments on which fields are included in the synchronization. Who can make this change?">
+    <Choice Id="D" isCorrect="false"> users with privileges to go offline</Choice>
+    <Choice Id="C" isCorrect="false"> users with privileges to sync to Outlook</Choice>
+    <Choice Id="A" isCorrect="true"> users with system administrator privileges</Choice>
+    <Choice Id="B" isCorrect="false"> users with privileges to use the Microsoft Dynamics 365 App for Outlook</Choice>
+  </Question>
+  <Question Id="11" Point="1" isMultiSelect="False" Text="You are a system administrator using Microsoft Dynamics 365. You received an email informing you that you need to schedule the December 2016 update: however, you skipped the June 2016 update. Which of the following is true?">
+    <Choice Id="D" isCorrect="false"> You can schedule both updates to be completed at the same time.</Choice>
+    <Choice Id="C" isCorrect="true"> You must schedule the June 2016 update before you can schedule the December 2016update.</Choice>
+    <Choice Id="A" isCorrect="false"> You can schedule the December 2016 update without scheduling the June 2016 update.</Choice>
+    <Choice Id="B" isCorrect="false"> You can skip both updates and schedule all to be completed when the June 2017update is available.</Choice>
+  </Question>
+  <Question Id="83" Point="1" isMultiSelect="False" Text="You are the system administrator for a public-sector organization that uses Microsoft Dynamics 365. Your organization allows staff to select from three different models of mobile devices. You need to create mobile responsive apps that can operate on all of these devices, as well as on a desktop computer, to achieve this goal without writing any code and while maintaining security and platform independence. In which tool should you build this mobile app?">
+    <Choice Id="D" isCorrect="false"> Xamarin.</Choice>
+    <Choice Id="C" isCorrect="true"> PowerApps</Choice>
+    <Choice Id="A" isCorrect="false"> Visual Studio</Choice>
+    <Choice Id="B" isCorrect="false"> InfoPath</Choice>
+  </Question>
+  <Question Id="81" Point="1" isMultiSelect="False" Text="You are a system administrator. You have one production instance and three sandbox instances. You are no longer using two of the sandbox instances, the last sandbox instance only requires the customizationand configurations from production. You need to free up as much storage as possible. How can you accomplish this goal?">
+    <Choice Id="D" isCorrect="false"> Reset two sandboxes. Perform a full copy on the last sandbox.</Choice>
+    <Choice Id="C" isCorrect="true"> Delete two sandboxes. Perform a minimal copy on the last sandbox.</Choice>
+    <Choice Id="A" isCorrect="false"> Delete two sandboxes. Reset the last sandbox.</Choice>
+    <Choice Id="B" isCorrect="false"> Reset two sandboxes. Perform a minimal copy on the last sandbox.</Choice>
+  </Question>
+  <Question Id="13" Point="1" isMultiSelect="True" Text="You are a system administrator responsible for maintaining Microsoft Dynamics 365 at yourcompany. Management wants a new application built that allows them to manage requests for vendors.You need to use the app designer to build the new application on Microsoft Dynamics 365. What are three items that can be configured in the app designer? Each correct answer presents a complete solution.">
+    <Choice Id="E" isCorrect="false"> a workflow for the new app.</Choice>
+    <Choice Id="D" isCorrect="true"> a dashboard for the new app</Choice>
+    <Choice Id="A" isCorrect="true"> a site map for the new app</Choice>
+    <Choice Id="C" isCorrect="false"> a role to be used by the new app</Choice>
+    <Choice Id="B" isCorrect="true"> a business rule for the new app</Choice>
+  </Question>
+  <Question Id="67" Point="1" isMultiSelect="False" Text="You are an administrator for Microsoft Dynamics 365. When accessing Microsoft Dynamics 365 in the browser on a phone, a user does not see the same fields as when accessing it on a desktop browser.What should you do?">
+    <Choice Id="D" isCorrect="false"> In the Mobile Express form, ensure the needed fields have been added to the form.</Choice>
+    <Choice Id="C" isCorrect="false"> In the security roles, ensure the user has privileges for Microsoft Dynamics 365 for mobile.</Choice>
+    <Choice Id="A" isCorrect="true"> In the Main form, ensure the needed sections are enabled for phones.</Choice>
+    <Choice Id="B" isCorrect="false"> In the Main form, ensure the needed fields are enabled for phones.</Choice>
+  </Question>
+  <Question Id="51" Point="1" isMultiSelect="False" Text="You are the network administrator for your company.Management wants to deploy Microsoft Dynamics 365 for the sales division. The company has more than 2 million records, currently stored on-premises, that need to be migrated to Microsoft Dynamics 365. The technology director wants you to utilize the Data Loader service for the migration process for the fastest possible migration. What is a prerequisite for running the Data Loader service in this instance?">
+    <Choice Id="D" isCorrect="true"> The data must first be converted to CSV files before uploading it with the Import DataWizard.</Choice>
+    <Choice Id="C" isCorrect="false"> The data set must reside in Azure on the same data center that hosts the company'sMicrosoft Dynamics 365 instance.</Choice>
+    <Choice Id="A" isCorrect="false"> The data must be cleansed before using the Import Data Wizard to migrate it to thecloud.</Choice>
+    <Choice Id="B" isCorrect="false"> Third-party tools must be installed in order to migrate the data with the Data Loaderservice.</Choice>
+  </Question>
+  <Question Id="18" Point="1" isMultiSelect="False" Text="You are training new hires on how to configure Microsoft Dynamics 365 for use on tablets and mobile devices that use the Microsoft Dynamics 365 mobile app. You need to describe the numerous requirements regarding which entities can be edited while using the app. What should you say about the task entity?">
+    <Choice Id="D" isCorrect="false"> The task entity can be made visible, and if it is made visible, it can always be edited inthe app.</Choice>
+    <Choice Id="C" isCorrect="false"> The task entity is always visible but can be made read-only for the app.</Choice>
+    <Choice Id="A" isCorrect="true"> The task entity can be set separately to Enable for mobile and read-only in the app.</Choice>
+    <Choice Id="B" isCorrect="false"> The task entity appears according to the settings on the activity entity.</Choice>
+  </Question>
+  <Question Id="46" Point="1" isMultiSelect="False" Text="You are the administrator of a Microsoft Dynamics 365 instance. Staff want to take advantage of Microsoft Exchange inbox folders in Microsoft Outlook to sort and track the email messages they have with customers.Which action must you take to fulfill their request?">
+    <Choice Id="D" isCorrect="false"> Use correlation to track email conversations.</Choice>
+    <Choice Id="C" isCorrect="false"> Use tracking tokens.</Choice>
+    <Choice Id="A" isCorrect="false"> Use smart matching.</Choice>
+    <Choice Id="B" isCorrect="true"> Use folder-level tracking.</Choice>
+  </Question>
+  <Question Id="49" Point="1" isMultiSelect="True" Text="You are a remote sales person using the Microsoft Dynamics 365 app on your tablet. You need to create new records while in an area with no Internet access.Which two statements are true about creating records offline? Each correct answer presents a complete solution.">
+    <Choice Id="D" isCorrect="false"> New records can be linked to each other while they are drafts.</Choice>
+    <Choice Id="C" isCorrect="true"> New records can be created as drafts while offline.</Choice>
+    <Choice Id="A" isCorrect="false"> Recently viewed records cached for offline access can be edited.</Choice>
+    <Choice Id="B" isCorrect="true"> New records can be edited while they are drafts.</Choice>
+  </Question>
+  <Question Id="71" Point="1" isMultiSelect="True" Text="You are using Microsoft Dynamics 365 to create a new application. You need to create a new sitemap for your application. Which three components can you configure in SiteMap designer? Each correct answerpresents a complete solution">
+    <Choice Id="E" isCorrect="true"> privileges</Choice>
+    <Choice Id="D" isCorrect="true"> groups</Choice>
+    <Choice Id="A" isCorrect="true"> SKUs</Choice>
+    <Choice Id="C" isCorrect="false"> hierarchies</Choice>
+    <Choice Id="B" isCorrect="false"> actions</Choice>
+  </Question>
+  <Question Id="26" Point="1" isMultiSelect="False" Text="You are the system administrator for an organization that has a Microsoft Dynamics 365 deployment hosted in country/region 1. Your organization just acquired a new company in country/region 2. You need to ensure that the instance created for the users of the acquired company does not share storage space with all of your current instances.What should you create to accomplish this goal?">
+    <Choice Id="D" isCorrect="false"> a new production instance in country/region 2 on your existing tenant.</Choice>
+    <Choice Id="C" isCorrect="false"> a new sandbox instance in country/region 2 on your existing tenant</Choice>
+    <Choice Id="A" isCorrect="false"> a new production instance in country/region 1 on your existing tenant</Choice>
+    <Choice Id="B" isCorrect="true"> a new production instance in a new tenant in country/region 2</Choice>
+  </Question>
+  <Question Id="50" Point="1" isMultiSelect="False" Text="You are a system administrator, and your company recently began using Microsoft Dynamics 365. You need to perform a full copy from a training sandbox instance to one of your production instances. What should you do?">
+    <Choice Id="D" isCorrect="false"> Switch the training instance to production and perform a full copy.</Choice>
+    <Choice Id="C" isCorrect="false"> Perform a full copy from the training instance to the production instance.</Choice>
+    <Choice Id="A" isCorrect="false"> Switch the production instance to a sandbox and perform a full copy from training.</Choice>
+    <Choice Id="B" isCorrect="true"> Place the production instance in Administration mode and perform a full copy from training.</Choice>
+  </Question>
+  <Question Id="47" Point="1" isMultiSelect="False" Text="You are implementing Microsoft Dynamics 365 in an organization where many users have former versions of Microsoft Outlook and Windows. What is the earliest supported scenario for Microsoft Dynamics 365 for Outlook?">
+    <Choice Id="D" isCorrect="false"> Windows 10 and Microsoft Office 2016.</Choice>
+    <Choice Id="C" isCorrect="false"> Windows 8.1 and Microsoft Office 2013</Choice>
+    <Choice Id="A" isCorrect="false"> Windows 8 and Microsoft Office 2010</Choice>
+    <Choice Id="B" isCorrect="true"> Windows 7 SP1 and Microsoft Office 2010</Choice>
+  </Question>
+  <Question Id="9" Point="1" isMultiSelect="False" Text="You are the network manager for a company that wants to implement Microsoft Dynamics 365. Your users have Active Directory accounts. These accounts are stored on-premises. Management wants users to have a seamless login experience, using Single Sign-On(SSO). What should you do to accomplish this goal?">
+    <Choice Id="D" isCorrect="false"> Create accounts within the Microsoft Office 365 Admin Portal.</Choice>
+    <Choice Id="C" isCorrect="true"> Implement Active Directory Federation Services.</Choice>
+    <Choice Id="A" isCorrect="false"> Synchronize Active Directory with Microsoft Office 365.</Choice>
+    <Choice Id="B" isCorrect="false"> License all users for Microsoft Dynamics 365 in the Office 365 Admin Portal.</Choice>
+  </Question>
+  <Question Id="14" Point="1" isMultiSelect="False" Text="You are a system administrator at Contoso, Inc. You need to ensure that only system administrators and system customizers have access to your development instance. What should you do?">
+    <Choice Id="D" isCorrect="false"> Set the instance to Preview mode.</Choice>
+    <Choice Id="C" isCorrect="false"> Use Security Groups to control access to the preview instance.</Choice>
+    <Choice Id="A" isCorrect="false"> Switch the instance to managed.</Choice>
+    <Choice Id="B" isCorrect="true"> Place the instance in Administration mode.</Choice>
+  </Question>
+  <Question Id="30" Point="1" isMultiSelect="False" Text="You are the system administrator at your organization.You need to quickly synchronize all customizations from your synchronizing the data. What should you perform to accomplish this goal?">
+    <Choice Id="D" isCorrect="true"> a minimal copy.</Choice>
+    <Choice Id="C" isCorrect="false"> a full copy</Choice>
+    <Choice Id="A" isCorrect="false"> a clone</Choice>
+    <Choice Id="B" isCorrect="false"> a switch</Choice>
+  </Question>
+  <Question Id="60" Point="1" isMultiSelect="False" Text="You are the sales manager for a company that has more than 15,000 employees. You plan to purchase Microsoft Dynamics 365 for your company, although only 750 seats will be required. Management wants all Microsoft Dynamics 365 users to have access to allMicrosoft Dynamics 365 applications. Based on this criteria, which licensing option should you select?">
+    <Choice Id="D" isCorrect="false"> Business Edition with APPS-based Licensing</Choice>
+    <Choice Id="C" isCorrect="false"> Business Edition with Plan-based Licensing</Choice>
+    <Choice Id="A" isCorrect="false"> Enterprise Edition with APPS-based Licensing</Choice>
+    <Choice Id="B" isCorrect="true"> Enterprise Edition with Plan-based Licensing</Choice>
+  </Question>
+  <Question Id="57" Point="1" isMultiSelect="False" Text="You are the technology director for a company that is planning a Microsoft Dynamics 365 implementation. The company currently uses Microsoft Dynamics AX 2012.You are researching which edition is best to purchase for the company. In which instance is the Enterprise edition required?">
+    <Choice Id="D" isCorrect="false"> The company wants all of its applications to be cloud-based.</Choice>
+    <Choice Id="C" isCorrect="false"> The sales staff use only a company-issued laptop to access Microsoft Dynamics 365.</Choice>
+    <Choice Id="A" isCorrect="false"> The sales staff use desktop computers, as well as mobile devices.</Choice>
+    <Choice Id="B" isCorrect="true"> The sales staff need online / on-premises dual use rights.</Choice>
+  </Question>
+  <Question Id="34" Point="1" isMultiSelect="True" Text="You are a systems architect helping a company deploy Microsoft Dynamics 365 Online. The company currently uses Microsoft Dynamics CRM 2016, which is hosted on-premises. The company needs to migrate the data within that system to Microsoft Dynamics 365. Which import method should you use to accomplish this goal (select two)?">
+    <Choice Id="D" isCorrect="true"> Export the data to multiple CSV files.</Choice>
+    <Choice Id="C" isCorrect="false"> Restore the CRM 2016 On-premises database in the Microsoft Dynamics 365 administration center.</Choice>
+    <Choice Id="A" isCorrect="true"> Migrate the data by using the Data Loader service.</Choice>
+    <Choice Id="B" isCorrect="false"> Upload CRM SQL backup file using the On-Premises to Online Conversion Service.</Choice>
+  </Question>
+  <Question Id="82" Point="1" isMultiSelect="False" Text="You are the administrator for an organization that uses Microsoft Dynamics 365. Your users are accessing Microsoft Dynamics 365 by using the app for both phones and tablets, and your forms are optimized for each. What are your options when customizing forms for the different devices?">
+    <Choice Id="D" isCorrect="true"> Fields. Sections, Tabs, and Sub-grids on a form can be disabled for phones and tablets.</Choice>
+    <Choice Id="C" isCorrect="false"> Fields and Sub-grids, but not Sections and Tabs, can be disabled for phones but not for tablets.</Choice>
+    <Choice Id="A" isCorrect="false"> Fields, Sections, Tabs, and Sub-grids on a form can be disabled for phones but not for tablets.</Choice>
+    <Choice Id="B" isCorrect="false"> Fields and Sub-grids, but not Sections and Tabs, can be disabled for phones and tablets.</Choice>
+  </Question>
+  <Question Id="27" Point="1" isMultiSelect="False" Text="You are a system administrator using Microsoft Dynamics 365. You have two production instances and four sandbox instances. A new update is comingout What is true about the updates?">
+    <Choice Id="D" isCorrect="false"> Updates for the sandbox instances are managed together.</Choice>
+    <Choice Id="C" isCorrect="false"> Updates for the production and the sandbox instances are all managed together.</Choice>
+    <Choice Id="A" isCorrect="true"> Updates for the production and the sandbox instances are each managed separately.</Choice>
+    <Choice Id="B" isCorrect="false"> Updates for the sandbox instances are managed separately. The production instancesare managed together.</Choice>
+  </Question>
+  <Question Id="42" Point="1" isMultiSelect="False" Text="Your company has been using Microsoft Dynamics 365. Business edition for one year. Since then, the size of your company has doubled, and you are using 98% of the storage allotted in your company's subscription. You need increase the size of your available storage. What should you do to accomplish this goal?">
+    <Choice Id="D" isCorrect="false"> Purchase additional storage for your current subscription through the MicrosoftDynamics 365 Admin portal.</Choice>
+    <Choice Id="C" isCorrect="false"> Increase the size of the storage allocated in the Microsoft Dynamics 365 Admin portal.</Choice>
+    <Choice Id="A" isCorrect="true"> Purchase additional storage for your current subscription through the Microsoft Office365 Admin portal.</Choice>
+    <Choice Id="B" isCorrect="false"> Purchase an additional volume license subscription through a Microsoft Partner foradded storage.</Choice>
+  </Question>
+  <Question Id="69" Point="1" isMultiSelect="True" Text="You want to add new functionality to Microsoft Dynamics 365. Which three apps, available from AppSource, allow you to achieve this goal? Each correct answer presents a complete solution.">
+    <Choice Id="E" isCorrect="false"> Microsoft Office 365 Groups</Choice>
+    <Choice Id="D" isCorrect="true"> Project Service Automation</Choice>
+    <Choice Id="A" isCorrect="true"> Microsoft Dynamics 365 - Gamification</Choice>
+    <Choice Id="C" isCorrect="true"> Microsoft Dynamics 365 - Organization Insights</Choice>
+    <Choice Id="B" isCorrect="false"> Customer Self-Service Portal</Choice>
+  </Question>
+  <Question Id="74" Point="1" isMultiSelect="False" Text="You are working for an organization that uses Microsoft Dynamics 365. You have just made some changes to forms that are used both in the web application and the Microsoft Dynamics 365 for phones app. You need to ensure that your users have access to the new configurations and that the first mobile user does not experience performance issues. What should you select?">
+    <Choice Id="D" isCorrect="true"> Publish All Customizations, then Prepare Client Customizations.</Choice>
+    <Choice Id="C" isCorrect="false"> Prepare Client Customizations, then Publish All Customizations</Choice>
+    <Choice Id="A" isCorrect="false"> Prepare Client Customizations only</Choice>
+    <Choice Id="B" isCorrect="false"> Publish All Customizations only</Choice>
+  </Question>
+  <Question Id="48" Point="1" isMultiSelect="False" Text="You are a system administrator at Contoso, Inc. You need to ensure that administrative notifications for your production instance are also sent to your external partner. What should you do?">
+    <Choice Id="D" isCorrect="true"> Add the external partner as an additional recipient on the production instance.</Choice>
+    <Choice Id="C" isCorrect="false"> Create a security group and forward notifications to the group.</Choice>
+    <Choice Id="A" isCorrect="false"> Add the external partner to the deployment administrators’ group.</Choice>
+    <Choice Id="B" isCorrect="false"> Create an Office 365 group and forward notifications to the group.</Choice>
+  </Question>
+  <Question Id="23" Point="1" isMultiSelect="False" Text="You are in the initial planning phase of a Microsoft Dynamics 365 implementation. The customer wants to use the Microsoft Dynamics 365 App for Outlook.The customer is about to make a decision on whether Microsoft Exchange and Microsoft Dynamics 365 should be on-premises, online, or a hybrid. You need to advise the customer on how their decision affects their ability to use the Microsoft Dynamics 365 App for Outlook, what should you tell them?">
+    <Choice Id="D" isCorrect="true"> The Microsoft Dynamics 365 App for Outlook supports both online-to-online, on-premisesto on-premises, and hybrid environments.</Choice>
+    <Choice Id="C" isCorrect="false"> The Microsoft Dynamics 365 App for Outlook requires Microsoft Dynamics 365 to beonline, but Microsoft Exchange can be on-premises.</Choice>
+    <Choice Id="A" isCorrect="false"> The Microsoft Dynamics 365 App for Outlook is online only, so both Microsoft Exchangeand Microsoft Dynamics 365 must be online.</Choice>
+    <Choice Id="B" isCorrect="false"> The Microsoft Dynamics 365 App for Outlook requires Microsoft Exchange to be online,but Microsoft Dynamics 365 can be on-premises.</Choice>
+  </Question>
+  <Question Id="32" Point="1" isMultiSelect="False" Text="You are a system administrator for an organization with a Microsoft Dynamics 365 deployment (hosted in a European data center) and Active Directory Federated Services on-premises. Your organization acquires a new company in the US that is using Microsoft Dynamics 365 Online in its own tenant. The US company can continue to use their Microsoft Dynamics 365 Online instance as is. All users need to be on the European Active Directory, but they need to use an instance close to them. What should you do?">
+    <Choice Id="D" isCorrect="false"> Migrate the US instance to the European tenant, and set the instance to the European region.</Choice>
+    <Choice Id="C" isCorrect="false"> Keep the US tenant, and federate Active Directory with only the European tenant.</Choice>
+    <Choice Id="A" isCorrect="false"> Migrate the US instance to the European tenant, and set the instance the US region.</Choice>
+    <Choice Id="B" isCorrect="true"> Keep the US tenant and federate Active Directory with both the US and European tenants.</Choice>
+  </Question>
+  <Question Id="20" Point="1" isMultiSelect="False" Text="You are an administrator for multiple Microsoft Dynamics 365 instances. The users who access multiple instances want the ability to take some of their data offline in order to work while traveling. What should you do to implement this request?">
+    <Choice Id="D" isCorrect="false"> Install Microsoft Dynamics 365 for Outlook and add synchronization and offlinecapabilities on all of the instances they use.</Choice>
+    <Choice Id="C" isCorrect="false"> Install Microsoft Dynamics 365 for Outlook and add all of the instances they use andenable synchronization for all of them; add offline capabilities for the one instance where itis needed.</Choice>
+    <Choice Id="A" isCorrect="true"> Install Microsoft Dynamics 365 for Outlook and add all of the instances they use; onlyenable synchronization and offline data on the one instance where it is needed.</Choice>
+    <Choice Id="B" isCorrect="false"> Install Microsoft Dynamics 365 for Outlook and add synchronization for the one instancethey use the most and offline capabilities for all others.</Choice>
+  </Question>
+  <Question Id="39" Point="1" isMultiSelect="False" Text="In which scenario is the Import Data Wizard method recommended for Microsoft Dynamics 365?">
+    <Choice Id="D" isCorrect="true"> a small company with data on-premises that has never used a Customer RelationshipManagement (CRM) application.</Choice>
+    <Choice Id="C" isCorrect="false"> a large company with Customer Relationship Management (CRM) application data thatis stored on the same data center as Microsoft Dynamics 365</Choice>
+    <Choice Id="A" isCorrect="false"> a large company with data on-premises that currently uses Microsoft Dynamics AX andhas it staged in Microsoft Azure</Choice>
+    <Choice Id="B" isCorrect="false"> a small company that currently uses Microsoft Dynamics 365, Business edition andwants to migrate to Enterprise edition</Choice>
+  </Question>
+  <Question Id="0" Point="1" isMultiSelect="True" Text="You are a system support specialist for your company.A sales manager is currently using a Windows 10 laptop. The sales manager finds that Microsoft Dynamics 365 does not work as expected when using Firefox.What are two ways the sales manager can retain full functionality? Each correct answer presents a complete solution.">
+    <Choice Id="D" isCorrect="false"> Download and install Safari on the laptop.</Choice>
+    <Choice Id="C" isCorrect="false"> Instruct the user to use Internet Explorer 10.</Choice>
+    <Choice Id="A" isCorrect="true"> Instruct the user to use Microsoft Edge.</Choice>
+    <Choice Id="B" isCorrect="true"> Upgrade Firefox to the latest public release.</Choice>
+  </Question>
+  <Question Id="65" Point="1" isMultiSelect="False" Text="Your organization has decided to take advantage of the Microsoft Dynamics 365 for Outlook App. What should you do to ensure the app is automatically added to the Outlook account of all eligible users?">
+    <Choice Id="D" isCorrect="false"> Assign all eligible users’ proper privileges to use the app in Microsoft Dynamics 365 and instruct them where to download and install the app.</Choice>
+    <Choice Id="C" isCorrect="false"> In Microsoft Dynamics 365 go to App Source, search for the Microsoft Dynamics 365 App for Outlook, and install it from App Source.</Choice>
+    <Choice Id="A" isCorrect="false"> Use Group Policy in Active Directory and automatically install the app for the eligible users.</Choice>
+    <Choice Id="B" isCorrect="true"> In Microsoft Dynamics 365 Settings &gt; Microsoft Dynamics 365 App for Outlook, add the app to all eligible users.</Choice>
+  </Question>
+  <Question Id="61" Point="1" isMultiSelect="True" Text="You are the technology director for a company that is considering a Microsoft Dynamics 365 implementation.You are researching the type of license subscription you need to purchase. In which two instances would a User Subscription License be appropriate? Each correctanswer presents a complete solution.">
+    <Choice Id="D" isCorrect="true"> a Windows 10 phone that is only used by the sales manager of the company</Choice>
+    <Choice Id="C" isCorrect="false"> a company workstation in the marketing department used by everyone on the sales staff</Choice>
+    <Choice Id="A" isCorrect="true"> a sales executive who uses a combination of company and personal devices to access Microsoft Dynamics 365</Choice>
+    <Choice Id="B" isCorrect="false"> desktop computers in the company's training room that new sales staff use for training on company applications</Choice>
+  </Question>
+  <Question Id="58" Point="1" isMultiSelect="True" Text="As a system administrator, you want to integrate the Office Graph from Microsoft Office 365 into Microsoft Dynamics 365. Which two steps should you take to perform this integration? Each complete answer presents part of the solution.">
+    <Choice Id="D" isCorrect="true"> Set up server-based Microsoft SharePoint integration.</Choice>
+    <Choice Id="C" isCorrect="true"> Enable Microsoft Office Graph integration.</Choice>
+    <Choice Id="A" isCorrect="false"> Set up Microsoft OneNote integration.</Choice>
+    <Choice Id="B" isCorrect="false"> Enable Microsoft OneDrive for Business integration.</Choice>
+  </Question>
+  <Question Id="87" Point="1" isMultiSelect="False" Text="You are the system administrator for your company.You need to deploy an instance to be used when testing third-party the instance after testing is completed. Which type of instance should you use to accomplish this goal?">
+    <Choice Id="D" isCorrect="false"> Production.</Choice>
+    <Choice Id="C" isCorrect="false"> development.</Choice>
+    <Choice Id="A" isCorrect="false"> preview.</Choice>
+    <Choice Id="B" isCorrect="true"> sandbox.</Choice>
+  </Question>
+  <Question Id="77" Point="1" isMultiSelect="False" Text="You are working in an organization that uses Microsoft Dynamics 365. Users in this organization need the ability to read and edit all records relevant TO What should you recommend to the mobile users?">
+    <Choice Id="D" isCorrect="false"> Microsoft Dynamics 365 for Outlook.</Choice>
+    <Choice Id="C" isCorrect="true"> Microsoft Dynamics 365 App for Outlook</Choice>
+    <Choice Id="A" isCorrect="false"> Microsoft Dynamics 365 for Phones Express</Choice>
+    <Choice Id="B" isCorrect="false"> Microsoft Dynamics 365 for Phones app</Choice>
+  </Question>
+  <Question Id="85" Point="1" isMultiSelect="True" Text="You are the technology director for your company. You need to purchase a subscription to Microsoft Dynamics 365 for the sales staff. What are two possible ways to achieve this goal? Each correct answer presents a complete solution.">
+    <Choice Id="D" isCorrect="true"> Purchase a Microsoft Dynamics 365 subscription through the Office 365 Admin Portal.</Choice>
+    <Choice Id="C" isCorrect="true"> Purchase a subscription through a Microsoft Partner.</Choice>
+    <Choice Id="A" isCorrect="false"> Purchase a Business License Premium subscription to Office 365.</Choice>
+    <Choice Id="B" isCorrect="false"> Purchase a Microsoft Dynamics 365 subscription</Choice>
+  </Question>
+  <Question Id="33" Point="1" isMultiSelect="True" Text="You are using Microsoft Dynamics 365 online and decide to integrate Microsoft Dynamics 365 with your organization's Yammer instance. Which three items are needed to integrate Yammer to Microsoft Dynamics 365? Each correct answer presents part of the solution.">
+    <Choice Id="E" isCorrect="false"> user management administrator role.</Choice>
+    <Choice Id="D" isCorrect="true"> verified system administrator privileges for your organization s Yammer account</Choice>
+    <Choice Id="A" isCorrect="true"> Yammer enterprise licenses</Choice>
+    <Choice Id="C" isCorrect="false"> service administrator role</Choice>
+    <Choice Id="B" isCorrect="true"> system administrator security role or equivalent permissions</Choice>
+  </Question>
+  <Question Id="54" Point="1" isMultiSelect="True" Text="You are the technology director for a company that is preparing to implement MicrosoftDynamics 365.Since sales staff are allowed to bring their own devices to work, you are preparing a list ofsupported mobile devices that meet the minimum requirements of Microsoft Dynamics 365.Which two mobile device environments should be included in you? Each correct answerpresents a complete solution.">
+    <Choice Id="D" isCorrect="true"> a tablet with 2 GB of memory running Windows 7.</Choice>
+    <Choice Id="C" isCorrect="false"> a Windows 10 phone that uses the Microsoft Dynamics 365 app</Choice>
+    <Choice Id="A" isCorrect="true"> a tablet with 1 GB of memory running Windows 8.1</Choice>
+    <Choice Id="B" isCorrect="false"> a 7-inch iPad Mini that has 8 GB of memory and uses Safari</Choice>
+  </Question>
+  <Question Id="79" Point="1" isMultiSelect="True" Text="You are a Microsoft Dynamics 365 system administrator. You need to configure Microsoft Dynamics 365 and Microsoft Exchange Online to worktogether so that users can automatically track incoming email messages. Which three steps should you perform? Each correct answer presents part of the solution.">
+    <Choice Id="E" isCorrect="true"> Configure incoming email to server-side synchronization or Email Router.</Choice>
+    <Choice Id="D" isCorrect="false"> Configure appointments, contacts, and tasks on a Microsoft Dynamics 365 mailbox record.</Choice>
+    <Choice Id="A" isCorrect="true"> Configure mailboxes and approve email.</Choice>
+    <Choice Id="C" isCorrect="true"> Configure the email server profile.</Choice>
+    <Choice Id="B" isCorrect="false"> Use correlation to track email conversations.</Choice>
+  </Question>
+  <Question Id="25" Point="1" isMultiSelect="True" Text="You are the technology director for a company that plans to implement Microsoft Dynamics 365. You are researching the licensing options and are currently considering Microsoft Dynamics 365, Business edition.Which two statements accurately describe using this edition? Each correct answer presents a complete solution.">
+    <Choice Id="D" isCorrect="true"> Business Edition is optimized for organizations with 250 employees or less.</Choice>
+    <Choice Id="C" isCorrect="true"> Business Edition is optimized for organizations that want to host all services in the cloud.</Choice>
+    <Choice Id="A" isCorrect="false"> Business Edition is optimized for organizations that have over 1,000 employees.</Choice>
+    <Choice Id="B" isCorrect="false"> Business Edition is optimized for enterprises that use local Microsoft Dynamics AXenvironments.</Choice>
+  </Question>
+  <Question Id="19" Point="1" isMultiSelect="True" Text="You need to publish an app that uses the full functionality of the Microsoft Dynamics 365 app designer. Which two components in the app designer allow you to accomplish this goal? Each correct answer presents a complete solution.">
+    <Choice Id="D" isCorrect="false"> synchronization filters.</Choice>
+    <Choice Id="C" isCorrect="true"> artifacts</Choice>
+    <Choice Id="A" isCorrect="true"> entity assets</Choice>
+    <Choice Id="B" isCorrect="false"> user information</Choice>
+  </Question>
+  <Question Id="35" Point="1" isMultiSelect="False" Text="You are the network administrator for a small company that has been in existence for less than two years. Management wants you to begin the data import process for a Microsoft Dynamics 365 deployment. The company does not currently use any sort of Microsoft Dynamics CRM application and has a small amount of data. This is their first attempt at cloud computing. Which method should you use in this situation to complete the data upload process toMicrosoft Dynamics 365?">
+    <Choice Id="D" isCorrect="true"> Import the data using the Data Import Wizard.</Choice>
+    <Choice Id="C" isCorrect="false"> Use the On-Premises to Online Conversion Service.</Choice>
+    <Choice Id="A" isCorrect="false"> Use the software deployment kit</Choice>
+    <Choice Id="B" isCorrect="false"> Use the Data Loader service.</Choice>
+  </Question>
+  <Question Id="84" Point="1" isMultiSelect="False" Text="You are a system administrator. You add a new sandbox instance to your tenant. How does this affect your storage limit?">
+    <Choice Id="D" isCorrect="false"> It will add 5 GB </Choice>
+    <Choice Id="C" isCorrect="true"> It will make no change to your storage limit.</Choice>
+    <Choice Id="A" isCorrect="false"> It will add 10 GB </Choice>
+    <Choice Id="B" isCorrect="false"> It will add 2 GB </Choice>
+  </Question>
+  <Question Id="21" Point="1" isMultiSelect="False" Text="You are configuring forms in Microsoft Dynamics 365 and need to accommodate some users that access Microsoft Dynamics 365 through the app for phones and tablets. You want to ensure your changes will apply properly to all users regardless of how they access Microsoft Dynamics 365. What should you do?">
+    <Choice Id="D" isCorrect="false"> Make the same configurations on both the Main form and the Main InteractiveExperience form.</Choice>
+    <Choice Id="C" isCorrect="false"> Make the same configurations on both the Main form and the Mobile Express form.</Choice>
+    <Choice Id="A" isCorrect="true"> Make the configurations on the Main form only, and preview your changes for tablet andmobile.</Choice>
+    <Choice Id="B" isCorrect="false"> Make the same configurations on both the Main form and the Card form.</Choice>
+  </Question>
+  <Question Id="37" Point="1" isMultiSelect="False" Text="You are an administrator for an organization that uses Microsoft Dynamics 365 and Microsoft Dynamics 365 for Outlook. Your users have varying requirements for which data they need to take offline. You need to ensure that your users have access to the correct data offline. What should you do?">
+    <Choice Id="D" isCorrect="false"> Instruct users on how to configure the synchronized fields.</Choice>
+    <Choice Id="C" isCorrect="false"> Create one set of offline filters and distribute those.</Choice>
+    <Choice Id="A" isCorrect="true"> Instruct users on how to configure the offline filter.</Choice>
+    <Choice Id="B" isCorrect="false"> Instruct users on how to configure the synchronization filters.</Choice>
+  </Question>
+  <Question Id="3" Point="1" isMultiSelect="False" Text="You are a system administrator.You are working with a Microsoft Dynamics 365 update process to include new featuresfrom a major release in your organization.How often do new features become available through customer-driven updates in theMicrosoft Dynamics 365 instance?">
+    <Choice Id="D" isCorrect="false"> Annually.</Choice>
+    <Choice Id="C" isCorrect="true"> twice per year</Choice>
+    <Choice Id="A" isCorrect="false"> monthly</Choice>
+    <Choice Id="B" isCorrect="false"> quarterly</Choice>
+  </Question>
+  <Question Id="31" Point="1" isMultiSelect="False" Text="You need to deploy a new instance, which will be used to conduct training for users for an indefinite period. You need to be able to deploy full copies of the production environment. into this new What should you do?">
+    <Choice Id="D" isCorrect="true"> Create a sandbox instance in the same tenant.</Choice>
+    <Choice Id="C" isCorrect="false"> Create a production instance in the same tenant.</Choice>
+    <Choice Id="A" isCorrect="false"> Create a production instance in a new tenant</Choice>
+    <Choice Id="B" isCorrect="false"> Create a trial in a new tenant</Choice>
+  </Question>
+  <Question Id="22" Point="1" isMultiSelect="False" Text="You are the technology director for a large corporation that is preparing for a Microsoft Dynamics 365 implementation. You are deciding which type of licensing to purchase. Your users will only be performing time and expense entry, and record updates. What is the most cost-effective licensing model available for these users?">
+    <Choice Id="D" isCorrect="false"> Enterprise Edition Plan 1.</Choice>
+    <Choice Id="C" isCorrect="true"> Team Members Enterprise subscription</Choice>
+    <Choice Id="A" isCorrect="false"> Microsoft Dynamics 365 for Operations, Enterprise edition</Choice>
+    <Choice Id="B" isCorrect="false"> Enterprise Edition Plan 2</Choice>
+  </Question>
+  <Question Id="36" Point="1" isMultiSelect="False" Text="You are working in an organization that uses multiple Microsoft Dynamics 365 instances. A large number of users have installed Microsoft Dynamics 365 for Outlook. The users connect to multiple instances from Outlook; however, they only want to synchronize with one particular instance. There is some confusion as to whether they are synchronizing with the correct instance. Where should the users review, and possibly change, the synchronizing instance?">
+    <Choice Id="D" isCorrect="false"> in Outlook, on the CRM tab</Choice>
+    <Choice Id="C" isCorrect="false"> in Outlook, in CRM Settings on the File menu</Choice>
+    <Choice Id="A" isCorrect="true"> in the Configuration Wizard for Microsoft Dynamics 365 for Outlook</Choice>
+    <Choice Id="B" isCorrect="false"> in Diagnostics for Microsoft Dynamics 365 for Outlook</Choice>
+  </Question>
+  <Question Id="75" Point="1" isMultiSelect="False" Text="You are a system administrator. Your organization relies on significant customization that may break in an upcoming update. Your Microsoft Dynamics 365 is currently up to date. You want to delay any updates for now. What are your options?">
+    <Choice Id="D" isCorrect="false"> Skip up to two updates, and have the customizations updated for the following version.</Choice>
+    <Choice Id="C" isCorrect="true"> Skip up to one update, and have the customizations updated for the following version.</Choice>
+    <Choice Id="A" isCorrect="false"> Update the instance now without full testing, and address bugs as they arise.</Choice>
+    <Choice Id="B" isCorrect="false"> Skip all updates until the customizations have been updated to the latest version.</Choice>
+  </Question>
+  <Question Id="12" Point="1" isMultiSelect="True" Text="You work with Microsoft Dynamics 365. You need to configure a new application for lifecycle management of guide dog training. What are two capabilities of Microsoft Dynamics 365 that allow you to build this application with a built-in designer? Each correct answer presents a complete solution.">
+    <Choice Id="D" isCorrect="true"> app designer.</Choice>
+    <Choice Id="C" isCorrect="false"> workflow designer</Choice>
+    <Choice Id="A" isCorrect="true"> SiteMap designer</Choice>
+    <Choice Id="B" isCorrect="false"> role designer</Choice>
+  </Question>
+  <Question Id="72" Point="1" isMultiSelect="False" Text="You are the technology director for a large corporation that wants to deploy Microsoft Dynamics 365. The corporation hosts all of its internal resources in Microsoft Azure, including its current CRM system. The company has more than 4 million records of data, which have been accumulating for 5 years. You need to import this data as quickly as possible. Which action below will achieve this goal?">
+    <Choice Id="D" isCorrect="false"> Use the On-Premises to Online Conversion Service.</Choice>
+    <Choice Id="C" isCorrect="false"> Use a workflow to automate data import.</Choice>
+    <Choice Id="A" isCorrect="true"> Use the Data Loader service for the import process.</Choice>
+    <Choice Id="B" isCorrect="false"> Use the Import Data Wizard in the Office 365 Admin portal.</Choice>
+  </Question>
+  <Question Id="29" Point="1" isMultiSelect="False" Text="You are a remote sales person using the Microsoft Dynamics 365 app on your tablet to access your data. You are now in an area where you do not have Internet access. Which statement is true?">
+    <Choice Id="D" isCorrect="false"> Records recently viewed have been stored on your tablet for offline access.</Choice>
+    <Choice Id="C" isCorrect="false"> Records that you own have been stored on your tablet for offline access.</Choice>
+    <Choice Id="A" isCorrect="false"> Records included in the Microsoft Dynamics 365 for Outlook offline filters have been stored on your tablet for offline access.</Choice>
+    <Choice Id="B" isCorrect="true"> Records included in the synchronization filters have been stored on your tablet for offline access.</Choice>
+  </Question>
+  <Question Id="70" Point="1" isMultiSelect="True" Text="You are a system administrator using Microsoft Dynamics 365. You have recently scheduled and approved an update on your production instance. Testing on a sandbox instance indicates that more time is needed before the production instance is ready for the update. Which two statements regarding scheduling updates are true? Each correct answerpresents a complete solution.">
+    <Choice Id="D" isCorrect="false"> A scheduled and approved update cannot be changed.</Choice>
+    <Choice Id="C" isCorrect="true"> A scheduled but not approved update can be changed.</Choice>
+    <Choice Id="A" isCorrect="true"> A scheduled and approved update can be changed by any user with the correct privileges.</Choice>
+    <Choice Id="B" isCorrect="false"> A scheduled and approved update can be changed only by the user who approved it.</Choice>
+  </Question>
+  <Question Id="15" Point="1" isMultiSelect="False" Text="You are the administrator for an organization that uses Microsoft Dynamics 365, which users access through the apps for phones and tablets. You are planning to introduce a new custom entity, which needs to be read-only on the app but editable when users access Microsoft Dynamics 365 online. What should you do next?">
+    <Choice Id="D" isCorrect="false"> Enable the entity for mobile and a flag for read-only in mobile. In the security roles, givethe users read access to the new entity.</Choice>
+    <Choice Id="C" isCorrect="false"> In the security roles, give users privileges for Microsoft Dynamics 365 for mobile, andgive them read access to the new entity.</Choice>
+    <Choice Id="A" isCorrect="true"> Enable the entity for mobile and check the box for read-only in mobile. In the securityroles, give the users read and write access to the new entity.</Choice>
+    <Choice Id="B" isCorrect="false"> Enable the entity for mobile. Modify the security roles so users have only read access tothe new entity.</Choice>
+  </Question>
+  <Question Id="40" Point="1" isMultiSelect="False" Text="You are the technology director for a large company that plans to implement Microsoft Dynamics 365. You are researching the type of licensing that is required for Microsoft Dynamics 365. Which Microsoft Dynamics 365 App is only available with MicrosoftDynamics 365 Plan 2?">
+    <Choice Id="D" isCorrect="false"> Field Service.</Choice>
+    <Choice Id="C" isCorrect="false"> Sales</Choice>
+    <Choice Id="A" isCorrect="false"> Customer Service</Choice>
+    <Choice Id="B" isCorrect="true"> Operations</Choice>
+  </Question>
+  <Question Id="4" Point="1" isMultiSelect="True" Text="You are a deployment manager for Microsoft Dynamics 365. Your company decides to implement Microsoft OneNote, and you need to integrate it to Microsoft Dynamics 365. Which two steps should you take to perform this integration? Each correct answer presentspart of the solution.">
+    <Choice Id="D" isCorrect="true"> Turn on server-based Microsoft SharePoint integration.</Choice>
+    <Choice Id="C" isCorrect="false"> Turn on Microsoft Office 365 Groups integration.</Choice>
+    <Choice Id="A" isCorrect="true"> Turn on Microsoft OneNote integration.</Choice>
+    <Choice Id="B" isCorrect="false"> Turn on Microsoft OneDrive for Business integration.</Choice>
+  </Question>
+  <Question Id="1" Point="1" isMultiSelect="True" Text="You are a technical support specialist for a company that is preparing for a Microsoft Dynamics 365 implementation. You are responsible for preparing images for multiple devices. Which two instances require the Microsoft Dynamics 365 App for Outlook to track emails?Each correct answer presents a complete solution.">
+    <Choice Id="D" isCorrect="true"> a Windows 8.1 laptop for users that utilize Microsoft Outlook Web Access.</Choice>
+    <Choice Id="C" isCorrect="false"> a tablet running Windows 10 for users that utilize Microsoft Outlook 2016 and Microsoft Outlook folders</Choice>
+    <Choice Id="A" isCorrect="false"> a Windows 10 laptop for users requiring offline functionality for Microsoft Outlook and Microsoft Dynamics 365</Choice>
+    <Choice Id="B" isCorrect="true"> Microsoft Outlook running on a laptop that has a Mac operating system</Choice>
+  </Question>
+  <Question Id="43" Point="1" isMultiSelect="True" Text="Which three options are available for configuring Microsoft Dynamics 365 to work withMicrosoft Exchange for sending outgoing emails? Each correct answer presents acomplete solution.">
+    <Choice Id="E" isCorrect="false"> forward mailbox.</Choice>
+    <Choice Id="D" isCorrect="true"> Email Router</Choice>
+    <Choice Id="A" isCorrect="false"> folder-level tracking</Choice>
+    <Choice Id="C" isCorrect="true"> server-side synchronization</Choice>
+    <Choice Id="B" isCorrect="true"> Microsoft Dynamics 365 for Outlook</Choice>
+  </Question>
+  <Question Id="38" Point="1" isMultiSelect="False" Text="You are the system administrator at your organization.You need to synchronize all customization and users from your production instance to your training instance.What should you perform to accomplish this goal?">
+    <Choice Id="D" isCorrect="true"> a minimal copy.</Choice>
+    <Choice Id="C" isCorrect="false"> a switch</Choice>
+    <Choice Id="A" isCorrect="false"> a full copy</Choice>
+    <Choice Id="B" isCorrect="false"> a clone</Choice>
+  </Question>
+  <Question Id="10" Point="1" isMultiSelect="False" Text="You are a system administrator using Microsoft Dynamics 365. You receive notification that an update needs to be scheduled and approved. Where should you perform this task?">
+    <Choice Id="D" isCorrect="false"> In the Microsoft Office 365 Admin Center, select Billing and Subscriptions.</Choice>
+    <Choice Id="C" isCorrect="false"> In Microsoft Dynamics 365. select Settings and Administration.</Choice>
+    <Choice Id="A" isCorrect="false"> In Microsoft Dynamics 365, select Settings and System Notifications.</Choice>
+    <Choice Id="B" isCorrect="true"> In the Microsoft Office 365 Admin Center, open the Microsoft Dynamics 365 Admin Center.</Choice>
+  </Question>
+  <Question Id="66" Point="1" isMultiSelect="False" Text="You are a Microsoft Dynamics 365 system administrator. Your organization has acquired a new company in another region, and you need to deploya production instance for the company's users. Which statement is true regarding working with multiple instances?">
+    <Choice Id="D" isCorrect="false"> Data from all instances is stored on the same database.</Choice>
+    <Choice Id="C" isCorrect="false"> Users can only access one production instance.</Choice>
+    <Choice Id="A" isCorrect="true"> Available storage is shared across all instances.</Choice>
+    <Choice Id="B" isCorrect="false"> AH instances must be deployed on the same region.</Choice>
+  </Question>
+  <Question Id="2" Point="1" isMultiSelect="True" Text="You are the system administrator for a medical company. You need to configure Microsoft SharePoint Online to work with Microsoft Dynamics 365.Once integrated, which two outcomes can be achieved? Each correct answer presents acomplete solution.">
+    <Choice Id="D" isCorrect="false"> Users can create new site collections in Microsoft SharePoint from the MicrosoftDynamics 365 command bar.</Choice>
+    <Choice Id="C" isCorrect="true"> Users can perform Microsoft SharePoint actions from the Microsoft Dynamics 365command bar.</Choice>
+    <Choice Id="A" isCorrect="true"> Users can sign in once and do not have to sign in to both Microsoft Dynamics 365 and Microsoft SharePoint</Choice>
+    <Choice Id="B" isCorrect="false"> Users can create folders in Microsoft SharePoint from the Microsoft Dynamics 365command bar.</Choice>
+  </Question>
+  <Question Id="56" Point="1" isMultiSelect="False" Text="You are the network administrator for a company that uses Microsoft Dynamics 365 and are reviewing all the licensed users for your organization to ensure all are up to date. What will occur if you remove a Microsoft Dynamics 365 license from a user?">
+    <Choice Id="D" isCorrect="true"> The user's account is disabled and cannot access any instances.</Choice>
+    <Choice Id="C" isCorrect="false"> The user's account is deleted and cannot access any instances.</Choice>
+    <Choice Id="A" isCorrect="false"> The user can access sandbox instances but not production instances.</Choice>
+    <Choice Id="B" isCorrect="false"> The user can access all instances but only view data in read-only mode.</Choice>
+  </Question>
+  <Question Id="8" Point="1" isMultiSelect="True" Text="You have Microsoft Dynamics 365 online and Microsoft SharePoint online configured for document management. Six months after going live, you decide that you need document storage on a new entity. You need to enable document management on the new entity in Microsoft Dynamics 365. Which two actions should you perform? Each correct answer presents part of the solution.">
+    <Choice Id="D" isCorrect="false"> Configure Notes (includes attachments) on the entity.</Choice>
+    <Choice Id="C" isCorrect="true"> Enable document management settings for the entity.</Choice>
+    <Choice Id="A" isCorrect="true"> Configure document management on the entity.</Choice>
+    <Choice Id="B" isCorrect="false"> Configure OneNote integration on the entity.</Choice>
+  </Question>
+  <Question Id="62" Point="1" isMultiSelect="False" Text="You are a network administrator for a company that is preparing for a Microsoft Dynamics 365 implementation. Your users use both Windows and Mac laptops. Management wants users to be able to use Microsoft Dynamics 365 for Outlook. What is a requirement for the Office for Mac users?">
+    <Choice Id="D" isCorrect="false"> They must have the latest Firefox installed.</Choice>
+    <Choice Id="C" isCorrect="false"> They must have Google Chrome installed.</Choice>
+    <Choice Id="A" isCorrect="true"> They must use the Microsoft Dynamics 365 App for Outlook.</Choice>
+    <Choice Id="B" isCorrect="false"> They must have the Opera Web Browser installed.</Choice>
+  </Question>
+  <Question Id="64" Point="1" isMultiSelect="False" Text="Microsoft Dynamics 365 and Skype for Business are implemented at your company. You recently became system administrator, and you notice that the Skype for Business presence is not displaying in Microsoft Dynamics 365. What should you do in Microsoft Dynamics 365 to resolve this issue?">
+    <Choice Id="D" isCorrect="true"> Enable presence for the system.</Choice>
+    <Choice Id="C" isCorrect="false"> Change user settings for the security roles.</Choice>
+    <Choice Id="A" isCorrect="false"> Enable country/region code prefixing.</Choice>
+    <Choice Id="B" isCorrect="false"> Select the provider for Click-to-Call.</Choice>
+  </Question>
+  <Question Id="24" Point="1" isMultiSelect="False" Text="You work for a large organization that uses Microsoft Dynamics 365. The organization wants to allow users to install Microsoft Dynamics 365 for Outlook, butusers do not have local administrator rights on their computers. How should Microsoft Dynamics 365 for Outlook be installed for the users who need it?">
+    <Choice Id="D" isCorrect="false"> by using the download link in the Microsoft Dynamics 365 web application.</Choice>
+    <Choice Id="C" isCorrect="false"> by using the command line on each computer</Choice>
+    <Choice Id="A" isCorrect="false"> by using Microsoft System Center Configuration Manager</Choice>
+    <Choice Id="B" isCorrect="true"> by configuring a Group Policy on Active Directory</Choice>
+  </Question>
+  <Question Id="17" Point="1" isMultiSelect="True" Text="You are a system administrator. Microsoft schedules an update for your instance of Microsoft Dynamics 365.Which two scenarios will occur? Each correct answer presents a complete solution.">
+    <Choice Id="D" isCorrect="true"> If you have not approved the update, the instance will not update on the scheduled date.</Choice>
+    <Choice Id="C" isCorrect="false"> The instance will update on the scheduled date, regardless of approval.</Choice>
+    <Choice Id="A" isCorrect="false"> If you have not approved the update before the scheduled date, the instance willbecome inactive until approved or rescheduled.</Choice>
+    <Choice Id="B" isCorrect="true"> If you have approved the update, the instance will update on the scheduled date.</Choice>
+  </Question>
+  <Question Id="45" Point="1" isMultiSelect="False" Text="You are the system administrator at Contoso, Inc. You have imported 3 GB of data into an instance, but the storage utilization for your subscription does not reflect the used storage space. What is causing this discrepancy?">
+    <Choice Id="D" isCorrect="false"> Data utilization is calculated every 48 hours.</Choice>
+    <Choice Id="C" isCorrect="true"> You imported the data into a preview instance.</Choice>
+    <Choice Id="A" isCorrect="false"> You imported the data into a sandbox instance.</Choice>
+    <Choice Id="B" isCorrect="false"> Custom indexing is enabled on your instance.</Choice>
   </Question>
 </Exam>

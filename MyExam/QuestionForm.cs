@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -91,16 +92,44 @@ namespace MyExam
 
             //generating question
             TextBox txtQuestion = new TextBox();
-            txtQuestion.Text = x.qa[currentItem].question;
-            txtQuestion.Multiline = true;
             txtQuestion.Width = flowLayoutPanelQuestion.Width;
             txtQuestion.Height = flowLayoutPanelQuestion.Height;
             txtQuestion.ScrollBars = ScrollBars.Both;
+            txtQuestion.Multiline = true;
 
-            //inserting to the form
-            flowLayoutPanelQuestion.Controls.Add(txtQuestion);
 
-            //answres are generating
+            PictureBox pBox = new PictureBox();
+            pBox.Width = flowLayoutPanelQuestion.Width;
+            pBox.Height = flowLayoutPanelQuestion.Height;
+
+    
+            if (x.qa[currentItem].question.Contains(" *** ")) // there is an image in the question
+            {
+                int imageStartindex = x.qa[currentItem].question.IndexOf(" *** ");
+                int imageEndIndex = x.qa[currentItem].question.LastIndexOf(" *** ");
+
+
+                byte[] bImage= Convert.FromBase64String(x.qa[currentItem].question.Substring(imageStartindex, imageEndIndex - imageStartindex).Replace(" *** ", ""));
+
+                System.Drawing.ImageConverter converter = new System.Drawing.ImageConverter();
+                pBox.Image = (Image)converter.ConvertFrom(bImage);
+                //inserting image to the form
+                flowLayoutPanelQuestion.Controls.Add(pBox);
+              
+
+                txtQuestion.Text = x.qa[currentItem].question.Remove(imageStartindex, imageEndIndex - imageStartindex);
+                //inserting text to the form
+                flowLayoutPanelQuestion.Controls.Add(txtQuestion);
+            }
+            else
+            {
+                txtQuestion.Text = x.qa[currentItem].question;
+
+                //inserting to the form
+                flowLayoutPanelQuestion.Controls.Add(txtQuestion);
+            }
+
+            //answers are generating
             if (x.qa[currentItem].allowMultipleSelect)
             {
                 //use check box control

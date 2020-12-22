@@ -1,0 +1,559 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Exam Code="Exam : MB2-718" Title="Title : Microsoft Dynamics 365 Customer Service">
+  <Question Id="0" Point="1" isMultiSelect="True" Text="You are deploying a Unified Service Desk (USD) application.For which three scenarios can you attach an action call? Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="true"> A window navigation rule is processed.</Choice>
+    <Choice Id="B" isCorrect="false"> Client diagnostic logging is turned on.</Choice>
+    <Choice Id="C" isCorrect="false"> A threshold is reached in a Microsoft Power BI report.</Choice>
+    <Choice Id="D" isCorrect="true"> An agent script is run, or an answer is clicked.</Choice>
+    <Choice Id="E" isCorrect="true"> A toolbar button is clicked.</Choice>
+  </Question>
+  <Question Id="1" Point="1" isMultiSelect="True" Text="Which three actions can you perform by using editable grids? Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="true"> Update a lookup field to a custom entity.</Choice>
+    <Choice Id="B" isCorrect="true"> Edit records by using mobile clients.</Choice>
+    <Choice Id="C" isCorrect="true"> Group records by a specific column.</Choice>
+    <Choice Id="D" isCorrect="false"> Update a Customer Type lookup field.</Choice>
+    <Choice Id="E" isCorrect="false"> Update the value of an Owner lookup field.</Choice>
+  </Question>
+  <Question Id="2" Point="1" isMultiSelect="False" Text="What are the states a knowledge base article can be in?">
+    <Choice Id="A" isCorrect="false"> Active. Approved, Draft, Inactive, or Scheduled</Choice>
+    <Choice Id="B" isCorrect="false"> Active or Inactive</Choice>
+    <Choice Id="C" isCorrect="true"> Approved, Archived, Discarded, Draft. Expired, or Scheduled</Choice>
+    <Choice Id="D" isCorrect="false"> Approved, Cancelled. Draft Expired. On Hold, or Scheduled</Choice>
+  </Question>
+  <Question Id="3" Point="1" isMultiSelect="True" Text="You plan to deploy Unified Service Desk (USD).You need to install all USD components and verify the installation.Which three actions should you perform? Each correct answer presents part of the solution.">
+    <Choice Id="A" isCorrect="true"> Deploy USD packages to the Microsoft Dynamics 365 instance.</Choice>
+    <Choice Id="B" isCorrect="true"> Install the USD client on a development computer.</Choice>
+    <Choice Id="C" isCorrect="true"> Run the USD client and connect to the Microsoft Dynamics 365.</Choice>
+    <Choice Id="D" isCorrect="false"> In the USD application, configure client diagnostic logging.</Choice>
+    <Choice Id="E" isCorrect="false"> Install computer telephony integration (CTI) adapters.</Choice>
+  </Question>
+  <Question Id="4" Point="1" isMultiSelect="True" Text="You use the automatic creation and update rule feature to create case records automatically.Which three source record types are available for automatically creating a case? Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="true"> social activity</Choice>
+    <Choice Id="B" isCorrect="true"> mailbox alert</Choice>
+    <Choice Id="C" isCorrect="false"> survey activity</Choice>
+    <Choice Id="D" isCorrect="false"> auto post</Choice>
+    <Choice Id="E" isCorrect="true"> booking alert</Choice>
+  </Question>
+  <Question Id="5" Point="1" isMultiSelect="False" Text="You have a Microsoft Dynamics 365 environment You implement Field Service. You need to check the work order instructions in the Field Service mobile app. Which tab on the work order contains instructions?">
+    <Choice Id="A" isCorrect="false"> Incidents</Choice>
+    <Choice Id="B" isCorrect="false"> Other</Choice>
+    <Choice Id="C" isCorrect="true"> Info</Choice>
+    <Choice Id="D" isCorrect="false"> Booking</Choice>
+  </Question>
+  <Question Id="6" Point="1" isMultiSelect="True" Text="Which two statements regarding case routing are true? Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="false"> You can add a maximum of five routing rule items to a routing rule set</Choice>
+    <Choice Id="B" isCorrect="true"> A workflow is automatically created for each routing rule.</Choice>
+    <Choice Id="C" isCorrect="false"> A maximum of three routing rule sets can be active at the same time.</Choice>
+    <Choice Id="D" isCorrect="true"> You can route or assign a case to a user, queue, or team.</Choice>
+  </Question>
+  <Question Id="7" Point="1" isMultiSelect="False" Text="You enable feedback for a Voice of the Customer survey. What is the total number of questions allowed for the survey?">
+    <Choice Id="A" isCorrect="false"> 30</Choice>
+    <Choice Id="B" isCorrect="false"> 40</Choice>
+    <Choice Id="C" isCorrect="false"> 100</Choice>
+    <Choice Id="D" isCorrect="true"> 250</Choice>
+  </Question>
+  <Question Id="8" Point="1" isMultiSelect="False" Text="Your organization plans to use Voice of the Customer to send surveys to select groups of customers. You need to customize branding colors and logos for the surveys. What should you do?">
+    <Choice Id="A" isCorrect="true"> Modify Voice of the Customer survey themes.</Choice>
+    <Choice Id="B" isCorrect="false"> Configure system settings.</Choice>
+    <Choice Id="C" isCorrect="false"> Modify Microsoft Dynamics 365 themes.</Choice>
+    <Choice Id="D" isCorrect="false"> Update Voice of the Customer piped data.</Choice>
+  </Question>
+  <Question Id="9" Point="1" isMultiSelect="True" Text="Which two statements regarding enhanced service-level agreements (SLAs) are true? Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="false"> Standard SLAs record failure time on the entity record itself.</Choice>
+    <Choice Id="B" isCorrect="true"> You can create SLAs for entities other than the Case entity.</Choice>
+    <Choice Id="C" isCorrect="true"> You can only pause enhanced SLAs.</Choice>
+    <Choice Id="D" isCorrect="false"> You must use an enhanced SLA to define multiple success criteria.</Choice>
+  </Question>
+  <Question Id="10" Point="1" isMultiSelect="False" Text="You need to change the warehouse location for product inventory. What should you do?">
+    <Choice Id="A" isCorrect="false"> Create a new Product Relationship record.</Choice>
+    <Choice Id="B" isCorrect="false"> Create a new Warehouse record.</Choice>
+    <Choice Id="C" isCorrect="true"> Create a new Inventory Transfer record.</Choice>
+    <Choice Id="D" isCorrect="false"> Create a new Inventory Adjustment record.</Choice>
+  </Question>
+  <Question Id="11" Point="1" isMultiSelect="True" Text="You implement the Unified Service Desk (USD). Which three statements regarding the debugger is true? Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="true"> The debugger allows you to review data parameters from static log files.</Choice>
+    <Choice Id="B" isCorrect="false"> The debugger allows you to review real-time data parameters.</Choice>
+    <Choice Id="C" isCorrect="true"> The debugger allows you to review action calls from static log files.</Choice>
+    <Choice Id="D" isCorrect="false"> The debugger is a USD hosted control.</Choice>
+    <Choice Id="E" isCorrect="true"> The debugger allows you to review real-time action calls.</Choice>
+    <Choice Id="F" isCorrect="false"> The debugger is a standalone tool.</Choice>
+  </Question>
+  <Question Id="12" Point="1" isMultiSelect="True" Text="You are creating an interactive service hub dashboard.You need to control the display color for data embedded in the chartWhich two field types should you configure? Each correct answer presents a completesolution.">
+    <Choice Id="A" isCorrect="false"> Floating Point Number</Choice>
+    <Choice Id="B" isCorrect="true"> Two Options</Choice>
+    <Choice Id="C" isCorrect="false"> Decimal</Choice>
+    <Choice Id="D" isCorrect="false"> Currency</Choice>
+    <Choice Id="E" isCorrect="false"> Option Set</Choice>
+  </Question>
+  <Question Id="13" Point="1" isMultiSelect="True" Text="Which two security roles are created when you install the Field Service application? Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="true"> Field Service Administrator</Choice>
+    <Choice Id="B" isCorrect="true"> Field Service Dispatcher</Choice>
+    <Choice Id="C" isCorrect="false"> Field Service Representative</Choice>
+    <Choice Id="D" isCorrect="false"> Field Service Read Only</Choice>
+  </Question>
+  <Question Id="14" Point="1" isMultiSelect="False" Text="You assign a case to a user named User A User A is not available to work on the case. The customer service manager moves the case to the queue for User B Which of the following statements is true?">
+    <Choice Id="A" isCorrect="true"> User A still owns the case, but the case is located in the queue for User B </Choice>
+    <Choice Id="B" isCorrect="false"> The customer service manager now owns the case.</Choice>
+    <Choice Id="C" isCorrect="false"> User B now owns the case.</Choice>
+    <Choice Id="D" isCorrect="false"> The case is not moved to the queue for User B until User A approves the move.</Choice>
+  </Question>
+  <Question Id="15" Point="1" isMultiSelect="True" Text="You have access to the desktop version of Microsoft Excel and Excel Online.You need to perform a bulk update of data for 225 contacts.What are two ways to achieve the goal? Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="true"> Open the data in Excel Online, make updates, and then save changes to Microsoft Dynamics 365.</Choice>
+    <Choice Id="B" isCorrect="false"> Export data as a dynamic pivot table, make updates, and then save changes to Microsoft Dynamics 365.</Choice>
+    <Choice Id="C" isCorrect="false"> Export the data as a static worksheet make updates, and then save changes to Microsoft Dynamics 365.</Choice>
+    <Choice Id="D" isCorrect="true"> Export the data as a static worksheet, make updates, and then import the data back into Microsoft Dynamics 365.</Choice>
+  </Question>
+  <Question Id="16" Point="1" isMultiSelect="False" Text="You create a queue and assign it to a team. Which type of queue is created?">
+    <Choice Id="A" isCorrect="false"> Personal</Choice>
+    <Choice Id="B" isCorrect="false"> System</Choice>
+    <Choice Id="C" isCorrect="false"> Escalation</Choice>
+    <Choice Id="D" isCorrect="true"> Shared</Choice>
+  </Question>
+  <Question Id="17" Point="1" isMultiSelect="True" Text="You use the interactive service hub to manage cases.Users report that they have difficulty finding a specific knowledge base article when they initiate a search from within a case.You need to ensure that search returns relevant results.What are two possible ways to achieve the goal? Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="true"> Relate the article to one or more categories.</Choice>
+    <Choice Id="B" isCorrect="false"> Relate the article to a more relevant subject.</Choice>
+    <Choice Id="C" isCorrect="true"> Update the article description.</Choice>
+    <Choice Id="D" isCorrect="false"> Add additional keywords.</Choice>
+  </Question>
+  <Question Id="18" Point="1" isMultiSelect="False" Text="You have a Microsoft Dynamics 365 environment and you are using Unified Service Desk (USD) in a call center scenario. Users must be able to ask their customers questions that will trigger defined follow on actions. You need to provide users with guidance for their customer interactions. What should you use?">
+    <Choice Id="A" isCorrect="true"> agent scripts</Choice>
+    <Choice Id="B" isCorrect="false"> knowledge management</Choice>
+    <Choice Id="C" isCorrect="false"> CRM dialogs</Choice>
+    <Choice Id="D" isCorrect="false"> CRM workflows</Choice>
+  </Question>
+  <Question Id="19" Point="1" isMultiSelect="False" Text="You need to install and configure the Unified Service Desk (USD) client What should you do?">
+    <Choice Id="A" isCorrect="false"> Import the USD client as a solution.</Choice>
+    <Choice Id="B" isCorrect="true"> You must manually install the client.</Choice>
+    <Choice Id="C" isCorrect="false"> Deploy the USD client from the Microsoft Dynamics 365 server.</Choice>
+    <Choice Id="D" isCorrect="false"> Enable the USD client from System Settings.</Choice>
+  </Question>
+  <Question Id="20" Point="1" isMultiSelect="False" Text="You create and activate an entitlement for a customer. The entitlement is set to decrease allotment on case creation. The customer opens a case and you observe that the issue is caused by a bug on the software.You need to ensure the customer allotment is not affected by this case.What should you do?">
+    <Choice Id="A" isCorrect="false"> Delete the case.</Choice>
+    <Choice Id="B" isCorrect="false"> Cancel the case.</Choice>
+    <Choice Id="C" isCorrect="true"> Use the Do Not Decrement Entitlement Terms action.</Choice>
+    <Choice Id="D" isCorrect="false"> Use the Apply Routing Rule action.</Choice>
+  </Question>
+  <Question Id="21" Point="1" isMultiSelect="False" Text="A user named User1 creates a knowledge base article. No other action has been taken.User1 must modify the article.You need to direct User1 to the view where the article is displayed.To which view should you direct User1?">
+    <Choice Id="A" isCorrect="false"> Scheduled Articles</Choice>
+    <Choice Id="B" isCorrect="false"> Unapproved Articles</Choice>
+    <Choice Id="C" isCorrect="true"> Draft Articles</Choice>
+    <Choice Id="D" isCorrect="false"> Inactive Articles</Choice>
+  </Question>
+  <Question Id="22" Point="1" isMultiSelect="True" Text="You implement the Unified Service Desk (USD). You plan to implement actions and replacement parameters. Which three symbols are valid replacement keys? Each correctanswer presents a complete solution.">
+    <Choice Id="A" isCorrect="true"> ^</Choice>
+    <Choice Id="B" isCorrect="false"> -</Choice>
+    <Choice Id="C" isCorrect="true"> +</Choice>
+    <Choice Id="D" isCorrect="true"> $</Choice>
+    <Choice Id="E" isCorrect="false"> ~</Choice>
+  </Question>
+  <Question Id="23" Point="1" isMultiSelect="False" Text="You configure an organization to use entitlements. No customization has been applied.You need to associate an entitlement with a case record.Which option is displayed in the entitlement lookup field on the case record?">
+    <Choice Id="A" isCorrect="false"> only active entitlements associated with the case customer</Choice>
+    <Choice Id="B" isCorrect="true"> all active entitlements associated with the customer and contact</Choice>
+    <Choice Id="C" isCorrect="false"> only active entitlements associated with the case contact</Choice>
+    <Choice Id="D" isCorrect="false"> all entitlements associated with the customer and contact</Choice>
+  </Question>
+  <Question Id="24" Point="1" isMultiSelect="False" Text="You are a customer service agent that uses Unified Service Desk (USD). You search for a customer. You select a customer record from the search results and open the customer record.How many sessions are created?">
+    <Choice Id="A" isCorrect="false"> 0</Choice>
+    <Choice Id="B" isCorrect="false"> 1</Choice>
+    <Choice Id="C" isCorrect="true"> 2</Choice>
+    <Choice Id="D" isCorrect="false"> 3</Choice>
+  </Question>
+  <Question Id="25" Point="1" isMultiSelect="True" Text="You install Microsoft Dynamics 365.Which three knowledge base article templates are available? Each correct answer presentsa complete solution.">
+    <Choice Id="A" isCorrect="true"> Solution to a Problem</Choice>
+    <Choice Id="B" isCorrect="true"> Standard KB Article</Choice>
+    <Choice Id="C" isCorrect="false"> Case Escalation</Choice>
+    <Choice Id="D" isCorrect="false"> Coverage Dates</Choice>
+    <Choice Id="E" isCorrect="true"> Procedure</Choice>
+  </Question>
+  <Question Id="26" Point="1" isMultiSelect="False" Text="You plan to create surveys for a multinational company that manages hotels. You must create a unique survey for each hotel location. Which statement is true?">
+    <Choice Id="A" isCorrect="false"> You can capture up to 10,000 survey responses per day.</Choice>
+    <Choice Id="B" isCorrect="false"> You can store unlimited survey responses over time.</Choice>
+    <Choice Id="C" isCorrect="true"> You can publish a maximum of 200 surveys.</Choice>
+    <Choice Id="D" isCorrect="false"> All surveys must use the same theme.</Choice>
+  </Question>
+  <Question Id="27" Point="1" isMultiSelect="True" Text="Which two of the following are valid routing rule actions? Each correct answer presents part of the solution.">
+    <Choice Id="A" isCorrect="false"> Cancel Case</Choice>
+    <Choice Id="B" isCorrect="false"> Send Email</Choice>
+    <Choice Id="C" isCorrect="true"> Assign to User/Team</Choice>
+    <Choice Id="D" isCorrect="true"> Route to Queue</Choice>
+  </Question>
+  <Question Id="28" Point="1" isMultiSelect="False" Text="You pick a case from a queue.You determine that you cannot resolve the case, and plan to release the case back to the queue.What effect does releasing the case to the queue have on record ownership?">
+    <Choice Id="A" isCorrect="false"> Ownership remains unchanged.</Choice>
+    <Choice Id="B" isCorrect="false"> Ownership is assigned based on the current routing rule.</Choice>
+    <Choice Id="C" isCorrect="true"> Ownership is reverted to the previous owner.</Choice>
+    <Choice Id="D" isCorrect="false"> Ownership of the record is assigned to the queue owner.</Choice>
+  </Question>
+  <Question Id="29" Point="1" isMultiSelect="True" Text="Under which two circumstances will a routing rule be applied to a case without user intervention? Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="true"> a case is created as the result of a record creation rule</Choice>
+    <Choice Id="B" isCorrect="false"> a case was created before the routing rule was activated</Choice>
+    <Choice Id="C" isCorrect="true"> a case is created by using a convert to case action</Choice>
+    <Choice Id="D" isCorrect="false"> a case is created manually</Choice>
+  </Question>
+  <Question Id="30" Point="1" isMultiSelect="False" Text="You create an entitlement for a customer. In the channels section of the entitlements page, you add email and assign 75 percent of the allocation to email.Which of the following statements is true?">
+    <Choice Id="A" isCorrect="false"> 75 percent of cases created by the customer must be created by using email. Remaining cases cannot be created until another channel is added to the entitlement</Choice>
+    <Choice Id="B" isCorrect="false"> 25 percent of cases created by the customer must be created by using email. The remaining cases may be created with any other channel.</Choice>
+    <Choice Id="C" isCorrect="false"> All cases created by the customer must be created by using email.</Choice>
+    <Choice Id="D" isCorrect="true"> 75 percent of cases created by the customer must be created by using email. The remaining cases may be created with any other channel.</Choice>
+  </Question>
+  <Question Id="31" Point="1" isMultiSelect="False" Text="You create a service level agreement (SLA) that will fail after seven days. You select a service calendar that uses 24-hour work days and no holidays. Saturday and Sunday are configured to be non-working days.If no action is taken, how many calendar days can pass before the SLA fails?">
+    <Choice Id="A" isCorrect="false"> 5 days</Choice>
+    <Choice Id="B" isCorrect="false"> 7 days</Choice>
+    <Choice Id="C" isCorrect="true"> 9 days</Choice>
+    <Choice Id="D" isCorrect="false"> 11 days</Choice>
+  </Question>
+  <Question Id="32" Point="1" isMultiSelect="False" Text="You have a Microsoft Dynamics 365 environment You implement Field Service.A user named User1 is creating an agreement User1 attempts to set the agreement booking dates and agreement invoice dates but reports that the options are disabled.You need to resolve the issue.What should you do?">
+    <Choice Id="A" isCorrect="false"> In System Settings, set the Fiscal Year End.</Choice>
+    <Choice Id="B" isCorrect="false"> Set the work order duration.</Choice>
+    <Choice Id="C" isCorrect="false"> Add the Customer Service Representative role to User1.</Choice>
+    <Choice Id="D" isCorrect="true"> Set the agreement status to Active.</Choice>
+  </Question>
+  <Question Id="33" Point="1" isMultiSelect="False" Text="You need to enable the Map view for the schedule board. What should you do first?">
+    <Choice Id="A" isCorrect="false"> Enable service territories.</Choice>
+    <Choice Id="B" isCorrect="true"> Enable the connection to Bing Maps.</Choice>
+    <Choice Id="C" isCorrect="false"> Enable Custom Geolocation.</Choice>
+    <Choice Id="D" isCorrect="false"> Select a resource details view.</Choice>
+  </Question>
+  <Question Id="34" Point="1" isMultiSelect="False" Text="What is a limitation of the Field Service mobile app?">
+    <Choice Id="A" isCorrect="false"> Windows 10 phones do not support the app.</Choice>
+    <Choice Id="B" isCorrect="false"> You cannot work offline.</Choice>
+    <Choice Id="C" isCorrect="true"> GPS locations are not available.</Choice>
+    <Choice Id="D" isCorrect="false"> You cannot create follow-ups.</Choice>
+  </Question>
+  <Question Id="35" Point="1" isMultiSelect="True" Text="You implement the Unified Service Desk (USD). You plan to implement a window navigation rule. Which two statements are true? Each answer represents a complete solution.">
+    <Choice Id="A" isCorrect="false"> You must populate the form and entity or URL fields for specific rules.</Choice>
+    <Choice Id="B" isCorrect="true"> Rules are evaluated based on the order number,</Choice>
+    <Choice Id="C" isCorrect="false"> You must use the display name to reference the entity in the rule.</Choice>
+    <Choice Id="D" isCorrect="true"> You must configure default rules so that they are evaluated first</Choice>
+  </Question>
+  <Question Id="36" Point="1" isMultiSelect="True" Text="You need to implement Microsoft Power BI to analyze and visualize data.Which two actions can you perform? Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="true"> Use iframes to display content</Choice>
+    <Choice Id="B" isCorrect="true"> Implement custom visualizations.</Choice>
+    <Choice Id="C" isCorrect="false"> Use a file that is stored in Microsoft OneDrive as a data source.</Choice>
+    <Choice Id="D" isCorrect="false"> Display the most recent version of the data always.</Choice>
+  </Question>
+  <Question Id="37" Point="1" isMultiSelect="False" Text="You manage a Microsoft Dynamics 365 deployment for Contoso, Ltd.You need to provide users the URL to their Microsoft Dynamics 365 Online interactive service hub.What is the URL format for the Microsoft Dynamics 365 Online interactive service hub?">
+    <Choice Id="A" isCorrect="false"> hnps://www.microsoht.com/en-US/crynamics/crm-custo-customer-center/interactive- service-hub-user-s-guide.aspx#bkmk_Access</Choice>
+    <Choice Id="B" isCorrect="false"> https://contoso.crm.dynamics.com/XRMServices/2011/Discovery.svc</Choice>
+    <Choice Id="C" isCorrect="true"> https://contoso.crm.dynamics,com/engagementhub.aspx</Choice>
+    <Choice Id="D" isCorrect="false"> https://contoso.crm.dynamics.com/main.aspx</Choice>
+  </Question>
+  <Question Id="38" Point="1" isMultiSelect="True" Text="You create a service-level agreement (SLA). For which two of the following key performance indicators (KPIs) can you create actions? Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="false"> Escalate By</Choice>
+    <Choice Id="B" isCorrect="true"> Resolve By</Choice>
+    <Choice Id="C" isCorrect="true"> First Response By</Choice>
+    <Choice Id="D" isCorrect="false"> Close By</Choice>
+  </Question>
+  <Question Id="39" Point="1" isMultiSelect="True" Text="You are creating a new survey with the Voice of the Customer Survey designer.Which two statements regarding the Voice of the Customer Survey designer are true?Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="true"> The Complete page must always display last.</Choice>
+    <Choice Id="B" isCorrect="true"> The Welcome page must always display first.</Choice>
+    <Choice Id="C" isCorrect="false"> Surveys can have up to three pages.</Choice>
+    <Choice Id="D" isCorrect="false"> Surveys can contain unlimited questions.</Choice>
+  </Question>
+  <Question Id="40" Point="1" isMultiSelect="False" Text="You are attempting to resolve a case.For which situation will the system display a prompt before reaching the Case Resolution window?">
+    <Choice Id="A" isCorrect="false"> The case has a service-level agreement (SLA) that was not met.</Choice>
+    <Choice Id="B" isCorrect="true"> The case has an open activity.</Choice>
+    <Choice Id="C" isCorrect="false"> The customer will exceed their entitlement allotment</Choice>
+    <Choice Id="D" isCorrect="false"> The case has an open parent case.</Choice>
+  </Question>
+  <Question Id="41" Point="1" isMultiSelect="False" Text="Which of the following records can you convert into a case?">
+    <Choice Id="A" isCorrect="true"> task</Choice>
+    <Choice Id="B" isCorrect="false"> queue</Choice>
+    <Choice Id="C" isCorrect="false"> lead</Choice>
+    <Choice Id="D" isCorrect="false"> opportunity</Choice>
+  </Question>
+  <Question Id="42" Point="1" isMultiSelect="True" Text="You have a Microsoft Dynamics 365 environment You implement Field Service.You need to set up a service task type.Which three fields, components, or relationships are available when you create a new service task type? Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="true"> Description</Choice>
+    <Choice Id="B" isCorrect="true"> Notes</Choice>
+    <Choice Id="C" isCorrect="false"> Field Agent</Choice>
+    <Choice Id="D" isCorrect="true"> Estimated Duration</Choice>
+    <Choice Id="E" isCorrect="false"> Work Order Duration</Choice>
+  </Question>
+  <Question Id="43" Point="1" isMultiSelect="False" Text="You ship a replacement part to a customer.The customer reports that they receive the incorrect part.You need to initiate a process to return the product to the warehouse.What should you do?">
+    <Choice Id="A" isCorrect="true"> Create a new return merchandise authorization (RMA) record.</Choice>
+    <Choice Id="B" isCorrect="false"> Create a new return to vendor (RTV) record.</Choice>
+    <Choice Id="C" isCorrect="false"> Create a new Agreement record.</Choice>
+    <Choice Id="D" isCorrect="false"> Create a new Inventory Adjustment record.</Choice>
+  </Question>
+  <Question Id="44" Point="1" isMultiSelect="False" Text="You are creating a new knowledge base article about a known product defectAfter publishing the article, you discover an inaccuracy.You need to correct the issue while maintaining a traceable history of what was published.What should you do?">
+    <Choice Id="A" isCorrect="true"> Use the update article option.</Choice>
+    <Choice Id="B" isCorrect="false"> Revert the article to draft status, fix the error, and then republish the article.</Choice>
+    <Choice Id="C" isCorrect="false"> Delete and recreate the article.</Choice>
+    <Choice Id="D" isCorrect="false"> Publish a minor revision to the article.</Choice>
+  </Question>
+  <Question Id="45" Point="1" isMultiSelect="False" Text="You need to provide quick ad-hoc analysis of data from within the Microsoft Dynamics 365environment Which Export to Excel option should you use?">
+    <Choice Id="A" isCorrect="true"> Excel Online</Choice>
+    <Choice Id="B" isCorrect="false"> static worksheet</Choice>
+    <Choice Id="C" isCorrect="false"> dynamic worksheet</Choice>
+    <Choice Id="D" isCorrect="false"> dynamic pivot table</Choice>
+  </Question>
+  <Question Id="46" Point="1" isMultiSelect="False" Text="Which of the following capabilities is only available when using enhanced SLAs?">
+    <Choice Id="A" isCorrect="true"> pause an SLA</Choice>
+    <Choice Id="B" isCorrect="false"> use security roles to control SLA creation</Choice>
+    <Choice Id="C" isCorrect="false"> track Key Performance Indicators (KPIs)</Choice>
+    <Choice Id="D" isCorrect="false"> define failure actions</Choice>
+  </Question>
+  <Question Id="47" Point="1" isMultiSelect="False" Text="You have a Microsoft Dynamics 365 environment that has no customization. You are working in the interactive service hub with a single-stream dashboard for cases.Which option can you use to filter cases?">
+    <Choice Id="A" isCorrect="false"> Business process stage</Choice>
+    <Choice Id="B" isCorrect="true"> Title</Choice>
+    <Choice Id="C" isCorrect="false"> Product</Choice>
+    <Choice Id="D" isCorrect="false"> Category</Choice>
+  </Question>
+  <Question Id="48" Point="1" isMultiSelect="True" Text="Your organization uses the interactive service hub to manage cases.You need to interact with records in a stream that displays active cases.Which two actions can you perform? Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="true"> Add to Queue</Choice>
+    <Choice Id="B" isCorrect="false"> Email a Link</Choice>
+    <Choice Id="C" isCorrect="false"> Send Direct Email</Choice>
+    <Choice Id="D" isCorrect="true"> Do Not Decrement Entitlement Terms</Choice>
+  </Question>
+  <Question Id="49" Point="1" isMultiSelect="False" Text="You create a Voice of the Customer survey.You need to configure an automatic response each time a customer completes the survey.Which feature, or component should you use?">
+    <Choice Id="A" isCorrect="true"> rule</Choice>
+    <Choice Id="B" isCorrect="false"> piped data</Choice>
+    <Choice Id="C" isCorrect="false"> linked question</Choice>
+    <Choice Id="D" isCorrect="false"> Microsoft Azure Content Delivery Network (CDN)</Choice>
+  </Question>
+  <Question Id="50" Point="1" isMultiSelect="False" Text="You create and activate an entitlement. The start and end dates for the entitlement are in the future. What is the status of the entitlement?">
+    <Choice Id="A" isCorrect="false"> Not started</Choice>
+    <Choice Id="B" isCorrect="false"> On Hold</Choice>
+    <Choice Id="C" isCorrect="false"> Pending</Choice>
+    <Choice Id="D" isCorrect="true"> Waiting</Choice>
+  </Question>
+  <Question Id="51" Point="1" isMultiSelect="True" Text="You implement the Unified Service Desk (USD). Which three of the following objects are events? Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="false"> Realignwindow</Choice>
+    <Choice Id="B" isCorrect="false"> BrowserDocumentComplete</Choice>
+    <Choice Id="C" isCorrect="true"> DesktopReady</Choice>
+    <Choice Id="D" isCorrect="true"> SessionClosing</Choice>
+    <Choice Id="E" isCorrect="true"> FireEvent</Choice>
+  </Question>
+  <Question Id="52" Point="1" isMultiSelect="False" Text="You use the Field Service application.You need to track users and equipment that are available for scheduling.Which resource type should you use?">
+    <Choice Id="A" isCorrect="true"> Bookable Resource</Choice>
+    <Choice Id="B" isCorrect="false"> Warehouse Resource</Choice>
+    <Choice Id="C" isCorrect="false"> Resource Group</Choice>
+    <Choice Id="D" isCorrect="false"> Web Resource</Choice>
+  </Question>
+  <Question Id="53" Point="1" isMultiSelect="True" Text="You are creating a new single-stream dashboard. You plan to filter the dashboard based on cases. Which two components can you add to the dashboard? Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="true"> a tile that shows the count of open activities</Choice>
+    <Choice Id="B" isCorrect="false"> a stream that contains a public queue of cases</Choice>
+    <Choice Id="C" isCorrect="true"> a chart based on open activities</Choice>
+    <Choice Id="D" isCorrect="false"> a stream that shows a view of open activities</Choice>
+  </Question>
+  <Question Id="54" Point="1" isMultiSelect="False" Text="Which queue type is created when you add a user to Dynamics 365?">
+    <Choice Id="A" isCorrect="false"> System</Choice>
+    <Choice Id="B" isCorrect="true"> Personal</Choice>
+    <Choice Id="C" isCorrect="false"> Escalation</Choice>
+    <Choice Id="D" isCorrect="false"> Shared</Choice>
+  </Question>
+  <Question Id="55" Point="1" isMultiSelect="False" Text="You have a Microsoft Dynamics 365 environment. You implement Field Service. You need to update a work order to indicate that you are traveling to the client Which field in the Field Service mobile app should you update?">
+    <Choice Id="A" isCorrect="false"> Booking Status</Choice>
+    <Choice Id="B" isCorrect="false"> Start Time</Choice>
+    <Choice Id="C" isCorrect="false"> Actual Arrival Time</Choice>
+    <Choice Id="D" isCorrect="true"> System Status</Choice>
+  </Question>
+  <Question Id="56" Point="1" isMultiSelect="False" Text="You are using the knowledge base article search from the service area.Which two search options are available? Each correct answer presents a completesolution.">
+    <Choice Id="A" isCorrect="false"> Language</Choice>
+    <Choice Id="B" isCorrect="true"> Title</Choice>
+    <Choice Id="C" isCorrect="false"> Date Created</Choice>
+    <Choice Id="D" isCorrect="true"> Subject</Choice>
+  </Question>
+  <Question Id="57" Point="1" isMultiSelect="False" Text="You have a Microsoft Dynamics 365 environment. You implement Field Service and create a Field Service Agreement for a specific accountWhere should you define the preferred resource?">
+    <Choice Id="A" isCorrect="false"> Schedule Board Setting</Choice>
+    <Choice Id="B" isCorrect="true"> Booking Setup</Choice>
+    <Choice Id="C" isCorrect="false"> Field Service Settings</Choice>
+    <Choice Id="D" isCorrect="false"> Scheduler Field Service slot text template</Choice>
+  </Question>
+  <Question Id="58" Point="1" isMultiSelect="False" Text="The time period for a goal was not set correctly. You need to ensure that a user can correct the goal. What should you do?">
+    <Choice Id="A" isCorrect="true"> Change the manager for the goal.</Choice>
+    <Choice Id="B" isCorrect="false"> Add a new goal metric.</Choice>
+    <Choice Id="C" isCorrect="false"> Add a child goal with the correct time period that is owned by the user.</Choice>
+    <Choice Id="D" isCorrect="false"> Add a parent goal with the correct time period that is owned by the user.</Choice>
+  </Question>
+  <Question Id="59" Point="1" isMultiSelect="True" Text="Which two actions can you perform by using entitlement channels? Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="true"> Specify the number of customers allowed to use each channel.</Choice>
+    <Choice Id="B" isCorrect="true"> Restrict users from creating cases by using specified channels.</Choice>
+    <Choice Id="C" isCorrect="false"> Restrict the number of child cases allowed for each parent case with a specified channel.</Choice>
+    <Choice Id="D" isCorrect="false"> Specify the number of cases allowed for each channel.</Choice>
+  </Question>
+  <Question Id="60" Point="1" isMultiSelect="False" Text="You create a service level agreement (SLA) for cases where the case priority is critical. The SLA must display a warning after 15 minutes and fail after 30 minutes.You create a normal priority case at 16:00. You change the priority to critical at 16:15. If no action is taken, how many minutes will elapse before the SLA fails?">
+    <Choice Id="A" isCorrect="false"> 15 minutes</Choice>
+    <Choice Id="B" isCorrect="true"> 30 minutes</Choice>
+    <Choice Id="C" isCorrect="false"> 145 minutes</Choice>
+    <Choice Id="D" isCorrect="false"> 60 minutes</Choice>
+  </Question>
+  <Question Id="61" Point="1" isMultiSelect="False" Text="You use the interactive service hub for your daily work. You identify a knowledge base article that can assist with an open case for a customer.You need to send the article to the customer. What should you do?">
+    <Choice Id="A" isCorrect="false"> Create a new email record and set the regarding object to the knowledge base article.</Choice>
+    <Choice Id="B" isCorrect="false"> Use Microsoft Skype for Business to send a link to the customer.</Choice>
+    <Choice Id="C" isCorrect="true"> Send a link to the customer by using Email a link.</Choice>
+    <Choice Id="D" isCorrect="false"> Search the knowledge base from within the case and use the Link Article and Email Content option.</Choice>
+  </Question>
+  <Question Id="62" Point="1" isMultiSelect="True" Text="Which three statements regarding Voice of The Customer are true. Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="false"> The survey definition is stored in Microsoft Azure. The survey response is temporarily stored in Azure Service Bus then later retrieved and stored in Microsoft Dynamics 365. Survey responses are deleted from Azure Service Bus after they are stored in Microsoft Dynamics 365.</Choice>
+    <Choice Id="B" isCorrect="true"> Collateral, such as themes and images, can be stored as web resources and included in solutions.</Choice>
+    <Choice Id="C" isCorrect="false"> Surveys can be included in solutions.</Choice>
+    <Choice Id="D" isCorrect="true"> Each new environment requires the creation of configuration records.</Choice>
+    <Choice Id="E" isCorrect="true"> Each survey contains three forms.</Choice>
+  </Question>
+  <Question Id="63" Point="1" isMultiSelect="False" Text="What are Field Service Agreements?">
+    <Choice Id="A" isCorrect="true"> frameworks for automatically generating work orders and invoices</Choice>
+    <Choice Id="B" isCorrect="false"> methods to help users verify what the customers are eligible for and create cases for customers</Choice>
+    <Choice Id="C" isCorrect="false"> methods to allow users to organize, prioritize, and monitor the progress of their work</Choice>
+    <Choice Id="D" isCorrect="false"> deflations for the level of service or support that your organization agrees to offer to a customer</Choice>
+  </Question>
+  <Question Id="64" Point="1" isMultiSelect="False" Text="You manage a Microsoft Dynamics 365 deployment You need to enable editable grids for an entity. What should you do?">
+    <Choice Id="A" isCorrect="true"> Customize the entity.</Choice>
+    <Choice Id="B" isCorrect="false"> Use the System Customizer tool.</Choice>
+    <Choice Id="C" isCorrect="false"> Configure the Microsoft Dynamics CRM for Outlook add-in.</Choice>
+    <Choice Id="D" isCorrect="false"> Modify the system settings.</Choice>
+  </Question>
+  <Question Id="65" Point="1" isMultiSelect="False" Text="Your organization has a custom entity.You need to ensure that the custom entity is available from the interactive service hub. Which setting for the entity should you modify?">
+    <Choice Id="A" isCorrect="false"> Enable for knowledge management</Choice>
+    <Choice Id="B" isCorrect="false"> Enable for mobile</Choice>
+    <Choice Id="C" isCorrect="true"> Enable for interactive experience</Choice>
+    <Choice Id="D" isCorrect="false"> Enable for SLA</Choice>
+  </Question>
+  <Question Id="66" Point="1" isMultiSelect="True" Text="You deploy Unified Service Desk (USD). You configure a toolbar container hosted control.You need to ensure that the hosted control is aligned to a specific part of the screen by using the Realign Window action.Which three parameters can you configure? Each correct answer presents a completesolution.">
+    <Choice Id="A" isCorrect="true"> screen</Choice>
+    <Choice Id="B" isCorrect="false"> resolution</Choice>
+    <Choice Id="C" isCorrect="true"> left</Choice>
+    <Choice Id="D" isCorrect="false"> client type</Choice>
+    <Choice Id="E" isCorrect="true"> top</Choice>
+  </Question>
+  <Question Id="67" Point="1" isMultiSelect="False" Text="You have two similar cases. One case is named Case1 and the other is named Case2Each case has a different parent case. You attempt to merge Case1 into Case2. What is the result to the merge process?">
+    <Choice Id="A" isCorrect="true"> Case1 is merged into Case2 Activities and notes are combined under Case2.</Choice>
+    <Choice Id="B" isCorrect="false"> The cases will not merge. Both cases will become child cases of the parent for Case2</Choice>
+    <Choice Id="C" isCorrect="false"> The cases will not merge. Each case will remain parented to their original records.</Choice>
+    <Choice Id="D" isCorrect="false"> Case1 is merged into Case2 Activities and notes are combined under Case1.</Choice>
+  </Question>
+  <Question Id="68" Point="1" isMultiSelect="True" Text="You implement the Unified Service Desk (USD). Which two statements are true when creating a hosted control?">
+    <Choice Id="A" isCorrect="true"> Fields that display on a form vary depending on the hosted control type.</Choice>
+    <Choice Id="B" isCorrect="true"> You can set a default action for the control.</Choice>
+    <Choice Id="C" isCorrect="false"> There are five total hosted control types available.</Choice>
+    <Choice Id="D" isCorrect="false"> The owner for the hosted control cannot be changed.</Choice>
+  </Question>
+  <Question Id="69" Point="1" isMultiSelect="True" Text="You need to search for a specific knowledge base article by number.Which two options can you use? Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="true"> Service Area</Choice>
+    <Choice Id="B" isCorrect="false"> Relevance Search</Choice>
+    <Choice Id="C" isCorrect="true"> Categorized Search</Choice>
+    <Choice Id="D" isCorrect="false"> Article Template Quick Find</Choice>
+  </Question>
+  <Question Id="70" Point="1" isMultiSelect="True" Text="You are working with the Field Service mobile app in online mode.Which two statements regarding data synchronization are true? Each correct">
+    <Choice Id="A" isCorrect="true"> The user can choose when data synchronization occurs.</Choice>
+    <Choice Id="B" isCorrect="false"> Data continuously synchronizes with the server.</Choice>
+    <Choice Id="C" isCorrect="false"> You do not need to manually synchronize your device.</Choice>
+    <Choice Id="D" isCorrect="true"> Information is downloaded to your device.</Choice>
+  </Question>
+  <Question Id="71" Point="1" isMultiSelect="True" Text="Which two statements regarding the Unified Service Desk (USD) debugger are true? Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="true"> Yellow highlights are used to indicate a warning regarding an action call.</Choice>
+    <Choice Id="B" isCorrect="true"> Red highlights are used to indicate the failure of an event</Choice>
+    <Choice Id="C" isCorrect="false"> You can view a replacement parameter list.</Choice>
+    <Choice Id="D" isCorrect="false"> You can run an action call on demand.</Choice>
+  </Question>
+  <Question Id="72" Point="1" isMultiSelect="True" Text="What are three functions of the Unified Service Desk (USD) Global Manager hosted control? Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="false"> Provide process flows to respond to agent request for help.</Choice>
+    <Choice Id="B" isCorrect="true"> Manage data for the session.</Choice>
+    <Choice Id="C" isCorrect="true"> Interpret window navigation rules.</Choice>
+    <Choice Id="D" isCorrect="false"> Provide escalation alerts to manage agents who need help.</Choice>
+    <Choice Id="E" isCorrect="true"> Provide data to the toolbar components and agent scripts.</Choice>
+  </Question>
+  <Question Id="73" Point="1" isMultiSelect="False" Text="You need to merge eight similar cases. Which of the following statements is true?">
+    <Choice Id="A" isCorrect="false"> You can merge all eight cases at the same time.</Choice>
+    <Choice Id="B" isCorrect="false"> You can only merge the cases if a parent/child relationship exists between the cases.</Choice>
+    <Choice Id="C" isCorrect="true"> You can only merge two cases at a time.</Choice>
+    <Choice Id="D" isCorrect="false"> You can only merge the cases if all related activities are closed.</Choice>
+  </Question>
+  <Question Id="74" Point="1" isMultiSelect="True" Text="Which three of the following are valid survey response actions?">
+    <Choice Id="A" isCorrect="false"> Restart Survey</Choice>
+    <Choice Id="B" isCorrect="true"> Toggle Visibility</Choice>
+    <Choice Id="C" isCorrect="false"> Auto-Populate</Choice>
+    <Choice Id="D" isCorrect="true"> End Survey</Choice>
+    <Choice Id="E" isCorrect="true"> Chain Survey</Choice>
+  </Question>
+  <Question Id="75" Point="1" isMultiSelect="False" Text="You have a Microsoft Dynamics 365 environment. You implement Field Service. You need to ensure that users can interact with Field Service on a mobile device. What should you do?">
+    <Choice Id="A" isCorrect="true"> Implement the Resco Mobile CRM Woodford app.</Choice>
+    <Choice Id="B" isCorrect="false"> Import the Field Service solution.</Choice>
+    <Choice Id="C" isCorrect="false"> Download the Windows Mobile Software Development Kit (SDK).</Choice>
+    <Choice Id="D" isCorrect="false"> Configure the Microsoft Dynamics 365 mobile app.</Choice>
+  </Question>
+  <Question Id="76" Point="1" isMultiSelect="False" Text="A customer returns a defective product You plan to ship the product back to the vendor for credit You need to initiate the return process to the vendor. Which type of record should you create?">
+    <Choice Id="A" isCorrect="true"> return to vendor (RTV)</Choice>
+    <Choice Id="B" isCorrect="false"> return merchandise authorization (RMA)</Choice>
+    <Choice Id="C" isCorrect="false"> Inventory Adjustment</Choice>
+    <Choice Id="D" isCorrect="false"> return merchandise authorization (RMA) receipt</Choice>
+  </Question>
+  <Question Id="77" Point="1" isMultiSelect="False" Text="You are a customer service agent in a call center. All customer service agents use Unified Service Desk (USD) to respond to calls.You need to respond to two calls from two different customers at the same time. What should you do?">
+    <Choice Id="A" isCorrect="true"> Create one session for each customer.</Choice>
+    <Choice Id="B" isCorrect="false"> Create two sessions and use connections to create a relationship between them.</Choice>
+    <Choice Id="C" isCorrect="false"> Create one session and add each customer to a separate section on the form.</Choice>
+    <Choice Id="D" isCorrect="false"> Create one session and add each customer to the related customer sub grid.</Choice>
+  </Question>
+  <Question Id="78" Point="1" isMultiSelect="False" Text="Which statement defines a User Interface Integration (UII) action?">
+    <Choice Id="A" isCorrect="false"> the data sent to the action</Choice>
+    <Choice Id="B" isCorrect="true"> the signature of the action to be performed</Choice>
+    <Choice Id="C" isCorrect="false"> the action to be performed</Choice>
+    <Choice Id="D" isCorrect="false"> the trigger for an action</Choice>
+  </Question>
+  <Question Id="79" Point="1" isMultiSelect="False" Text="Your organization uses enhanced service level agreements (SLA's).You need to create a view that displays the SLA failure and succeeded time for data related to a case.Which entity should you use to select the fields?">
+    <Choice Id="A" isCorrect="false"> SLA</Choice>
+    <Choice Id="B" isCorrect="false"> enhanced SLA</Choice>
+    <Choice Id="C" isCorrect="true"> SLA KPI Instance</Choice>
+    <Choice Id="D" isCorrect="false"> SLA Item</Choice>
+  </Question>
+  <Question Id="80" Point="1" isMultiSelect="False" Text="You have the Customer service representative security role. You apply a filter to the active case system view. You need to save the view. What should you do?">
+    <Choice Id="A" isCorrect="false"> Create a personal view.</Choice>
+    <Choice Id="B" isCorrect="false"> Save the filtered view.</Choice>
+    <Choice Id="C" isCorrect="false"> Pin the view.</Choice>
+    <Choice Id="D" isCorrect="true"> Use Save As and give the view a new name.</Choice>
+  </Question>
+  <Question Id="81" Point="1" isMultiSelect="False" Text="A company plans to send out customer surveys. When a customer responds that they are not likely to recommend the company to a colleague, you need to display another question to gather additional information.You need to configure the environment. What should you do?">
+    <Choice Id="A" isCorrect="false"> Modify piped data.</Choice>
+    <Choice Id="B" isCorrect="true"> Use a response routing rule.</Choice>
+    <Choice Id="C" isCorrect="false"> Add a business rule.</Choice>
+    <Choice Id="D" isCorrect="false"> Create an action rule.</Choice>
+  </Question>
+  <Question Id="82" Point="1" isMultiSelect="True" Text="Which two statements regarding Microsoft Power BI dashboards are true? Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="false"> Visualizations can display up to 5,000 records.</Choice>
+    <Choice Id="B" isCorrect="true"> You can use Microsoft One Drive for Business as a data connection.</Choice>
+    <Choice Id="C" isCorrect="true"> You can examine data by using natural language capabilities.</Choice>
+    <Choice Id="D" isCorrect="false"> You can add up to six visualizations.</Choice>
+  </Question>
+  <Question Id="83" Point="1" isMultiSelect="True" Text="You need to create a goal record.For which three fields must you enter data? Each correct answer presents a completesolution.">
+    <Choice Id="A" isCorrect="true"> Time Period</Choice>
+    <Choice Id="B" isCorrect="true"> Actual Value</Choice>
+    <Choice Id="C" isCorrect="true"> Owner</Choice>
+    <Choice Id="D" isCorrect="false"> Metric Type</Choice>
+    <Choice Id="E" isCorrect="false"> Goal Metric</Choice>
+  </Question>
+  <Question Id="84" Point="1" isMultiSelect="False" Text="Your organization's Microsoft Dynamics 365 application is configured with the default setting for parent and child case You need to resolve a parent case.Which statement is true?">
+    <Choice Id="A" isCorrect="false"> All child cases are automatically resolved when you resolve a parent case.</Choice>
+    <Choice Id="B" isCorrect="true"> You must resolve each child case before you can resolve the parent case.</Choice>
+    <Choice Id="C" isCorrect="false"> You must merge the parent and child cases before resolving the case.</Choice>
+    <Choice Id="D" isCorrect="false"> You can resolve the parent and child cases independently of each other.</Choice>
+  </Question>
+  <Question Id="85" Point="1" isMultiSelect="False" Text="What are two examples of entitlement allotment options? Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="false"> Number of Channels</Choice>
+    <Choice Id="B" isCorrect="false"> Number of Products</Choice>
+    <Choice Id="C" isCorrect="true"> Number of Cases</Choice>
+    <Choice Id="D" isCorrect="true"> Number of Hours</Choice>
+  </Question>
+  <Question Id="86" Point="1" isMultiSelect="True" Text="A user selects a case from a queue and studies the queue item details for the case. Which two data points are displayed? Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="false"> the user who owns the case</Choice>
+    <Choice Id="B" isCorrect="false"> the time spent working on the case</Choice>
+    <Choice Id="C" isCorrect="true"> the queue the case is related to</Choice>
+    <Choice Id="D" isCorrect="true"> the user working on the case</Choice>
+  </Question>
+  <Question Id="87" Point="1" isMultiSelect="False" Text="You release an item from a queue.What is the outcome?">
+    <Choice Id="A" isCorrect="false"> The current routing rule is applied.</Choice>
+    <Choice Id="B" isCorrect="true"> The value from the Worked By field is removed.</Choice>
+    <Choice Id="C" isCorrect="false"> The record is returned to the originating queue.</Choice>
+    <Choice Id="D" isCorrect="false"> The record is removed from the current queue and placed in the user's personal queue.</Choice>
+  </Question>
+  <Question Id="88" Point="1" isMultiSelect="True" Text="You attempt to delete a queue in Microsoft Dynamics 365. You are not able to delete the queue.What are two possible reasons why you cannot delete the queue? Each correct answer presents a complete solution.">
+    <Choice Id="A" isCorrect="true"> The queue contains a queue item.</Choice>
+    <Choice Id="B" isCorrect="false"> The queue has a designated email address.</Choice>
+    <Choice Id="C" isCorrect="true"> The queue is referenced by a routing rule.</Choice>
+    <Choice Id="D" isCorrect="false"> The queue has a team owner.</Choice>
+  </Question>
+  <Question Id="89" Point="1" isMultiSelect="False" Text="You plan to combine two cases by using the merge case process. Which option can you specify?">
+    <Choice Id="A" isCorrect="false"> Set a parent case.</Choice>
+    <Choice Id="B" isCorrect="false"> Assign the case owner.</Choice>
+    <Choice Id="C" isCorrect="true"> Select which case to merge into another case.</Choice>
+    <Choice Id="D" isCorrect="false"> Indicate which fields should be set as the master field from each case record.</Choice>
+  </Question>
+</Exam>
