@@ -18,6 +18,10 @@ namespace MyExam
     {       
         MyExamForm.Exam x;
         int currentItem = 0;
+
+        Question certainQuestion;
+        string choiceIds = string.Empty;
+        
         public QuestionForm()
         {
             InitializeComponent();
@@ -35,6 +39,17 @@ namespace MyExam
                 qTemp.choices = ShuffleList(qTemp.choices);
                 x.qa[i] = qTemp;
             }
+        }
+
+        public QuestionForm(MyExamForm.Exam Exam, string QuestionId, string ChoiceId)
+        {
+            InitializeComponent();
+
+            x = Exam;
+
+            certainQuestion = x.qa.Where( item => item.Id == QuestionId ).FirstOrDefault<Question>();
+            choiceIds = ChoiceId;
+            
         }
 
         private List<E> ShuffleList<E>(List<E> inputList)
@@ -56,7 +71,96 @@ namespace MyExam
         private void QuestionForm_Load(object sender, EventArgs e)
         {
             this.Name = $"{x.header.examCode} - {x.header.examTitle}";
-            LoadQuestion();
+
+            if (certainQuestion.question == null)
+                LoadQuestion();
+            else
+                LoadQuestion(certainQuestion, choiceIds);
+        }
+
+
+
+        private void LoadQuestion(Question question, string choices)
+        {
+            buttonSubmit.Enabled = false;
+            buttonNext.Enabled = false;
+            buttonBack.Enabled = false;
+
+            this.buttonCancel.Text = "Close";
+
+            //Clear form
+            flowLayoutPanelQuestion.Controls.Clear();
+            flowLayoutPanelAnswers.Controls.Clear();
+
+            //generating question
+            TextBox txtQuestion = new TextBox();
+            txtQuestion.ScrollBars = ScrollBars.Both;
+            txtQuestion.Multiline = true;
+
+
+            PictureBox pBox = new PictureBox();
+            pBox.Width = flowLayoutPanelQuestion.Width;
+            pBox.Height = flowLayoutPanelQuestion.Height;
+
+
+            if (question.question.Contains(" *** ")) // there is an image in the question
+            {
+
+                int imageStartindex = question.question.IndexOf(" *** ");
+                int imageEndIndex = question.question.LastIndexOf(" *** ");
+
+                txtQuestion.Text = question.Id + " - " + question.question.Remove(imageStartindex, imageEndIndex - imageStartindex);
+                txtQuestion.Width = flowLayoutPanelQuestion.Width;
+                txtQuestion.Height = Convert.ToInt32(flowLayoutPanelQuestion.Height * 0.25);
+                //inserting text to the form
+                flowLayoutPanelQuestion.Controls.Add(txtQuestion);
+
+                byte[] bImage = Convert.FromBase64String(question.question.Substring(imageStartindex, imageEndIndex - imageStartindex).Replace(" *** ", ""));
+
+                System.Drawing.ImageConverter converter = new System.Drawing.ImageConverter();
+                pBox.Image = (Image)converter.ConvertFrom(bImage);
+                pBox.Width = flowLayoutPanelQuestion.Width;
+                pBox.Height = Convert.ToInt32(flowLayoutPanelQuestion.Height * 0.75);
+                //inserting image to the form
+                flowLayoutPanelQuestion.Controls.Add(pBox);
+
+
+
+            }
+            else
+            {
+                txtQuestion.Text = question.Id + " - " + question.question;
+                txtQuestion.Width = flowLayoutPanelQuestion.Width;
+                txtQuestion.Height = flowLayoutPanelQuestion.Height;
+
+                //inserting to the form
+                flowLayoutPanelQuestion.Controls.Add(txtQuestion);
+            }
+
+            //answers are generating
+            if (question.allowMultipleSelect)
+            {
+                //use check box control
+                foreach (MyExamForm.Choice choice in question.choices)
+                {
+                    if (choiceIds.Contains(choice.Id))
+                        flowLayoutPanelAnswers.Controls.Add(new CheckBox() { Text = choice.answerText, Name = choice.Id + "-" + choice.isCorrect, Width = flowLayoutPanelAnswers.Width, Checked = true });
+                    else
+                        flowLayoutPanelAnswers.Controls.Add(new CheckBox() { Text = choice.answerText, Name = choice.Id + "-" + choice.isCorrect, Width = flowLayoutPanelAnswers.Width });
+
+                }
+            }
+            else
+            {
+                //use radio control
+                foreach (MyExamForm.Choice choice in question.choices)
+                {
+                    if (choiceIds.Contains(choice.Id))
+                        flowLayoutPanelAnswers.Controls.Add(new RadioButton() { Text = choice.answerText, Name = choice.Id + "-" + choice.isCorrect, Width = flowLayoutPanelAnswers.Width, Checked = true });
+                    else
+                        flowLayoutPanelAnswers.Controls.Add(new RadioButton() { Text = choice.answerText, Name = choice.Id + "-" + choice.isCorrect, Width = flowLayoutPanelAnswers.Width });
+                }
+            }
         }
 
         private void LoadQuestion()
@@ -92,8 +196,6 @@ namespace MyExam
 
             //generating question
             TextBox txtQuestion = new TextBox();
-            txtQuestion.Width = flowLayoutPanelQuestion.Width;
-            txtQuestion.Height = flowLayoutPanelQuestion.Height;
             txtQuestion.ScrollBars = ScrollBars.Both;
             txtQuestion.Multiline = true;
 
@@ -105,25 +207,33 @@ namespace MyExam
     
             if (x.qa[currentItem].question.Contains(" *** ")) // there is an image in the question
             {
+
                 int imageStartindex = x.qa[currentItem].question.IndexOf(" *** ");
                 int imageEndIndex = x.qa[currentItem].question.LastIndexOf(" *** ");
 
+                txtQuestion.Text = x.qa[currentItem].Id + " - " + x.qa[currentItem].question.Remove(imageStartindex, imageEndIndex - imageStartindex);
+                txtQuestion.Width = flowLayoutPanelQuestion.Width;
+                txtQuestion.Height =  Convert.ToInt32(flowLayoutPanelQuestion.Height * 0.25);
+                //inserting text to the form
+                flowLayoutPanelQuestion.Controls.Add(txtQuestion);
 
                 byte[] bImage= Convert.FromBase64String(x.qa[currentItem].question.Substring(imageStartindex, imageEndIndex - imageStartindex).Replace(" *** ", ""));
 
                 System.Drawing.ImageConverter converter = new System.Drawing.ImageConverter();
                 pBox.Image = (Image)converter.ConvertFrom(bImage);
+                pBox.Width = flowLayoutPanelQuestion.Width;
+                pBox.Height = Convert.ToInt32(flowLayoutPanelQuestion.Height * 0.75);
                 //inserting image to the form
                 flowLayoutPanelQuestion.Controls.Add(pBox);
               
 
-                txtQuestion.Text = x.qa[currentItem].question.Remove(imageStartindex, imageEndIndex - imageStartindex);
-                //inserting text to the form
-                flowLayoutPanelQuestion.Controls.Add(txtQuestion);
+             
             }
             else
             {
-                txtQuestion.Text = x.qa[currentItem].question;
+                txtQuestion.Text = x.qa[currentItem].Id + " - " + x.qa[currentItem].question;
+                txtQuestion.Width = flowLayoutPanelQuestion.Width;
+                txtQuestion.Height = flowLayoutPanelQuestion.Height;
 
                 //inserting to the form
                 flowLayoutPanelQuestion.Controls.Add(txtQuestion);
@@ -224,7 +334,9 @@ namespace MyExam
 
         private void buttonCancel_Click(object sender, EventArgs e)
         {
-            ((MyExamForm)this.Owner).exam = x;
+            if (certainQuestion.question == null)
+                ((MyExamForm)this.Owner).exam = x;
+            
             this.Close();
             this.Dispose();
         }

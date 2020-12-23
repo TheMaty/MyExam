@@ -54,6 +54,7 @@ namespace MyExam
             // 
             this.splitContainerMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainerMain.Location = new System.Drawing.Point(0, 0);
+            this.splitContainerMain.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainerMain.Name = "splitContainerMain";
             this.splitContainerMain.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -64,14 +65,16 @@ namespace MyExam
             // splitContainerMain.Panel2
             // 
             this.splitContainerMain.Panel2.Controls.Add(this.buttonOK);
-            this.splitContainerMain.Size = new System.Drawing.Size(969, 768);
-            this.splitContainerMain.SplitterDistance = 713;
+            this.splitContainerMain.Size = new System.Drawing.Size(724, 621);
+            this.splitContainerMain.SplitterDistance = 576;
+            this.splitContainerMain.SplitterWidth = 3;
             this.splitContainerMain.TabIndex = 0;
             // 
             // splitContainerHeader
             // 
             this.splitContainerHeader.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainerHeader.Location = new System.Drawing.Point(0, 0);
+            this.splitContainerHeader.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.splitContainerHeader.Name = "splitContainerHeader";
             this.splitContainerHeader.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -87,61 +90,68 @@ namespace MyExam
             // splitContainerHeader.Panel2
             // 
             this.splitContainerHeader.Panel2.Controls.Add(this.listViewResult);
-            this.splitContainerHeader.Size = new System.Drawing.Size(969, 713);
-            this.splitContainerHeader.SplitterDistance = 131;
+            this.splitContainerHeader.Size = new System.Drawing.Size(724, 576);
+            this.splitContainerHeader.SplitterDistance = 105;
+            this.splitContainerHeader.SplitterWidth = 3;
             this.splitContainerHeader.TabIndex = 1;
             // 
             // labelGrade
             // 
             this.labelGrade.AutoSize = true;
-            this.labelGrade.Location = new System.Drawing.Point(12, 103);
+            this.labelGrade.Location = new System.Drawing.Point(9, 84);
+            this.labelGrade.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelGrade.Name = "labelGrade";
-            this.labelGrade.Size = new System.Drawing.Size(46, 17);
+            this.labelGrade.Size = new System.Drawing.Size(35, 13);
             this.labelGrade.TabIndex = 5;
             this.labelGrade.Text = "label1";
             // 
             // labelFullName
             // 
             this.labelFullName.AutoSize = true;
-            this.labelFullName.Location = new System.Drawing.Point(12, 52);
+            this.labelFullName.Location = new System.Drawing.Point(9, 42);
+            this.labelFullName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelFullName.Name = "labelFullName";
-            this.labelFullName.Size = new System.Drawing.Size(46, 17);
+            this.labelFullName.Size = new System.Drawing.Size(35, 13);
             this.labelFullName.TabIndex = 4;
             this.labelFullName.Text = "label1";
             // 
             // labelExamCodeName
             // 
             this.labelExamCodeName.AutoSize = true;
-            this.labelExamCodeName.Location = new System.Drawing.Point(12, 35);
+            this.labelExamCodeName.Location = new System.Drawing.Point(9, 28);
+            this.labelExamCodeName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelExamCodeName.Name = "labelExamCodeName";
-            this.labelExamCodeName.Size = new System.Drawing.Size(46, 17);
+            this.labelExamCodeName.Size = new System.Drawing.Size(35, 13);
             this.labelExamCodeName.TabIndex = 3;
             this.labelExamCodeName.Text = "label1";
             // 
             // labelExamDate
             // 
             this.labelExamDate.AutoSize = true;
-            this.labelExamDate.Location = new System.Drawing.Point(12, 18);
+            this.labelExamDate.Location = new System.Drawing.Point(9, 15);
+            this.labelExamDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelExamDate.Name = "labelExamDate";
-            this.labelExamDate.Size = new System.Drawing.Size(46, 17);
+            this.labelExamDate.Size = new System.Drawing.Size(35, 13);
             this.labelExamDate.TabIndex = 2;
             this.labelExamDate.Text = "label1";
             // 
             // labelCountOfIncorrectAnswer
             // 
             this.labelCountOfIncorrectAnswer.AutoSize = true;
-            this.labelCountOfIncorrectAnswer.Location = new System.Drawing.Point(12, 86);
+            this.labelCountOfIncorrectAnswer.Location = new System.Drawing.Point(9, 70);
+            this.labelCountOfIncorrectAnswer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCountOfIncorrectAnswer.Name = "labelCountOfIncorrectAnswer";
-            this.labelCountOfIncorrectAnswer.Size = new System.Drawing.Size(46, 17);
+            this.labelCountOfIncorrectAnswer.Size = new System.Drawing.Size(35, 13);
             this.labelCountOfIncorrectAnswer.TabIndex = 1;
             this.labelCountOfIncorrectAnswer.Text = "label1";
             // 
             // labelCountOfCorrectAnswer
             // 
             this.labelCountOfCorrectAnswer.AutoSize = true;
-            this.labelCountOfCorrectAnswer.Location = new System.Drawing.Point(12, 69);
+            this.labelCountOfCorrectAnswer.Location = new System.Drawing.Point(9, 56);
+            this.labelCountOfCorrectAnswer.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCountOfCorrectAnswer.Name = "labelCountOfCorrectAnswer";
-            this.labelCountOfCorrectAnswer.Size = new System.Drawing.Size(46, 17);
+            this.labelCountOfCorrectAnswer.Size = new System.Drawing.Size(35, 13);
             this.labelCountOfCorrectAnswer.TabIndex = 0;
             this.labelCountOfCorrectAnswer.Text = "label1";
             // 
@@ -150,18 +160,22 @@ namespace MyExam
             this.listViewResult.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listViewResult.FullRowSelect = true;
             this.listViewResult.GridLines = true;
+            this.listViewResult.HideSelection = false;
             this.listViewResult.Location = new System.Drawing.Point(0, 0);
+            this.listViewResult.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.listViewResult.Name = "listViewResult";
-            this.listViewResult.Size = new System.Drawing.Size(969, 578);
+            this.listViewResult.Size = new System.Drawing.Size(724, 468);
             this.listViewResult.TabIndex = 0;
             this.listViewResult.UseCompatibleStateImageBehavior = false;
             this.listViewResult.View = System.Windows.Forms.View.Details;
+            this.listViewResult.SelectedIndexChanged += new System.EventHandler(this.listViewResult_SelectedIndexChanged);
             // 
             // buttonOK
             // 
-            this.buttonOK.Location = new System.Drawing.Point(800, 13);
+            this.buttonOK.Location = new System.Drawing.Point(600, 11);
+            this.buttonOK.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonOK.Name = "buttonOK";
-            this.buttonOK.Size = new System.Drawing.Size(166, 23);
+            this.buttonOK.Size = new System.Drawing.Size(124, 19);
             this.buttonOK.TabIndex = 0;
             this.buttonOK.Text = "OK";
             this.buttonOK.UseVisualStyleBackColor = true;
@@ -169,12 +183,13 @@ namespace MyExam
             // 
             // DisplayResultForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(969, 768);
+            this.ClientSize = new System.Drawing.Size(724, 621);
             this.ControlBox = false;
             this.Controls.Add(this.splitContainerMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "DisplayResultForm";

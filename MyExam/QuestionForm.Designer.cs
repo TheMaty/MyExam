@@ -52,7 +52,7 @@
             // 
             this.splitContainerQandA.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainerQandA.Location = new System.Drawing.Point(0, 0);
-            this.splitContainerQandA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.splitContainerQandA.Margin = new System.Windows.Forms.Padding(2);
             this.splitContainerQandA.Name = "splitContainerQandA";
             this.splitContainerQandA.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -63,8 +63,8 @@
             // splitContainerQandA.Panel2
             // 
             this.splitContainerQandA.Panel2.Controls.Add(this.splitContainerForChoicesAndButtons);
-            this.splitContainerQandA.Size = new System.Drawing.Size(1212, 794);
-            this.splitContainerQandA.SplitterDistance = 450;
+            this.splitContainerQandA.Size = new System.Drawing.Size(1208, 790);
+            this.splitContainerQandA.SplitterDistance = 447;
             this.splitContainerQandA.SplitterWidth = 3;
             this.splitContainerQandA.TabIndex = 0;
             // 
@@ -72,16 +72,16 @@
             // 
             this.flowLayoutPanelQuestion.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanelQuestion.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanelQuestion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanelQuestion.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanelQuestion.Name = "flowLayoutPanelQuestion";
-            this.flowLayoutPanelQuestion.Size = new System.Drawing.Size(1212, 450);
+            this.flowLayoutPanelQuestion.Size = new System.Drawing.Size(1208, 447);
             this.flowLayoutPanelQuestion.TabIndex = 0;
             // 
             // splitContainerForChoicesAndButtons
             // 
             this.splitContainerForChoicesAndButtons.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainerForChoicesAndButtons.Location = new System.Drawing.Point(0, 0);
-            this.splitContainerForChoicesAndButtons.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.splitContainerForChoicesAndButtons.Margin = new System.Windows.Forms.Padding(2);
             this.splitContainerForChoicesAndButtons.Name = "splitContainerForChoicesAndButtons";
             this.splitContainerForChoicesAndButtons.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -92,8 +92,8 @@
             // splitContainerForChoicesAndButtons.Panel2
             // 
             this.splitContainerForChoicesAndButtons.Panel2.Controls.Add(this.flowLayoutPanelButtons);
-            this.splitContainerForChoicesAndButtons.Size = new System.Drawing.Size(1212, 341);
-            this.splitContainerForChoicesAndButtons.SplitterDistance = 311;
+            this.splitContainerForChoicesAndButtons.Size = new System.Drawing.Size(1208, 340);
+            this.splitContainerForChoicesAndButtons.SplitterDistance = 310;
             this.splitContainerForChoicesAndButtons.SplitterWidth = 3;
             this.splitContainerForChoicesAndButtons.TabIndex = 0;
             // 
@@ -102,9 +102,9 @@
             this.flowLayoutPanelAnswers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanelAnswers.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanelAnswers.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanelAnswers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanelAnswers.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanelAnswers.Name = "flowLayoutPanelAnswers";
-            this.flowLayoutPanelAnswers.Size = new System.Drawing.Size(1212, 311);
+            this.flowLayoutPanelAnswers.Size = new System.Drawing.Size(1208, 310);
             this.flowLayoutPanelAnswers.TabIndex = 0;
             // 
             // flowLayoutPanelButtons
@@ -116,15 +116,15 @@
             this.flowLayoutPanelButtons.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanelButtons.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
             this.flowLayoutPanelButtons.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanelButtons.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.flowLayoutPanelButtons.Margin = new System.Windows.Forms.Padding(2);
             this.flowLayoutPanelButtons.Name = "flowLayoutPanelButtons";
-            this.flowLayoutPanelButtons.Size = new System.Drawing.Size(1212, 27);
+            this.flowLayoutPanelButtons.Size = new System.Drawing.Size(1208, 27);
             this.flowLayoutPanelButtons.TabIndex = 2;
             // 
             // buttonCancel
             // 
-            this.buttonCancel.Location = new System.Drawing.Point(1154, 2);
-            this.buttonCancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonCancel.Location = new System.Drawing.Point(1150, 2);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(56, 19);
             this.buttonCancel.TabIndex = 3;
@@ -134,8 +134,8 @@
             // 
             // buttonSubmit
             // 
-            this.buttonSubmit.Location = new System.Drawing.Point(1094, 2);
-            this.buttonSubmit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonSubmit.Location = new System.Drawing.Point(1090, 2);
+            this.buttonSubmit.Margin = new System.Windows.Forms.Padding(2);
             this.buttonSubmit.Name = "buttonSubmit";
             this.buttonSubmit.Size = new System.Drawing.Size(56, 19);
             this.buttonSubmit.TabIndex = 2;
@@ -145,8 +145,8 @@
             // 
             // buttonNext
             // 
-            this.buttonNext.Location = new System.Drawing.Point(1034, 2);
-            this.buttonNext.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonNext.Location = new System.Drawing.Point(1030, 2);
+            this.buttonNext.Margin = new System.Windows.Forms.Padding(2);
             this.buttonNext.Name = "buttonNext";
             this.buttonNext.Size = new System.Drawing.Size(56, 19);
             this.buttonNext.TabIndex = 1;
@@ -156,8 +156,8 @@
             // 
             // buttonBack
             // 
-            this.buttonBack.Location = new System.Drawing.Point(974, 2);
-            this.buttonBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonBack.Location = new System.Drawing.Point(970, 2);
+            this.buttonBack.Margin = new System.Windows.Forms.Padding(2);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(56, 19);
             this.buttonBack.TabIndex = 0;
@@ -169,11 +169,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1212, 794);
+            this.ClientSize = new System.Drawing.Size(1208, 790);
             this.ControlBox = false;
             this.Controls.Add(this.splitContainerQandA);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "QuestionForm";

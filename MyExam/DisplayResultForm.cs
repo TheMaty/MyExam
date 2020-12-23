@@ -41,9 +41,9 @@ namespace MyExam
             labelFullName.Text = $"Fullname =  {x.result.FullName}";
             labelGrade.Text = $"Grade =     {x.result.grade.ToString()}";
 
-            listViewResult.Columns.Add("Question Id", 150);
-            listViewResult.Columns.Add("Choice Id", 150);
-            listViewResult.Columns.Add("Is Correct", 150);
+            listViewResult.Columns.Add("QuestionCol","Question Id", 150);
+            listViewResult.Columns.Add("ChoiceCol", "Choice Id", 150);
+            listViewResult.Columns.Add("ResultCol", "Is Correct", 150);
 
             string[] arr;
             ListViewItem itm;
@@ -61,6 +61,18 @@ namespace MyExam
 
                 listViewResult.Items.Add(itm);
             }
+        }
+
+        private void listViewResult_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listViewResult.SelectedItems.Count <= 0)
+                return;
+
+            if (listViewResult.SelectedItems[0].SubItems[0].Text.Length <= 0 || listViewResult.SelectedItems[0].SubItems[1].Text.Length <= 0)
+                return;
+
+            QuestionForm Qform = new QuestionForm(x, listViewResult.SelectedItems[0].SubItems[0].Text, listViewResult.SelectedItems[0].SubItems[1].Text);
+            Qform.ShowDialog();
         }
     }
 }
