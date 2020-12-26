@@ -211,7 +211,7 @@ namespace MyExam
                 int imageStartindex = x.qa[currentItem].question.IndexOf(" *** ");
                 int imageEndIndex = x.qa[currentItem].question.LastIndexOf(" *** ");
 
-                txtQuestion.Text = x.qa[currentItem].Id + " - " + x.qa[currentItem].question.Remove(imageStartindex, imageEndIndex - imageStartindex);
+                txtQuestion.Text = (currentItem + 1) + " of " + x.qa.Count + " - " + x.qa[currentItem].question.Remove(imageStartindex, imageEndIndex - imageStartindex);
                 txtQuestion.Width = flowLayoutPanelQuestion.Width;
                 txtQuestion.Height =  Convert.ToInt32(flowLayoutPanelQuestion.Height * 0.25);
                 //inserting text to the form
@@ -231,7 +231,7 @@ namespace MyExam
             }
             else
             {
-                txtQuestion.Text = x.qa[currentItem].Id + " - " + x.qa[currentItem].question;
+                txtQuestion.Text = (currentItem + 1) + " of " + x.qa.Count + " - " + x.qa[currentItem].question;
                 txtQuestion.Width = flowLayoutPanelQuestion.Width;
                 txtQuestion.Height = flowLayoutPanelQuestion.Height;
 
